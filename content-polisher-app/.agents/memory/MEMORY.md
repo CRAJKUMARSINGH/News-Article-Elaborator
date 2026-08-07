@@ -1,0 +1,1 @@
+- [Editorial evidence guardrail](editorial-evidence-guardrail.md) — Keep reported concerns visibly separate from established facts in investigative outputs.
