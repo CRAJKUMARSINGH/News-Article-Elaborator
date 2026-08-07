@@ -111,3 +111,60 @@ What Must Change
   • Recovery must be treated as a legal and financial priority — not an afterthought.
   • Defaulting contractors must be blacklisted from future tenders until full recovery is made.
   • Named cases — Bhairavji Bridge, Kotada Road, Gannon Dunkerlay — must be subject to immediate CAG scrutiny and ACB investigation where collusion in non-recovery is suspected.
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+CRITICAL QUESTIONS: WHY NO DIGITISED RECOVERY PORTAL?
+WHY NO LEGAL PURSUIT AND MONITORING OF RECOVERY?
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+Two Questions That Expose The Architecture of Impunity
+
+Question One: Why has no Digitised Recovery Portal been promulgated?
+
+The government has built e-Procurement, IFMS, WAM, PayManager, and a digital Measurement Book system. It has the technical infrastructure, the NIC support, and the institutional knowledge to build a recovery tracking portal. Yet no such portal exists.
+
+A Digitised Recovery Portal would:
+  - Record every rescinded contract with contractor name, project details, rescission date, and recoverable amount
+  - Track the status of risk-and-cost proceedings in real time
+  - Record legal notices issued, court filings made, and recovery amounts realised
+  - Flag overdue recovery cases automatically to the next supervisory level
+  - Generate monthly reports for the department head, Finance Department, and CAG
+  - Be publicly accessible so citizens can see which contractors owe money to the state
+
+The fact that this portal does not exist — despite 15 years of digital infrastructure investment — is not a technical gap. It is a deliberate policy vacuum. A portal like this would make every non-recovery visible and attributable to a specific officer. That visibility is precisely what the system appears designed to avoid.
+
+Question Two: Why is there no legal pursuit and monitoring of recovery?
+
+Recovery from a defaulting contractor is not optional — it is a legal obligation of the department. The contractual provisions, the Rajasthan Public Works Department Code, and general principles of government financial management all impose a clear duty to recover:
+  - The additional cost incurred through risk-and-cost re-tendering
+  - Any mobilisation advance outstanding
+  - Losses and damages attributable to the contractor's default
+
+Yet across approximately 200 rescinded contracts, this legal obligation is systematically ignored. No legal notices are tracked. No litigation register is maintained. No officer is held accountable for the passage of time — which in many cases will extinguish the legal right to recover as limitation periods expire.
+
+The Two Explanations: Negligence or Complicity
+
+There are only two possible explanations for this state of affairs:
+
+Explanation A — Gross Negligence: The department lacks the management systems, legal capacity, and institutional will to pursue recovery. Officers are not trained, incentivised, or held accountable for recovery. It simply falls through the cracks of an overwhelmed administration.
+
+Explanation B — Complicity: Non-recovery is deliberate. The same officers who processed the original contract, oversaw its execution, and approved payments have a vested interest in ensuring that no recovery proceeds — because recovery proceedings would expose their own role in the original failure. Legal pursuit would mean scrutiny. Scrutiny would mean accountability. Accountability is what the system is structured to prevent.
+
+The evidence — the named cases, the absence of any monitoring mechanism, and the failure to build a digitised portal despite available technical capacity — is consistent with Explanation B.
+
+What Must Change: A Five-Point Recovery Accountability Framework
+
+  1. Digitised Recovery Portal — mandatory promulgation within 90 days
+     Built on IFMS infrastructure. Every rescinded contract entered. Recovery status visible publicly. Officer responsible named against each case.
+
+  2. Mandatory Legal Notice within 30 days of rescission
+     Recovery proceedings must begin within 30 days of contract rescission. Legal notice issued. Recorded in the portal. Acknowledged or contested — but never silent.
+
+  3. Litigation Register — maintained by department legal cell
+     Every case where recovery has been contested must be in a register. Court dates, hearing status, and recovery realised must be updated monthly.
+
+  4. Limitation Period Tracking — automatic alerts
+     The portal must flag cases where the legal limitation period for recovery is approaching. Officers must act before rights extinguish. Failure to act within limitation = personal accountability of the officer.
+
+  5. ACB Investigation where non-recovery suggests complicity
+     Where an officer who processed a contract is also the officer who failed to initiate recovery — this overlap must trigger automatic referral to the Anti-Corruption Bureau. Non-recovery is not just negligence when the same hand that paid is the hand that refused to collect.
