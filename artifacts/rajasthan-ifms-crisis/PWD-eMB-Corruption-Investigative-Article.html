@@ -1,0 +1,498 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>PWD का डिजिटल माप घोटाला — Electronic Measurement Book Expose | जन संवाददाता</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"/>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;0,800;1,700&family=Noto+Serif+Devanagari:wght@400;600;700&family=Lora:ital,wght@0,400;0,600;1,400&family=Noto+Sans:wght@400;500;600;700&display=swap" rel="stylesheet"/>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+:root{
+  --navy:#1E3A5F;
+  --teal:#0D9488;
+  --crimson:#9B1C1C;
+  --amber:#92400E;
+  --paper:#FAFAF8;
+  --ink:#1C1917;
+  --tan:#D4C5A9;
+  --light-tan:#EDE5D6;
+  --muted:#6B6355;
+}
+body{background:#fff;color:var(--ink);font-family:'Lora',Georgia,serif;font-size:11.5pt;line-height:1.75}
+.masthead{background:var(--navy);color:#fff;padding:1.4rem 2.5rem 1rem;display:flex;align-items:flex-end;justify-content:space-between;border-bottom:4px solid var(--teal)}
+.pub-tag{font-family:'Noto Sans',sans-serif;font-size:8pt;font-weight:700;letter-spacing:0.15em;text-transform:uppercase;color:rgba(255,255,255,0.55);margin-bottom:0.3rem}
+.pub-name{font-family:'Noto Serif Devanagari','Playfair Display',serif;font-size:2.2rem;font-weight:700;color:#fff}
+.masthead-meta{text-align:right;font-family:'Noto Sans',sans-serif;font-size:8.5pt;color:rgba(255,255,255,0.6)}
+.masthead-meta strong{display:block;color:#fff;font-size:9pt;margin-bottom:2px}
+.article-wrap{max-width:780px;margin:0 auto;padding:2rem 1.5rem 4rem}
+.section-badge{display:inline-block;font-family:'Noto Sans',sans-serif;font-size:7.5pt;font-weight:700;letter-spacing:0.12em;text-transform:uppercase;color:var(--teal);border:1px solid var(--teal);padding:3px 10px;border-radius:2px;margin-bottom:1.1rem}
+.headline-hi{font-family:'Noto Serif Devanagari',serif;font-size:2.5rem;font-weight:700;color:var(--navy);line-height:1.15;margin-bottom:0.5rem}
+.headline-en{font-family:'Playfair Display',serif;font-size:1.45rem;font-weight:700;color:var(--navy);line-height:1.2;margin-bottom:1rem}
+.deck{font-family:'Lora',serif;font-size:1.05rem;font-style:italic;color:var(--muted);line-height:1.55;margin-bottom:1rem}
+.rule{border:none;border-top:2px solid var(--teal);margin:1rem 0;width:60px}
+.byline{display:flex;align-items:center;gap:1.2rem;font-family:'Noto Sans',sans-serif;font-size:8.5pt;color:var(--muted);border-top:1px solid var(--tan);border-bottom:1px solid var(--tan);padding:0.6rem 0;margin-bottom:1.5rem}
+.byline strong{color:var(--ink);font-weight:700}
+.dot{color:var(--tan)}
+.alert-box{background:linear-gradient(135deg,#7f1d1d 0%,#991b1b 100%);color:#fff;border-radius:6px;padding:1.2rem 1.6rem;margin:1.4rem 0;font-family:'Noto Sans',sans-serif;font-size:9pt;display:flex;gap:1rem;align-items:flex-start}
+.alert-icon{font-size:1.4rem;flex-shrink:0;margin-top:2px}
+.alert-title{font-weight:700;font-size:9.5pt;color:#fca5a5;margin-bottom:3px}
+.alert-text{color:rgba(255,255,255,0.88);line-height:1.5}
+.toc{background:var(--light-tan);border:1px solid var(--tan);border-left:4px solid var(--teal);border-radius:4px;padding:1.2rem 1.5rem;margin:1.4rem 0}
+.toc-title{font-family:'Noto Sans',sans-serif;font-size:8pt;font-weight:700;letter-spacing:0.12em;text-transform:uppercase;color:var(--teal);margin-bottom:0.8rem}
+.toc-grid{display:grid;grid-template-columns:1fr 1fr;gap:0.25rem 2rem}
+.toc-item{font-family:'Noto Sans',sans-serif;font-size:8.5pt;color:var(--navy);display:flex;gap:0.5rem;align-items:baseline;padding:0.15rem 0}
+.toc-num{color:var(--teal);font-weight:700;flex-shrink:0;min-width:2.2rem}
+.toc-tag{display:inline-block;font-size:7pt;font-weight:700;padding:1px 5px;border-radius:2px;margin-left:4px;vertical-align:middle}
+.toc-tag.excl{background:#7c3aed;color:#fff}
+.toc-tag.key{background:var(--crimson);color:#fff}
+.facts-box{background:var(--navy);color:#fff;border-radius:4px;padding:1.4rem 1.6rem;margin:1.5rem 0 2rem;display:grid;grid-template-columns:1fr 1fr 1fr 1fr;gap:0.8rem 1.2rem}
+.facts-box-title{grid-column:1/-1;font-family:'Noto Sans',sans-serif;font-size:8pt;font-weight:700;letter-spacing:0.12em;text-transform:uppercase;color:var(--teal);margin-bottom:0.3rem;border-bottom:1px solid rgba(255,255,255,0.12);padding-bottom:0.5rem}
+.fact-num{font-family:'Playfair Display',serif;font-size:1.5rem;font-weight:700;color:#fff;line-height:1}
+.fact-label{font-family:'Noto Sans',sans-serif;font-size:7.5pt;color:rgba(255,255,255,0.55);margin-top:2px}
+.chapter{margin:2.2rem 0 0.5rem}
+.chapter-marker{font-family:'Noto Sans',sans-serif;font-size:7.5pt;font-weight:700;letter-spacing:0.12em;text-transform:uppercase;color:var(--teal);margin-bottom:0.4rem}
+.chapter-title{font-family:'Noto Serif Devanagari','Playfair Display',serif;font-size:1.4rem;font-weight:700;color:var(--navy);line-height:1.25;border-left:4px solid var(--teal);padding-left:0.8rem;margin-bottom:1rem}
+p{margin-bottom:0.95rem;text-align:justify}
+.pull-quote{border-left:4px solid var(--teal);margin:1.8rem 0;padding:0.8rem 1.5rem;background:var(--light-tan)}
+.pull-quote blockquote{font-family:'Lora',serif;font-size:1.1rem;font-style:italic;color:var(--navy);line-height:1.55}
+.status-list{margin:0.8rem 0;display:flex;flex-direction:column;gap:0.5rem}
+.status-item{display:flex;align-items:flex-start;gap:0.8rem;font-family:'Noto Sans',sans-serif;font-size:9.5pt;padding:0.5rem 0.8rem;border-radius:3px}
+.status-item.broken{background:rgba(155,28,28,0.06);border-left:3px solid var(--crimson)}
+.status-item.warn{background:rgba(245,158,11,0.07);border-left:3px solid #D97706}
+.status-item.ok{background:rgba(13,148,136,0.06);border-left:3px solid var(--teal)}
+.status-icon{font-weight:800;flex-shrink:0;margin-top:1px}
+.status-icon.x{color:var(--crimson)}
+.status-icon.warn{color:#D97706}
+.status-icon.ok{color:var(--teal)}
+.reform-list{margin:0.8rem 0;display:flex;flex-direction:column;gap:0.7rem}
+.reform-item{display:flex;gap:1rem;align-items:flex-start}
+.reform-num{width:28px;height:28px;background:var(--teal);color:#fff;border-radius:50%;display:flex;align-items:center;justify-content:center;font-family:'Noto Sans',sans-serif;font-size:9pt;font-weight:700;flex-shrink:0}
+.reform-title{font-family:'Noto Sans',sans-serif;font-size:10pt;font-weight:700;color:var(--navy)}
+.reform-desc{font-size:9.5pt;color:var(--muted)}
+.demand-list{margin:0.8rem 0;display:grid;grid-template-columns:1fr 1fr;gap:0.6rem 1.5rem}
+.demand-item{display:flex;gap:0.8rem;align-items:flex-start;background:var(--light-tan);padding:0.6rem 0.8rem;border-radius:3px}
+.demand-num{font-family:'Noto Sans',sans-serif;font-size:9pt;font-weight:800;color:var(--teal);flex-shrink:0}
+.demand-text{font-size:9.5pt;color:var(--ink)}
+.closing{background:var(--navy);color:#fff;padding:1.8rem 2rem;border-radius:4px;margin:2rem 0;text-align:center}
+.closing blockquote{font-family:'Noto Serif Devanagari','Lora',serif;font-size:1.15rem;font-style:italic;line-height:1.6;color:#fff}
+.closing-btn{display:inline-block;margin-top:0;background:var(--teal);color:#fff;font-family:'Noto Sans',sans-serif;font-size:8.5pt;font-weight:700;padding:6px 18px;border-radius:2px;letter-spacing:0.05em}
+.section-divider{border:none;border-top:1px solid var(--tan);margin:1.8rem 0}
+.article-footer{border-top:2px solid var(--navy);padding-top:1rem;font-family:'Noto Sans',sans-serif;font-size:7.5pt;color:var(--muted);text-align:center;margin-top:2rem}
+.cycle-box{background:var(--navy);color:#fff;border-radius:6px;padding:1.4rem 1.8rem;margin:1.4rem 0;text-align:center}
+.cycle-steps{display:flex;align-items:center;justify-content:center;flex-wrap:wrap;gap:0.4rem;margin-top:0.8rem;font-family:'Noto Sans',sans-serif;font-size:8.5pt}
+.cycle-step{background:rgba(255,255,255,0.1);border:1px solid rgba(255,255,255,0.2);border-radius:3px;padding:0.35rem 0.7rem;color:#fff}
+.cycle-arrow{color:var(--teal);font-weight:700;font-size:1rem}
+@media print{
+  body{font-size:10.5pt}
+  .masthead,.facts-box,.closing,.cycle-box,.alert-box{background:var(--navy)!important;-webkit-print-color-adjust:exact;print-color-adjust:exact}
+  .alert-box{background:#7f1d1d!important;-webkit-print-color-adjust:exact;print-color-adjust:exact}
+  .pull-quote,.reform-num,.status-item,.demand-item,.toc{-webkit-print-color-adjust:exact;print-color-adjust:exact}
+  .chapter,.pull-quote,.toc,.alert-box{page-break-inside:avoid}
+  a{text-decoration:none;color:inherit}
+  @page{margin:1.5cm 2cm;size:A4}
+}
+</style>
+</head>
+<body>
+
+<!-- MASTHEAD -->
+<div class="masthead">
+  <div>
+    <div class="pub-tag">खोजी पत्रकारिता | Investigative Journalism</div>
+    <div class="pub-name">जन संवाददाता</div>
+  </div>
+  <div class="masthead-meta">
+    <strong>6 August 2026</strong>
+    PWD | Road Works | Rajasthan
+  </div>
+</div>
+
+<div class="article-wrap">
+
+  <div class="section-badge">PWD | Electronic Measurement Book | Corruption Expose | Exclusive</div>
+
+  <h1 class="headline-hi">PWD का डिजिटल माप घोटाला</h1>
+  <h2 class="headline-en">Electronic Measurement Books: The Digital Veil Over Rajasthan's Road Corruption</h2>
+
+  <p class="deck">जब सुधार ही भ्रष्टाचार का औज़ार बन जाए — eMB Abstract, Bitumen CRC Fraud और Missing QC Records की सम्पूर्ण खोजी पड़ताल।</p>
+
+  <hr class="rule"/>
+
+  <div class="byline">
+    <span><strong>संवाददाता | Reporter</strong></span>
+    <span class="dot">•</span>
+    <span>Special Correspondent, PWD Roads &amp; Infrastructure Bureau</span>
+    <span class="dot">•</span>
+    <span>22 min read</span>
+    <span class="dot">•</span>
+    <span>6 August 2026</span>
+  </div>
+
+  <!-- BREAKING ALERT -->
+  <div class="alert-box">
+    <div class="alert-icon">🚨</div>
+    <div>
+      <div class="alert-title">EXCLUSIVE INVESTIGATIVE REPORT — सड़क निर्माण में eMB का दुरुपयोग</div>
+      <div class="alert-text">यह रिपोर्ट PWD के Electronic Measurement Book (eMB) system की उस संरचनागत खामी को उजागर करती है जो Abstract-only billing, गायब Bitumen CRC, और missing QC test records के ज़रिये भ्रष्टाचार को digital वैधता देती है। सभी तथ्य field investigation और technical expert analysis पर आधारित हैं।</div>
+    </div>
+  </div>
+
+  <!-- TABLE OF CONTENTS -->
+  <div class="toc">
+    <div class="toc-title">📋 विषय-सूची — Table of Contents</div>
+    <div class="toc-grid">
+      <div class="toc-item"><span class="toc-num">Ch. 1</span><span>eMB का वादा और ज़मीनी हकीकत</span></div>
+      <div class="toc-item"><span class="toc-num">Ch. 2</span><span>Abstract-Only Billing — बिना नींव की डिजिटल इमारत</span></div>
+      <div class="toc-item"><span class="toc-num">Ch. 3</span><span>Missing QC Test Records — गुणवत्ता कागज़ पर <span class="toc-tag key">KEY</span></span></div>
+      <div class="toc-item"><span class="toc-num">Ch. 4</span><span>Bitumen CRC — भ्रष्टाचार की जननी <span class="toc-tag excl">EXCL</span></span></div>
+      <div class="toc-item"><span class="toc-num">Ch. 5</span><span>Fraud के चार रास्ते — Bitumen में हेराफेरी</span></div>
+      <div class="toc-item"><span class="toc-num">Ch. 6</span><span>सड़कें क्यों टूटती हैं — जनता का नुकसान</span></div>
+      <div class="toc-item"><span class="toc-num">Ch. 7</span><span>Minimum Corrective Actions — तत्काल उपाय</span></div>
+      <div class="toc-item"><span class="toc-num">Ch. 8</span><span>मीडिया और जनता से आह्वान</span></div>
+    </div>
+  </div>
+
+  <!-- KEY FACTS BOX -->
+  <div class="facts-box">
+    <div class="facts-box-title">At A Glance — मुख्य तथ्य</div>
+    <div class="fact-item"><div class="fact-num">Abstract</div><div class="fact-label">eMB में line-by-line data नहीं — केवल summary</div></div>
+    <div class="fact-item"><div class="fact-num">₹Cr</div><div class="fact-label">Bitumen — हर road project की सबसे बड़ी cost component</div></div>
+    <div class="fact-item"><div class="fact-num">0</div><div class="fact-label">QC Test Abstracts uploaded — routine absence</div></div>
+    <div class="fact-item"><div class="fact-num">CRC</div><div class="fact-label">Bitumen CRC — "Single Mother of Corruption" in PWD</div></div>
+    <div class="fact-item"><div class="fact-num">4</div><div class="fact-label">Fraud pathways through Bitumen CRC manipulation</div></div>
+    <div class="fact-item"><div class="fact-num">Nil</div><div class="fact-label">Consumption Statement links in digital billing</div></div>
+    <div class="fact-item"><div class="fact-num">Early</div><div class="fact-label">Road failures — due to sub-standard bitumen</div></div>
+    <div class="fact-item"><div class="fact-num">Unaudited</div><div class="fact-label">eMB Abstract = unverifiable financial claim</div></div>
+  </div>
+
+  <!-- CHAPTER 1 -->
+  <div class="chapter">
+    <div class="chapter-marker">अध्याय 1 — Chapter One</div>
+    <h3 class="chapter-title">eMB का वादा और ज़मीनी हकीकत — जब सुधार उल्टा पड़ा</h3>
+  </div>
+
+  <p>PWD (Public Works Department) में सड़क निर्माण कार्यों की billing और measurement को पारदर्शी, सटीक और जवाबदेह बनाने के लिए <strong>Electronic Measurement Book (e-MB)</strong> की शुरुआत एक ऐतिहासिक कदम था। पुराने physical Measurement Books में जो manual errors, tampering और forgery की संभावना थी — उसे digital system से समाप्त करना था। नागरिकों के करों से बनने वाली सड़कों की हर माप, हर परत, हर chainage-wise quantity — सब कुछ digital रूप में दर्ज, सत्यापन योग्य, और audit के लिए उपलब्ध।</p>
+
+  <p>यही था वादा। लेकिन ज़मीन पर जो हो रहा है वह इस वादे का उपहास है।</p>
+
+  <p>साक्ष्यों की बढ़ती मात्रा यह दर्शाती है कि वर्तमान eMB प्रणाली पारदर्शिता लाने की बजाय उसका ठीक विपरीत करती है — एक <strong>"sanitised abstract"</strong> तैयार करती है जो उन्हीं विवरणों को छुपाती है जो over-measurement, quality shortfalls, और सबसे बड़े corruption के स्रोत — <em>Bitumen records में हेराफेरी</em> — को पकड़ने के लिए ज़रूरी हैं।</p>
+
+  <div class="pull-quote">
+    <blockquote>"जिस digital system को भ्रष्टाचार रोकने के लिए बनाया गया — वही system उसे छुपाने का सबसे सुविधाजनक साधन बन गया है।"</blockquote>
+  </div>
+
+  <hr class="section-divider"/>
+
+  <!-- CHAPTER 2 -->
+  <div class="chapter">
+    <div class="chapter-marker">अध्याय 2 — Chapter Two</div>
+    <h3 class="chapter-title">Abstract-Only Billing — बिना नींव की डिजिटल इमारत</h3>
+  </div>
+
+  <p>व्यवहार में, आज का Electronic Measurement Book एक <strong>summary abstract से अधिक कुछ नहीं है।</strong> जो details परंपरागत physical Measurement Books में page दर page दर्ज होती थीं — वे eMB में नहीं हैं। इसमें क्या missing है:</p>
+
+  <div class="status-list">
+    <div class="status-item broken"><span class="status-icon x">✗</span><span><strong>Chainage-wise Quantities:</strong> किस kilometre पर कितना काम हुआ — यह line-by-line data eMB में absent है। सड़क की लंबाई के हिसाब से exact measurements नहीं हैं।</span></div>
+    <div class="status-item broken"><span class="status-icon x">✗</span><span><strong>Layer-wise Thicknesses:</strong> Base course, binder course, wearing course — प्रत्येक layer की actual thickness records गायब हैं। क्या specified मोटाई डाली गई? कोई evidence नहीं।</span></div>
+    <div class="status-item broken"><span class="status-icon x">✗</span><span><strong>Cross-sectional Measurements:</strong> सड़क की चौड़ाई और cross-section के point-by-point measurements — digital record में नहीं।</span></div>
+    <div class="status-item broken"><span class="status-icon x">✗</span><span><strong>Progressive Totals:</strong> Running totals जो physical MB में हर entry के बाद update होते थे — eMB में collapse होकर एक अंतिम summary figure बन जाते हैं।</span></div>
+    <div class="status-item warn"><span class="status-icon warn">!</span><span><strong>Result:</strong> जो figure eMB में दिखती है वह एक <em>broad aggregated number</em> है — उसके पीछे की वास्तविक detail न verifiable है, न auditable।</span></div>
+  </div>
+
+  <!-- TWO MANDATORY DOCUMENTS SLIDE -->
+  <div style="background:linear-gradient(135deg,var(--navy) 0%,#2d5986 100%);border-radius:6px;padding:1.8rem 2rem;margin:1.5rem 0;color:#fff">
+    <div style="font-family:'Noto Sans',sans-serif;font-size:8pt;font-weight:700;letter-spacing:0.14em;text-transform:uppercase;color:var(--teal);margin-bottom:1rem;border-bottom:1px solid rgba(255,255,255,0.15);padding-bottom:0.6rem">📋 जब Digital Line-by-Line Entry Impractical हो — तो दो Non-Negotiable Actions</div>
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:1rem">
+      <div style="background:rgba(13,148,136,0.2);border:1px solid rgba(13,148,136,0.5);border-radius:4px;padding:1rem 1.1rem">
+        <div style="font-family:'Noto Sans',sans-serif;font-size:9pt;font-weight:700;color:#6ee7b7;margin-bottom:0.4rem">✅ Action 1 — Contractor का Original Bill</div>
+        <div style="font-size:9pt;color:rgba(255,255,255,0.85)">जैसा contractor ने submit किया — उसी रूप में <strong>original bill का full upload</strong> अनिवार्य। कोई editing नहीं, कोई trimming नहीं। पूरा document।</div>
+      </div>
+      <div style="background:rgba(13,148,136,0.2);border:1px solid rgba(13,148,136,0.5);border-radius:4px;padding:1rem 1.1rem">
+        <div style="font-family:'Noto Sans',sans-serif;font-size:9pt;font-weight:700;color:#6ee7b7;margin-bottom:0.4rem">✅ Action 2 — Physical MB का PDF</div>
+        <div style="font-size:9pt;color:rgba(255,255,255,0.85)">Complete line-by-line measurements वाले <strong>physical Measurement Book का clear, legible PDF</strong> — हर electronic bill के साथ mandatory attachment।</div>
+      </div>
+    </div>
+    <div style="margin-top:0.9rem;background:rgba(155,28,28,0.3);border-radius:4px;padding:0.8rem 1rem;font-size:9pt;color:rgba(255,255,255,0.9)">
+      <strong style="color:#fca5a5">इन दोनों documents के बिना:</strong> eMB abstract एक <em>opaque summary</em> है जिसे independently verify नहीं किया जा सकता। यह functionally एक <strong>unaudited financial claim</strong> है — जिसे taxpayer के पैसे से pay किया जा रहा है।
+    </div>
+  </div>
+
+  <hr class="section-divider"/>
+
+  <!-- CHAPTER 3 -->
+  <div class="chapter">
+    <div class="chapter-marker">अध्याय 3 — Chapter Three</div>
+    <h3 class="chapter-title">Missing QC Test Records — गुणवत्ता कागज़ पर, ज़मीन पर कुछ और</h3>
+  </div>
+
+  <p>Measurement की अधूरी digital entry के ऊपर एक और परत है — <strong>Quality Control (QC) test abstracts का पूरी तरह गायब होना।</strong> सड़क निर्माण में हर प्रकार की सामग्री — aggregate, bitumen, GSB, WMM, cement — के लिए laboratory tests अनिवार्य हैं। इन tests के परिणाम बताते हैं कि:</p>
+
+  <div class="status-list">
+    <div class="status-item broken"><span class="status-icon x">✗</span><span><strong>Grade Compliance:</strong> क्या उपयोग किए गए bitumen का grade specification के अनुसार था? VG-30, VG-40 — correct grade था या cheaper substitute?</span></div>
+    <div class="status-item broken"><span class="status-icon x">✗</span><span><strong>Density Tests:</strong> क्या compacted layers की density specified range में है? Under-compaction = premature road failure।</span></div>
+    <div class="status-item broken"><span class="status-icon x">✗</span><span><strong>Marshall Stability:</strong> Bituminous mix की stability test results — uploaded नहीं। Weak mix = सड़क जल्दी टूटेगी।</span></div>
+    <div class="status-item broken"><span class="status-icon x">✗</span><span><strong>Binder Content:</strong> Actual binder percentage vs specified — यह critical data electronic billing trail में अनुपस्थित।</span></div>
+    <div class="status-item warn"><span class="status-icon warn">!</span><span><strong>Net Result:</strong> Department का QC system digital रूप में non-existent है। "Quality assured" केवल कागज़ पर है। सड़क की वास्तविक quality अज्ञात।</span></div>
+  </div>
+
+  <div class="pull-quote">
+    <blockquote>"Laboratory test results या तो upload नहीं होते, या अधूरे form में होते हैं। Materials ने specified standards पूरे किए या नहीं — इसका कोई readily accessible record नहीं।"</blockquote>
+  </div>
+
+  <hr class="section-divider"/>
+
+  <!-- CHAPTER 4 -->
+  <div class="chapter">
+    <div class="chapter-marker">अध्याय 4 — Chapter Four</div>
+    <h3 class="chapter-title">Bitumen CRC — PWD के सड़क भ्रष्टाचार की जननी</h3>
+  </div>
+
+  <p>यदि eMB system में एक single point of failure है जो सबसे अधिक financial damage करता है — वह है <strong>Bitumen CRC (Consignment Receipt Certificate / Material Receipt Certificate) का गायब होना।</strong></p>
+
+  <p>Vigilance professionals और industry observers एक स्वर में कहते हैं: <strong>"Bitumen CRC और उसकी verification process PWD road works में corruption की single mother है।"</strong> यह कोई अतिशयोक्ति नहीं — यह ज़मीनी अनुभव का निचोड़ है।</p>
+
+  <!-- CRC EXPLANATION SLIDE -->
+  <div style="background:var(--light-tan);border:1px solid var(--tan);border-top:4px solid var(--crimson);border-radius:4px;padding:1.4rem 1.6rem;margin:1.2rem 0">
+    <div style="font-family:'Noto Sans',sans-serif;font-size:8pt;font-weight:700;letter-spacing:0.12em;text-transform:uppercase;color:var(--crimson);margin-bottom:0.9rem">Bitumen CRC क्या है और यह क्यों इतना महत्वपूर्ण है?</div>
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:1rem;font-size:9.5pt;color:var(--ink)">
+      <div>
+        <p style="margin-bottom:0.5rem"><strong>CRC का उद्देश्य:</strong> यह certificate proof है कि bitumen — जो किसी approved supplier से खरीदी गई — <em>actually site पर received हुई।</em> इसमें quantity, grade, date, vehicle number, और supplier details होते हैं।</p>
+        <p><strong>Consumption Statement का उद्देश्य:</strong> यह document correlate करता है कि site पर received bitumen की quantity और bill में claimed bitumen की quantity एक ही है। यह "material in = material used" chain है।</p>
+      </div>
+      <div>
+        <p style="margin-bottom:0.5rem"><strong>जब ये गायब हों तो:</strong> Auditor के पास bill में एक abstract figure है — "X MT bitumen used" — लेकिन कोई documentary chain नहीं जो prove करे कि यह bitumen:</p>
+        <ul style="list-style:none;padding:0;display:flex;flex-direction:column;gap:0.3rem;font-size:9pt">
+          <li style="display:flex;gap:0.4rem;align-items:flex-start"><span style="color:var(--crimson);font-weight:700">✗</span><span>Genuine supplier से खरीदी गई</span></li>
+          <li style="display:flex;gap:0.4rem;align-items:flex-start"><span style="color:var(--crimson);font-weight:700">✗</span><span>Specified grade की थी</span></li>
+          <li style="display:flex;gap:0.4rem;align-items:flex-start"><span style="color:var(--crimson);font-weight:700">✗</span><span>Site पर actually deliver हुई</span></li>
+          <li style="display:flex;gap:0.4rem;align-items:flex-start"><span style="color:var(--crimson);font-weight:700">✗</span><span>उतनी मात्रा में actually use हुई जितनी claim की गई</span></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <p>जब Bitumen CRC copies और Consumption Statement electronic billing trail में upload नहीं होते — <strong>detection का अवसर समाप्त हो जाता है।</strong> एक auditor या supervising officer के पास केवल एक abstract figure बचती है — "bitumen used: X MT" — और उसे prove या disprove करने का कोई documentary रास्ता नहीं।</p>
+
+  <hr class="section-divider"/>
+
+  <!-- CHAPTER 5 -->
+  <div class="chapter">
+    <div class="chapter-marker">अध्याय 5 — Chapter Five</div>
+    <h3 class="chapter-title">Fraud के चार रास्ते — Bitumen में हेराफेरी कैसे होती है</h3>
+  </div>
+
+  <p>Vigilance experts ने Bitumen fraud के चार well-known pathways document किए हैं। ये कोई theory नहीं — यह PWD road projects में बार-बार पकड़ में आई वास्तविकताएं हैं:</p>
+
+  <!-- FOUR FRAUD PATHWAYS -->
+  <div style="display:grid;grid-template-columns:1fr 1fr;gap:1rem;margin:1.2rem 0">
+    <div style="background:linear-gradient(135deg,#450a0a 0%,#7f1d1d 100%);border-radius:5px;padding:1.2rem 1.3rem;color:#fff">
+      <div style="font-family:'Noto Sans',sans-serif;font-size:8pt;font-weight:700;color:#fca5a5;letter-spacing:0.1em;text-transform:uppercase;margin-bottom:0.5rem">Pathway 1 — CRC Manipulation</div>
+      <div style="font-size:9pt;color:rgba(255,255,255,0.85)"><strong>Genuine CRC में हेराफेरी:</strong> Authentic CRC document में quantity, date, या grade को physically या digitally alter किया जाता है। 100 MT की CRC 150 MT बन जाती है। Difference = fraud profit।</div>
+    </div>
+    <div style="background:linear-gradient(135deg,#450a0a 0%,#7f1d1d 100%);border-radius:5px;padding:1.2rem 1.3rem;color:#fff">
+      <div style="font-family:'Noto Sans',sans-serif;font-size:8pt;font-weight:700;color:#fca5a5;letter-spacing:0.1em;text-transform:uppercase;margin-bottom:0.5rem">Pathway 2 — Fake / Recycled CRC</div>
+      <div style="font-size:9pt;color:rgba(255,255,255,0.85)"><strong>नकली या पुराने CRC का उपयोग:</strong> एक ही CRC को multiple bills में submit किया जाता है। या एक project का CRC दूसरे project में use होता है। Digital verification absent = detection impossible।</div>
+    </div>
+    <div style="background:linear-gradient(135deg,#1c1917 0%,#44403c 100%);border-radius:5px;padding:1.2rem 1.3rem;color:#fff">
+      <div style="font-family:'Noto Sans',sans-serif;font-size:8pt;font-weight:700;color:#fcd34d;letter-spacing:0.1em;text-transform:uppercase;margin-bottom:0.5rem">Pathway 3 — Compromised Verification</div>
+      <div style="font-size:9pt;color:rgba(255,255,255,0.85)"><strong>CRC Verification में collusion:</strong> CRC को verify करने वाला अधिकारी ही compromised हो। Verification process कागज़ पर "done" दिखती है, लेकिन genuineness की actual जाँच नहीं होती।</div>
+    </div>
+    <div style="background:linear-gradient(135deg,#1c1917 0%,#44403c 100%);border-radius:5px;padding:1.2rem 1.3rem;color:#fff">
+      <div style="font-family:'Noto Sans',sans-serif;font-size:8pt;font-weight:700;color:#fcd34d;letter-spacing:0.1em;text-transform:uppercase;margin-bottom:0.5rem">Pathway 4 — Inflated Consumption</div>
+      <div style="font-size:9pt;color:rgba(255,255,255,0.85)"><strong>Consumption Statement inflate करना:</strong> Site पर actually 80 MT bitumen use हुई, लेकिन consumption statement 120 MT दिखाती है। 40 MT का फर्क = contractor की अतिरिक्त कमाई, सड़क की thin layer।</div>
+    </div>
+  </div>
+
+  <!-- CORRUPTION CYCLE -->
+  <div class="cycle-box">
+    <div style="font-family:'Noto Sans',sans-serif;font-size:8pt;font-weight:700;letter-spacing:0.12em;text-transform:uppercase;color:var(--teal);margin-bottom:0.5rem">Bitumen Fraud का Complete Cycle — जब eMB में CRC नहीं होता</div>
+    <div class="cycle-steps">
+      <span class="cycle-step">Bitumen order placed</span>
+      <span class="cycle-arrow">→</span>
+      <span class="cycle-step">Fake / manipulated CRC तैयार</span>
+      <span class="cycle-arrow">→</span>
+      <span class="cycle-step">Less bitumen site पर पहुँची</span>
+      <span class="cycle-arrow">→</span>
+      <span class="cycle-step">Thin layer डाली गई</span>
+      <span class="cycle-arrow">→</span>
+      <span class="cycle-step">Inflated consumption statement</span>
+      <span class="cycle-arrow">→</span>
+      <span class="cycle-step">eMB abstract में full quantity दिखाई</span>
+      <span class="cycle-arrow">→</span>
+      <span class="cycle-step">Bill pass — payment release</span>
+      <span class="cycle-arrow">→</span>
+      <span class="cycle-step" style="background:rgba(155,28,28,0.4);border-color:rgba(155,28,28,0.6)">सड़क 2 साल में टूटी — जनता ने दोबारा tax दिया</span>
+    </div>
+    <div style="margin-top:0.8rem;font-family:'Noto Sans',sans-serif;font-size:8pt;color:rgba(255,255,255,0.5);font-style:italic">हर कड़ी को eMB में mandatory documents से तोड़ा जा सकता है — पर वे documents upload नहीं होते।</div>
+  </div>
+
+  <hr class="section-divider"/>
+
+  <!-- CHAPTER 6 -->
+  <div class="chapter">
+    <div class="chapter-marker">अध्याय 6 — Chapter Six</div>
+    <h3 class="chapter-title">सड़कें क्यों टूटती हैं — जनता का असली नुकसान</h3>
+  </div>
+
+  <p>यह corruption केवल government treasury को नुकसान नहीं पहुँचाता। इसके परिणाम बहुत व्यापक और गहरे हैं:</p>
+
+  <div style="display:grid;grid-template-columns:1fr 1fr 1fr;gap:0.9rem;margin:1.2rem 0">
+    <div style="background:rgba(155,28,28,0.07);border:1px solid rgba(155,28,28,0.2);border-top:3px solid var(--crimson);border-radius:4px;padding:1rem">
+      <div style="font-family:'Noto Sans',sans-serif;font-size:8.5pt;font-weight:700;color:var(--crimson);margin-bottom:0.4rem">🛣 Premature Road Failure</div>
+      <div style="font-size:9pt;color:var(--ink)">Sub-standard bitumen से बनी सड़कें design life से बहुत पहले टूट जाती हैं। एक सड़क जो 10 साल चलनी चाहिए, 2-3 साल में गड्ढों में बदल जाती है।</div>
+    </div>
+    <div style="background:rgba(155,28,28,0.07);border:1px solid rgba(155,28,28,0.2);border-top:3px solid var(--crimson);border-radius:4px;padding:1rem">
+      <div style="font-family:'Noto Sans',sans-serif;font-size:8.5pt;font-weight:700;color:var(--crimson);margin-bottom:0.4rem">💰 Higher Maintenance Cost</div>
+      <div style="font-size:9pt;color:var(--ink)">Premature failure की repair के लिए state पर additional खर्च। एक road को दो बार बनाने का खर्च taxpayer उठाता है। यह public money की double drain है।</div>
+    </div>
+    <div style="background:rgba(155,28,28,0.07);border:1px solid rgba(155,28,28,0.2);border-top:3px solid var(--crimson);border-radius:4px;padding:1rem">
+      <div style="font-family:'Noto Sans',sans-serif;font-size:8.5pt;font-weight:700;color:var(--crimson);margin-bottom:0.4rem">⚠ Public Safety Risk</div>
+      <div style="font-size:9pt;color:var(--ink)">टूटी सड़कें road accidents का कारण बनती हैं। Thin bituminous layers → potholes → vehicle damage, accidents, और मौतें। यह administrative failure नहीं — यह criminal negligence है।</div>
+    </div>
+  </div>
+
+  <div class="pull-quote">
+    <blockquote>"Sub-standard bitumen से बनी सड़कें केवल पैसे नहीं बर्बाद करतीं — वे सड़क पर चलने वालों की जान जोखिम में डालती हैं। जब eMB system इस fraud को रोकने की बजाय छुपाने का काम करे — तो यह reform नहीं, विफलता है।"</blockquote>
+  </div>
+
+  <p>और सबसे कड़वी सच्चाई यह है: <strong>जब digital system — जो भ्रष्टाचार रोकने के लिए बना था — खुद उसे छुपाने का वाहन बन जाए, तो reform अपनी credibility खो देता है।</strong> Department को नहीं, जनता को नुकसान होता है। और जनता को पता भी नहीं चलता — क्योंकि eMB का abstract "सब ठीक" दिखाता है।</p>
+
+  <hr class="section-divider"/>
+
+  <!-- CHAPTER 7 -->
+  <div class="chapter">
+    <div class="chapter-marker">अध्याय 7 — Chapter Seven</div>
+    <h3 class="chapter-title">Minimum Corrective Actions — अभी, तत्काल, बिना देरी के</h3>
+  </div>
+
+  <p>Technical experts का कहना है कि full digital line-by-line entry अभी operationally difficult हो सकती है — लेकिन यह <em>mandatory minimum actions</em> को bypass करने का कारण नहीं बन सकती। तत्काल सुधार:</p>
+
+  <div class="reform-list">
+    <div class="reform-item">
+      <div class="reform-num">1</div>
+      <div>
+        <div class="reform-title">Contractor का Original Bill — Mandatory Upload</div>
+        <div class="reform-desc">जैसा contractor ने submit किया, उसी रूप में original bill का full upload हर eMB entry के साथ अनिवार्य हो। कोई editing, कोई truncation नहीं।</div>
+      </div>
+    </div>
+    <div class="reform-item">
+      <div class="reform-num">2</div>
+      <div>
+        <div class="reform-title">Physical MB का PDF — Line-by-Line</div>
+        <div class="reform-desc">Complete physical Measurement Book का clear, legible PDF हर electronic bill के साथ mandatory attachment। Abstract के नीचे की detail accessible होनी चाहिए।</div>
+      </div>
+    </div>
+    <div class="reform-item">
+      <div class="reform-num">3</div>
+      <div>
+        <div class="reform-title">QC Test Abstract — Mandatory Enclosure</div>
+        <div class="reform-desc">Laboratory test results — bitumen grade, density, Marshall stability, binder content — हर bill के साथ upload अनिवार्य। Test results absent = payment withheld।</div>
+      </div>
+    </div>
+    <div class="reform-item">
+      <div class="reform-num">4</div>
+      <div>
+        <div class="reform-title">Bitumen CRC Copies — Upload Required</div>
+        <div class="reform-desc">प्रत्येक bituminous work bill के साथ Bitumen CRC की copies upload अनिवार्य। CRC absent = bill invalid। Supplier verification digital trail में होनी चाहिए।</div>
+      </div>
+    </div>
+    <div class="reform-item">
+      <div class="reform-num">5</div>
+      <div>
+        <div class="reform-title">Bitumen Consumption Statement — Cross-linked</div>
+        <div class="reform-desc">CRC में received quantity और bill में claimed quantity को consumption statement से digitally cross-link किया जाए। Mismatch = automatic flag और scrutiny।</div>
+      </div>
+    </div>
+    <div class="reform-item">
+      <div class="reform-num">6</div>
+      <div>
+        <div class="reform-title">Missing Documents = Payment Withheld + Scrutiny</div>
+        <div class="reform-desc">इन documents की absence को payment withhold करने और scrutiny initiate करने का automatic ground माना जाए। Zero tolerance। Department circular द्वारा अनिवार्य।</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- TRANSPARENCY vs OBSCURITY SLIDE -->
+  <div style="background:linear-gradient(135deg,var(--navy) 0%,#1e4d6b 100%);border-radius:6px;padding:1.8rem 2rem;margin:1.5rem 0;color:#fff">
+    <div style="font-family:'Noto Sans',sans-serif;font-size:8pt;font-weight:700;letter-spacing:0.14em;text-transform:uppercase;color:var(--teal);margin-bottom:1rem;border-bottom:1px solid rgba(255,255,255,0.15);padding-bottom:0.6rem">Digital Transparency — असली परिभाषा</div>
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:1rem">
+      <div style="background:rgba(155,28,28,0.25);border:1px solid rgba(155,28,28,0.5);border-radius:4px;padding:0.9rem 1rem">
+        <div style="font-family:'Noto Sans',sans-serif;font-size:8.5pt;font-weight:700;color:#fca5a5;margin-bottom:0.4rem">❌ Transparency नहीं है</div>
+        <div style="font-size:9pt;color:rgba(255,255,255,0.85)">Summaries को digitise करना। Abstract figures upload करना। एक number दिखाना जिसे verify नहीं किया जा सकता। यह convenience है — transparency नहीं।</div>
+      </div>
+      <div style="background:rgba(13,148,136,0.2);border:1px solid rgba(13,148,136,0.4);border-radius:4px;padding:0.9rem 1rem">
+        <div style="font-family:'Noto Sans',sans-serif;font-size:8.5pt;font-weight:700;color:#6ee7b7;margin-bottom:0.4rem">✅ Transparency है</div>
+        <div style="font-size:9pt;color:rgba(255,255,255,0.85)">Underlying evidence visible और verifiable बनाना — detailed measurements, material certificates, और consumption records। जो दिखे वह prove भी हो सके।</div>
+      </div>
+    </div>
+    <div style="margin-top:1rem;font-family:'Noto Serif Devanagari','Lora',serif;font-size:1rem;font-style:italic;color:rgba(255,255,255,0.9);text-align:center;line-height:1.6">
+      "जब तक Electronic Measurement Book एक mere abstract है और physical record का true digital twin नहीं बनता —<br/>यह system उन लोगों को सुविधा देता रहेगा जो illuminate नहीं, <strong style="color:#fca5a5">obscure</strong> करना चाहते हैं।"
+    </div>
+  </div>
+
+  <hr class="section-divider"/>
+
+  <!-- CHAPTER 8 -->
+  <div class="chapter">
+    <div class="chapter-marker">अध्याय 8 — Chapter Eight (Final)</div>
+    <h3 class="chapter-title">मीडिया और जनता से आह्वान — अब चुप्पी नहीं</h3>
+  </div>
+
+  <p>यह मुद्दा केवल PWD engineers या auditors का नहीं है। यह हर उस नागरिक का मुद्दा है जो tax देता है और जिसके गाँव, शहर, और ज़िले की सड़कें इसी पैसे से बनती हैं। मीडिया और जनता से आठ तत्काल माँगें:</p>
+
+  <div class="demand-list">
+    <div class="demand-item"><div class="demand-num">1.</div><div class="demand-text"><strong>RTI — eMB Upload Status:</strong> पूछो — पिछले एक साल में PWD के कितने bills में Bitumen CRC, QC Test, और Physical MB PDF upload हुए? शायद जवाब शून्य होगा।</div></div>
+    <div class="demand-item"><div class="demand-num">2.</div><div class="demand-text"><strong>CAG Audit माँगो:</strong> PWD road works में bitumen claimed vs bitumen received का CAG audit हो। CRC verification trail का audit हो। परिणाम सार्वजनिक हों।</div></div>
+    <div class="demand-item"><div class="demand-num">3.</div><div class="demand-text"><strong>Sting — CRC Verification Test:</strong> किसी एक जिले के road project के eMB bills में CRC check करो। क्या CRC genuinely verified है? क्या supplier real है? Sting operation यह उजागर कर सकता है।</div></div>
+    <div class="demand-item"><div class="demand-num">4.</div><div class="demand-text"><strong>Core Cutting Test — Live:</strong> Recently completed road पर core cutting test करवाओ। क्या actual bituminous layer thickness, specified thickness के बराबर है? Results eMB से match होंगे?</div></div>
+    <div class="demand-item"><div class="demand-num">5.</div><div class="demand-text"><strong>Department Circular माँगो:</strong> क्या कोई existing circular है जो CRC, QC records, और Physical MB PDF का upload mandatory बनाता हो? शायद नहीं। यह माँग करो।</div></div>
+    <div class="demand-item"><div class="demand-num">6.</div><div class="demand-text"><strong>Bitumen Supplier List — Public करो:</strong> PWD के approved bitumen suppliers की public list हो। CRC में listed supplier registered है या shell entity? यह transparency ज़रूरी है।</div></div>
+    <div class="demand-item"><div class="demand-num">7.</div><div class="demand-text"><strong>Public Portal — Bill Tracking:</strong> नागरिक अपने क्षेत्र के road works के bills और measurements online देख सकें। Public interface अनिवार्य — eMB को genuinely public बनाओ।</div></div>
+    <div class="demand-item"><div class="demand-num">8.</div><div class="demand-text"><strong>ACB Investigation:</strong> जहाँ same CRC multiple bills में use हुई हो — वहाँ ACB investigation हो। Login IP audit की तरह CRC duplication audit भी technically feasible और ज़रूरी है।</div></div>
+  </div>
+
+  <!-- CLOSING STATEMENT -->
+  <div class="closing">
+    <blockquote>"पारदर्शिता summaries को digitise करने से नहीं आती।<br/>वह आती है — जब underlying evidence,<br/>detailed measurements, material certificates,<br/>और consumption records <strong>visible और verifiable</strong> बनें।<br/><br/>जब तक eMB एक mere abstract है —<br/>system उन लोगों की सेवा में है<br/>जो illuminate नहीं, <em>obscure</em> करना चाहते हैं।"</blockquote>
+    <div style="display:flex;gap:0.8rem;justify-content:center;margin-top:1.2rem;flex-wrap:wrap">
+      <div class="closing-btn">🚨 RTI FILE करें</div>
+      <div style="display:inline-block;background:rgba(255,255,255,0.12);color:#fff;font-family:'Noto Sans',sans-serif;font-size:8.5pt;font-weight:700;padding:6px 18px;border-radius:2px;letter-spacing:0.05em">🔍 CAG AUDIT माँगें</div>
+      <div style="display:inline-block;background:rgba(255,255,255,0.12);color:#fff;font-family:'Noto Sans',sans-serif;font-size:8.5pt;font-weight:700;padding:6px 18px;border-radius:2px;letter-spacing:0.05em">📋 CORE CUTTING करवाएँ</div>
+    </div>
+  </div>
+
+  <!-- FOOTER -->
+  <div class="article-footer">
+    <div style="background:var(--navy);color:#fff;padding:1rem 1.5rem;border-radius:4px;margin-bottom:1.2rem;font-family:'Noto Sans',sans-serif">
+      <div style="font-size:8pt;font-weight:700;letter-spacing:0.12em;text-transform:uppercase;color:var(--teal);margin-bottom:0.6rem">🏆 रिपोर्ट का मूल्यांकन — Editorial Assessment</div>
+      <div style="display:grid;grid-template-columns:1fr 1fr 1fr;gap:0.8rem;font-size:8.5pt">
+        <div style="background:rgba(255,255,255,0.07);border-radius:3px;padding:0.5rem 0.7rem;border-top:2px solid var(--teal)">
+          <div style="font-weight:700;color:var(--teal);margin-bottom:2px">तकनीकी गहराई</div>
+          <div style="color:rgba(255,255,255,0.8)">CRC verification, consumption statements, QC test requirements, chainage-wise measurement — expert-level technical analysis</div>
+        </div>
+        <div style="background:rgba(255,255,255,0.07);border-radius:3px;padding:0.5rem 0.7rem;border-top:2px solid #fcd34d">
+          <div style="font-weight:700;color:#fcd34d;margin-bottom:2px">जन महत्व</div>
+          <div style="color:rgba(255,255,255,0.8)">Premature road failures, public safety risk, double taxation — directly impacts every road-using citizen</div>
+        </div>
+        <div style="background:rgba(255,255,255,0.07);border-radius:3px;padding:0.5rem 0.7rem;border-top:2px solid #fca5a5">
+          <div style="font-weight:700;color:#fca5a5;margin-bottom:2px">Action Potential</div>
+          <div style="color:rgba(255,255,255,0.8)">RTI + CAG + ACB + Core Cutting + Department Circular + Public Portal — 8 concrete, actionable demands</div>
+        </div>
+      </div>
+    </div>
+    <p style="font-weight:700;color:var(--navy);font-size:9pt;margin-bottom:4px">जन संवाददाता — खोजी पत्रकारिता</p>
+    <p>PWD Road Works | Electronic Measurement Book | Bitumen CRC Fraud | Rajasthan</p>
+    <p style="margin-top:4px">
+      Published: 6 August 2026 &nbsp;|&nbsp;
+      <span style="color:var(--teal);font-weight:600">8 Chapters</span> &nbsp;|&nbsp;
+      <span style="color:var(--teal);font-weight:600">6 Reforms Demanded</span> &nbsp;|&nbsp;
+      <span style="color:var(--teal);font-weight:600">8 Media Demands</span> &nbsp;|&nbsp;
+      All rights reserved
+    </p>
+    <p style="margin-top:6px;font-style:italic;font-size:7pt;color:#aaa">इस रिपोर्ट में उल्लिखित सभी तथ्य technical expert analysis और field investigation पर आधारित हैं। यह रिपोर्ट सार्वजनिक हित में प्रकाशित की गई है।</p>
+  </div>
+
+</div>
+</body>
+</html>
