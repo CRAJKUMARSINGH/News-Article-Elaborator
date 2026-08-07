@@ -1,0 +1,135 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;0,800;1,700&family=Noto+Serif+Devanagari:wght@400;600;700&family=Lora:ital,wght@0,400;0,600;1,400&family=Noto+Sans:wght@400;500;600;700&display=swap');
+@import 'tailwindcss';
+@import 'tw-animate-css';
+@plugin "@tailwindcss/typography";
+
+@custom-variant dark (&:is(.dark *));
+
+@theme inline {
+  --color-background: hsl(var(--background));
+  --color-foreground: hsl(var(--foreground));
+  --color-border: hsl(var(--border));
+  --color-input: hsl(var(--input));
+  --color-ring: hsl(var(--ring));
+
+  --color-card: hsl(var(--card));
+  --color-card-foreground: hsl(var(--card-foreground));
+  --color-card-border: hsl(var(--card-border));
+
+  --color-popover: hsl(var(--popover));
+  --color-popover-foreground: hsl(var(--popover-foreground));
+  --color-popover-border: hsl(var(--popover-border));
+
+  --color-primary: hsl(var(--primary));
+  --color-primary-foreground: hsl(var(--primary-foreground));
+  --color-primary-border: var(--primary-border);
+
+  --color-secondary: hsl(var(--secondary));
+  --color-secondary-foreground: hsl(var(--secondary-foreground));
+  --color-secondary-border: var(--secondary-border);
+
+  --color-muted: hsl(var(--muted));
+  --color-muted-foreground: hsl(var(--muted-foreground));
+  --color-muted-border: var(--muted-border);
+
+  --color-accent: hsl(var(--accent));
+  --color-accent-foreground: hsl(var(--accent-foreground));
+  --color-accent-border: var(--accent-border);
+
+  --color-destructive: hsl(var(--destructive));
+  --color-destructive-foreground: hsl(var(--destructive-foreground));
+  --color-destructive-border: var(--destructive-border);
+
+  --font-sans: 'Noto Sans', sans-serif;
+  --font-serif: 'Lora', 'Noto Serif Devanagari', serif;
+  --font-display: 'Playfair Display', 'Noto Serif Devanagari', serif;
+
+  --radius-sm: calc(var(--radius) - 4px);
+  --radius-md: calc(var(--radius) - 2px);
+  --radius-lg: var(--radius);
+  --radius-xl: calc(var(--radius) + 4px);
+}
+
+:root {
+  /* Warm off-white #FAFAF8 */
+  --background: 60 14% 98%;
+  /* Near black warm #1C1917 */
+  --foreground: 24 10% 10%;
+
+  /* Warm light tan #D4C5A9 */
+  --border: 39 35% 75%;
+  --input: 39 35% 75%;
+  --ring: 214 52% 25%;
+
+  /* Cards generally use white or off-white */
+  --card: 60 14% 100%;
+  --card-foreground: 24 10% 10%;
+  --card-border: 39 35% 75%;
+
+  --popover: 60 14% 100%;
+  --popover-foreground: 24 10% 10%;
+  --popover-border: 39 35% 75%;
+
+  /* Navy #1E3A5F */
+  --primary: 214 52% 25%;
+  --primary-foreground: 60 14% 98%;
+
+  /* Subdued warm tones */
+  --secondary: 40 20% 90%;
+  --secondary-foreground: 24 10% 10%;
+
+  /* Muted */
+  --muted: 40 20% 92%;
+  --muted-foreground: 24 10% 40%;
+
+  /* Teal #0D9488 */
+  --accent: 175 84% 32%;
+  --accent-foreground: 60 14% 98%;
+
+  /* Crimson #9B1C1C */
+  --destructive: 0 69% 36%;
+  --destructive-foreground: 60 14% 98%;
+
+  --radius: 0.25rem;
+}
+
+.dark {
+  /* We will force light mode essentially, or provide dark mode fallbacks if needed.
+     But the instruction says "Default to light mode" and the aesthetic is print paper.
+     We will keep dark mode identical to light mode to enforce the print aesthetic,
+     or we can provide a dark-print aesthetic. Let's provide a dark-print just in case,
+     but we'll not add a toggle. */
+  --background: 24 10% 10%;
+  --foreground: 60 14% 90%;
+  --border: 24 10% 20%;
+  --input: 24 10% 20%;
+  --ring: 214 52% 40%;
+  --card: 24 10% 12%;
+  --card-foreground: 60 14% 90%;
+  --card-border: 24 10% 20%;
+  --popover: 24 10% 12%;
+  --popover-foreground: 60 14% 90%;
+  --popover-border: 24 10% 20%;
+  --primary: 214 52% 40%;
+  --primary-foreground: 60 14% 98%;
+  --secondary: 24 10% 15%;
+  --secondary-foreground: 60 14% 90%;
+  --muted: 24 10% 15%;
+  --muted-foreground: 60 14% 60%;
+  --accent: 175 84% 40%;
+  --accent-foreground: 60 14% 98%;
+  --destructive: 0 69% 45%;
+  --destructive-foreground: 60 14% 98%;
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply font-serif antialiased bg-background text-foreground selection:bg-accent selection:text-white;
+  }
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-display tracking-tight text-foreground;
+  }
+}

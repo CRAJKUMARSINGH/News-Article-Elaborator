@@ -1,0 +1,28 @@
+kind = "web"
+previewPath = "/ifms-news-article/"
+title = "IFMS Sankat — Print News Article"
+description = "A full-length, beautifully typeset investigative news article about the Rajasthan PWD/Irrigation IFMS 3.0 contractor payment portal crisis — from WAM (2012) through IFMS 2.0 failures to the July 2026 collapse. Designed as a premium print-media-ready long-form journalism piece in Hindi and English."
+version = "1.0.0"
+id = "artifacts/ifms-news-article"
+router = "path"
+
+[[services]]
+name = "web"
+paths = [ "/ifms-news-article/" ]
+localPort = 22131
+
+[services.development]
+run = "pnpm --filter @workspace/ifms-news-article run dev"
+
+[services.production]
+build = [ "pnpm", "--filter", "@workspace/ifms-news-article", "run", "build" ]
+serve = "static"
+publicDir = "artifacts/ifms-news-article/dist/public"
+
+[[services.production.rewrites]]
+from = "/*"
+to = "/index.html"
+
+[services.env]
+PORT = "22131"
+BASE_PATH = "/ifms-news-article/"

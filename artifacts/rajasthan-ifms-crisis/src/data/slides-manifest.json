@@ -1,0 +1,82 @@
+[
+  {
+    "id": "f4a2c1d8-3b7e-4f6a-9c2d-8e1f3b5a7c9d",
+    "position": 1,
+    "filepath": "src/pages/slides/Slide01Cover.tsx",
+    "title": "राजस्थान का डिजिटल भुगतान संकट",
+    "description": "Cover slide — IFMS investigative report with key statistics on the payment crisis",
+    "speakerNotes": ""
+  },
+  {
+    "id": "b8e3f1a7-5c2d-4e9b-8a6f-3d7c1e5b9a2f",
+    "position": 2,
+    "filepath": "src/pages/slides/Slide02WamBirth.tsx",
+    "title": "2012: WAM Portal का जन्म",
+    "description": "Origins of the WAM portal and the online contractor payment infrastructure",
+    "speakerNotes": ""
+  },
+  {
+    "id": "c9d4e2f1-6a3b-5c8d-7e1f-2a4b6c8d0e1f",
+    "position": 3,
+    "filepath": "src/pages/slides/Slide03WamFlaws.tsx",
+    "title": "WAM की छुपी खामियां",
+    "description": "Hidden systemic flaws in the WAM portal that were never resolved",
+    "speakerNotes": ""
+  },
+  {
+    "id": "d1e2f3a4-7b5c-6d9e-8f0a-3b5c7d9e1f2a",
+    "position": 4,
+    "filepath": "src/pages/slides/Slide04IFMS20.tsx",
+    "title": "जनवरी 2025: IFMS 2.0 — महत्वाकांक्षी सुधार",
+    "description": "IFMS 2.0 reform mandate, required IDs, and the new complications it introduced",
+    "speakerNotes": ""
+  },
+  {
+    "id": "e2f3a4b5-8c6d-7e0f-9a1b-4c6d8e0f2a3b",
+    "position": 5,
+    "filepath": "src/pages/slides/Slide05DarkSide.tsx",
+    "title": "IFMS 2.0 का अंधेरा पहलू",
+    "description": "Scams, overload, outsourcing explosion, and financial waste under IFMS 2.0",
+    "speakerNotes": ""
+  },
+  {
+    "id": "f3a4b5c6-9d7e-8f1a-0b2c-5d7e9f1a3b4c",
+    "position": 6,
+    "filepath": "src/pages/slides/Slide06JulyCollapse.tsx",
+    "title": "जुलाई 2026: WAM बंद, IFMS 3.0 तैयार नहीं",
+    "description": "Critical July 2026 timeline — WAM shut down while IFMS 3.0 was not operational",
+    "speakerNotes": ""
+  },
+  {
+    "id": "a4b5c6d7-0e8f-9a2b-1c3d-6e8f0a2b4c5d",
+    "position": 7,
+    "filepath": "src/pages/slides/Slide07ThreeTier.tsx",
+    "title": "IFMS 3.0: कागज़ पर सुरक्षित, ज़मीन पर खोखली",
+    "description": "Government vision vs ground reality of the Maker-Checker-Approver three-tier system",
+    "speakerNotes": ""
+  },
+  {
+    "id": "b5c6d7e8-1f9a-0b3c-2d4e-7f9a1b3c5d6e",
+    "position": 8,
+    "filepath": "src/pages/slides/Slide08Broken.tsx",
+    "title": "अभी क्या टूटा है: 1 August 2026",
+    "description": "Current status dashboard — all broken components as of August 2026",
+    "speakerNotes": ""
+  },
+  {
+    "id": "c6d7e8f9-2a0b-1c4d-3e5f-8a0b2c4d6e7f",
+    "position": 9,
+    "filepath": "src/pages/slides/Slide09Reforms.tsx",
+    "title": "पाँच तत्काल सुधार",
+    "description": "Five immediate reforms required to fix the IFMS payment crisis",
+    "speakerNotes": ""
+  },
+  {
+    "id": "d7e8f9a0-3b1c-2d5e-4f6a-9b1c3d5e7f8a",
+    "position": 10,
+    "filepath": "src/pages/slides/Slide10Media.tsx",
+    "title": "मीडिया की ज़िम्मेदारी: लोकतंत्र का चौथा स्तंभ",
+    "description": "Call to action — the press must expose systemic failures in the IFMS portal",
+    "speakerNotes": ""
+  }
+]

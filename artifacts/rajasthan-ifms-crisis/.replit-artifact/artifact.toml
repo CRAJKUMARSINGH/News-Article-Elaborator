@@ -1,0 +1,28 @@
+kind = "slides"
+previewPath = "/rajasthan-ifms-crisis/"
+title = "राजस्थान IFMS संकट — Investigative Report"
+description = "A 10-slide chronological investigative exposé on the collapse of Rajasthan's PWD & Irrigation Department contractor payment system, tracing the journey from WAM portal (2012) through IFMS 2.0 failures to the IFMS 3.0 meltdown of July 2026. Designed for print and screen media."
+version = "1.0.0"
+id = "artifacts/rajasthan-ifms-crisis"
+router = "path"
+
+[[services]]
+name = "web"
+paths = [ "/rajasthan-ifms-crisis/" ]
+localPort = 25383
+
+[services.development]
+run = "pnpm --filter @workspace/rajasthan-ifms-crisis run dev"
+
+[services.production]
+build = [ "pnpm", "--filter", "@workspace/rajasthan-ifms-crisis", "run", "build" ]
+serve = "static"
+publicDir = "artifacts/rajasthan-ifms-crisis/dist/public"
+
+[[services.production.rewrites]]
+from = "/*"
+to = "/index.html"
+
+[services.env]
+PORT = "25383"
+BASE_PATH = "/rajasthan-ifms-crisis/"
