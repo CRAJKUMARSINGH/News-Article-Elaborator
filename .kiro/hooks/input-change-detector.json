@@ -1,0 +1,16 @@
+{
+  "version": "v1",
+  "hooks": [
+    {
+      "name": "INPUT File Change Detector",
+      "trigger": "PostFileSave",
+      "description": "When any INPUT/*.txt is saved, run the detect command to check if the hash changed vs the output HTML and report which articles need revision.",
+      "matcher": "INPUT/.*\\.txt$",
+      "action": {
+        "type": "command",
+        "command": "python scripts/revise_article.py --detect",
+        "timeout": 30
+      }
+    }
+  ]
+}

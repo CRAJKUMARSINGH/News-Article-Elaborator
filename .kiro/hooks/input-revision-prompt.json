@@ -1,0 +1,15 @@
+{
+  "version": "v1",
+  "hooks": [
+    {
+      "name": "INPUT → Output Revision Prompt",
+      "trigger": "PostFileSave",
+      "description": "When an INPUT article source file is saved, remind the agent to offer to revise and push the linked output HTML.",
+      "matcher": "INPUT/.*\\.txt$",
+      "action": {
+        "type": "agent",
+        "prompt": "An INPUT source file was just saved. Check article-manifest.json to find which output article is linked to this file. Then:\n1. Run: python scripts/revise_article.py --detect  to confirm the hash changed.\n2. Ask the user: \"INPUT file changed — shall I revise the linked article and push to remote?\"\n3. If user says yes: run python scripts/revise_article.py --article <id> then git add outputs/ article-manifest.json && git commit -m \"Revise <article-id> from updated INPUT\" && git push origin main.\n4. If user says no: do nothing and inform them they can run the revision manually later."
+      }
+    }
+  ]
+}
