@@ -3,9 +3,11 @@
 <head>
 <meta charset="UTF-8"/>
 <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<meta name="description" content="राजस्थान PWD-Irrigation: IFMS 3.0 विफलता, Digital Signature दुरुपयोग, AS/FS ID घोटाला, Helpline मौन — एक सम्पूर्ण खोजी रिपोर्ट"/>
 <title>राजस्थान का डिजिटल भुगतान संकट — IFMS 3.0 खोजी रिपोर्ट | जन संवाददाता</title>
 <link rel="preconnect" href="https://fonts.googleapis.com"/>
-<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;0,800;1,700&family=Noto+Serif+Devanagari:wght@400;600;700&family=Lora:ital,wght@0,400;0,600;1,400&family=Noto+Sans:wght@400;500;600;700&display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,800;1,700&family=Noto+Serif+Devanagari:wght@400;600;700&family=Lora:ital,wght@0,400;0,600;1,400&family=Noto+Sans:wght@400;500;600;700&display=swap" rel="stylesheet"/>
+<link rel="stylesheet" href="../jan-sanvaddata-base.css"/>
 <style>
 *{box-sizing:border-box;margin:0;padding:0}
 :root{
@@ -19,11 +21,79 @@
   --muted:#6B6355;
 }
 body{
-  background:#fff;
+  background:var(--paper);
   color:var(--ink);
   font-family:'Lora',Georgia,serif;
   font-size:11.5pt;
   line-height:1.75;
+}
+/* Drop cap for opening paragraph */
+.drop-cap::first-letter{
+  font-family:'Playfair Display',serif;
+  font-size:4.4em;
+  font-weight:700;
+  color:var(--navy);
+  float:left;
+  line-height:0.82;
+  margin-right:0.09em;
+  margin-top:0.06em;
+}
+/* Hero band */
+.hero-band{
+  background:linear-gradient(135deg,#0a1628 0%,#1E3A5F 55%,#0b3533 100%);
+  color:#fff;
+  padding:3.5rem 2rem 2.5rem;
+  text-align:center;
+  position:relative;
+  overflow:hidden;
+}
+.hero-band::before{
+  content:"IFMS";
+  font-family:'Playfair Display',serif;
+  font-size:14rem;
+  font-weight:800;
+  color:rgba(255,255,255,0.04);
+  position:absolute;
+  top:50%;left:50%;
+  transform:translate(-50%,-50%);
+  pointer-events:none;
+  line-height:1;
+  letter-spacing:-0.04em;
+}
+.hero-kicker{font-family:'Noto Sans',sans-serif;font-size:0.55rem;font-weight:700;letter-spacing:0.18em;text-transform:uppercase;color:var(--teal);margin-bottom:1rem;position:relative;}
+.hero-title{font-family:'Noto Serif Devanagari','Playfair Display',serif;font-size:clamp(2rem,6vw,3.2rem);font-weight:700;line-height:1.18;color:#fff;margin-bottom:0.6rem;position:relative;}
+.hero-subtitle{font-family:'Playfair Display',serif;font-size:clamp(1rem,2.5vw,1.3rem);font-style:italic;color:rgba(255,255,255,0.7);position:relative;}
+/* Enhanced pull quote with quote glyph */
+.pull-quote{
+  position:relative;
+  border-left:4px solid var(--teal);
+  margin:2rem 0;
+  padding:1.1rem 1.6rem 1.1rem 4rem;
+  background:var(--light-tan);
+  border-radius:0 4px 4px 0;
+}
+.pull-quote::before{
+  content:"\201C";
+  font-family:'Playfair Display',serif;
+  font-size:5.5rem;
+  color:var(--teal);
+  opacity:0.2;
+  position:absolute;
+  top:-0.6rem;
+  left:0.5rem;
+  line-height:1;
+  pointer-events:none;
+}
+/* Sticky masthead override (base already sticky — reinforce) */
+.masthead{position:sticky;top:0;z-index:100;}
+/* Mobile adjustments */
+@media(max-width:640px){
+  .hero-band::before{font-size:7rem;}
+  .facts-box{grid-template-columns:1fr 1fr!important;}
+  .pull-quote{padding:1rem 1.2rem 1rem 1.4rem;}
+  .pull-quote::before{display:none;}
+  .demand-list{grid-template-columns:1fr!important;}
+  .toc-grid{grid-template-columns:1fr!important;}
 }
 /* ── Masthead ── */
 .masthead{
@@ -153,16 +223,23 @@ p{margin-bottom:0.95rem;text-align:justify}
 </head>
 <body>
 
-<!-- MASTHEAD -->
+<!-- STICKY MASTHEAD -->
 <div class="masthead">
   <div>
-    <div class="pub-tag">खोजी पत्रकारिता | Investigative Journalism</div>
+    <div class="pub-tag">खोजी पत्रकारिता | Investigative Journalism · Rajasthan</div>
     <div class="pub-name">जन संवाददाता</div>
   </div>
   <div class="masthead-meta">
-    <strong>6 August 2026</strong>
-    PWD &amp; Irrigation | Rajasthan
+    <strong>PWD &amp; Irrigation | IFMS Crisis</strong>
+    6 August 2026 &nbsp;·&nbsp; Exclusive Investigation
   </div>
+</div>
+
+<!-- HERO BAND -->
+<div class="hero-band">
+  <div class="hero-kicker">खोजी पत्रकारिता · PWD &amp; Irrigation · Digital Governance</div>
+  <h1 class="hero-title">राजस्थान का डिजिटल भुगतान संकट</h1>
+  <p class="hero-subtitle">Rajasthan's IFMS 3.0 Crisis — The Complete Investigative Exposé</p>
 </div>
 
 <div class="article-wrap">
@@ -201,22 +278,22 @@ p{margin-bottom:0.95rem;text-align:justify}
   <div class="toc">
     <div class="toc-title">📋 विषय-सूची — Table of Contents</div>
     <div class="toc-grid">
-      <div class="toc-item"><span class="toc-num">Ch. 1</span><span class="toc-label">WAM Portal — नींव और वादा (2012)</span></div>
-      <div class="toc-item"><span class="toc-num">Ch. 2</span><span class="toc-label">WAM की छुपी खामियां</span></div>
-      <div class="toc-item"><span class="toc-num">Ch. 3</span><span class="toc-label">IFMS 2.0 — नई उलझनें (2025)</span></div>
-      <div class="toc-item"><span class="toc-num">Ch. 4</span><span class="toc-label">IFMS 2.0 — Scam और Accountability का पतन</span></div>
-      <div class="toc-item"><span class="toc-num">Ch. 4ख</span><span class="toc-label">AS/FS ID देरी और HO Credential दलाली <span class="toc-tag new">NEW</span><span class="toc-tag excl">EXCL</span></span></div>
-      <div class="toc-item"><span class="toc-num">Ch. 5</span><span class="toc-label">वह काली जुलाई — WAM बंद (July 2026)</span></div>
-      <div class="toc-item"><span class="toc-num">Ch. 6</span><span class="toc-label">IFMS 3.0 — कागज़ पर सुरक्षित, ज़मीन पर खोखली</span></div>
-      <div class="toc-item"><span class="toc-num">Ch. 6क</span><span class="toc-label">आदर्श Delegation Matrix <span class="toc-tag new">NEW</span></span></div>
-      <div class="toc-item"><span class="toc-num">Ch. 6ख</span><span class="toc-label">Digital Signature बाज़ार में <span class="toc-tag excl">EXCL</span></span></div>
-      <div class="toc-item"><span class="toc-num">Ch. 7</span><span class="toc-label">Portal Status: 4 Documented Bugs <span class="toc-tag new">NEW</span></span></div>
-      <div class="toc-item"><span class="toc-num">Ch. 8</span><span class="toc-label">Helpline: संपर्क नहीं, समाधान नहीं</span></div>
-      <div class="toc-item"><span class="toc-num">Ch. 8ख</span><span class="toc-label">~200 रद्द अनुबंध — Recovery शून्य <span class="toc-tag excl">EXCL</span></span></div>
-      <div class="toc-item"><span class="toc-num">Ch. 8ग</span><span class="toc-label">Recovery Portal नहीं, Legal Pursuit नहीं — Impunity का Architecture <span class="toc-tag key">KEY</span></span></div>
-      <div class="toc-item"><span class="toc-num">Press</span><span class="toc-label">Print Media Corroboration <span class="toc-tag new">NEW</span></span></div>
-      <div class="toc-item"><span class="toc-num">Ch. 9</span><span class="toc-label">7 तत्काल माँगें</span></div>
-      <div class="toc-item"><span class="toc-num">Ch. 10</span><span class="toc-label">चौथे स्तंभ से आह्वान — 10 Media Demands</span></div>
+      <a class="toc-item" href="#ch1"><span class="toc-num">Ch. 1</span><span>WAM Portal — नींव और वादा (2012)</span></a>
+      <a class="toc-item" href="#ch2"><span class="toc-num">Ch. 2</span><span>WAM की छुपी खामियां</span></a>
+      <a class="toc-item" href="#ch3"><span class="toc-num">Ch. 3</span><span>IFMS 2.0 — नई उलझनें (2025)</span></a>
+      <a class="toc-item" href="#ch4"><span class="toc-num">Ch. 4</span><span>IFMS 2.0 — Scam और Accountability का पतन</span></a>
+      <a class="toc-item" href="#ch4b"><span class="toc-num">Ch. 4ख</span><span>AS/FS ID देरी और HO Credential दलाली <span class="toc-tag new">NEW</span><span class="toc-tag excl">EXCL</span></span></a>
+      <a class="toc-item" href="#ch5"><span class="toc-num">Ch. 5</span><span>वह काली जुलाई — WAM बंद (July 2026)</span></a>
+      <a class="toc-item" href="#ch6"><span class="toc-num">Ch. 6</span><span>IFMS 3.0 — कागज़ पर सुरक्षित, ज़मीन पर खोखली</span></a>
+      <a class="toc-item" href="#ch6a"><span class="toc-num">Ch. 6क</span><span>आदर्श Delegation Matrix <span class="toc-tag new">NEW</span></span></a>
+      <a class="toc-item" href="#ch6b"><span class="toc-num">Ch. 6ब</span><span>Digital Signature बाज़ार में <span class="toc-tag excl">EXCL</span></span></a>
+      <a class="toc-item" href="#ch7"><span class="toc-num">Ch. 7</span><span>Portal Status: 4 Documented Bugs <span class="toc-tag new">NEW</span></span></a>
+      <a class="toc-item" href="#ch8"><span class="toc-num">Ch. 8</span><span>Helpline: संपर्क नहीं, समाधान नहीं</span></a>
+      <a class="toc-item" href="#ch8b"><span class="toc-num">Ch. 8ख</span><span>~200 रद्द अनुबंध — Recovery शून्य <span class="toc-tag excl">EXCL</span></span></a>
+      <a class="toc-item" href="#ch8c"><span class="toc-num">Ch. 8ग</span><span>Recovery Portal नहीं — Impunity का Architecture <span class="toc-tag key">KEY</span></span></a>
+      <a class="toc-item" href="#press"><span class="toc-num">Press</span><span>Print Media Corroboration <span class="toc-tag new">NEW</span></span></a>
+      <a class="toc-item" href="#ch9"><span class="toc-num">Ch. 9</span><span>7 तत्काल माँगें</span></a>
+      <a class="toc-item" href="#ch10"><span class="toc-num">Ch. 10</span><span>चौथे स्तंभ से आह्वान — 10 Media Demands</span></a>
     </div>
   </div>
 
@@ -262,12 +339,12 @@ p{margin-bottom:0.95rem;text-align:justify}
   </div>
 
   <!-- CHAPTER 1 -->
-  <div class="chapter">
+  <div class="chapter" id="ch1">
     <div class="chapter-marker">अध्याय 1 — Chapter One</div>
     <h3 class="chapter-title">WAM Portal — नींव और वादा (2012)</h3>
   </div>
 
-  <p>वर्ष 2012 में Rajasthan सरकार ने एक महत्वाकांक्षी कदम उठाया। PWD (Public Works Department) और Irrigation Department के ठेकेदारों को उनका भुगतान online करने के लिए <strong>WAM portal (wam.rajasthan.gov.in)</strong> लॉन्च किया गया। साथ ही <strong>PayManager (paymanager.rajasthan.gov.in)</strong> से integration हुई, जिसके माध्यम से संबंधित treasury सीधे contractor के bank account में payment जमा करने लगी।</p>
+  <p class="drop-cap">वर्ष 2012 में Rajasthan सरकार ने एक महत्वाकांक्षी कदम उठाया। PWD (Public Works Department) और Irrigation Department के ठेकेदारों को उनका भुगतान online करने के लिए <strong>WAM portal (wam.rajasthan.gov.in)</strong> लॉन्च किया गया। साथ ही <strong>PayManager (paymanager.rajasthan.gov.in)</strong> से integration हुई, जिसके माध्यम से संबंधित treasury सीधे contractor के bank account में payment जमा करने लगी।</p>
 
   <p>यह प्रणाली दो स्तंभों पर टिकी थी: पारदर्शिता और दक्षता। कागज़ी प्रक्रिया का अंत, बिचौलियों की समाप्ति, और समय पर भुगतान — यही इसका वादा था। 14 वर्षों तक, अपनी तमाम खामियों के बावजूद, यह प्रणाली काम करती रही।</p>
 
@@ -278,7 +355,7 @@ p{margin-bottom:0.95rem;text-align:justify}
   <hr class="section-divider"/>
 
   <!-- CHAPTER 2 -->
-  <div class="chapter">
+  <div class="chapter" id="ch2">
     <div class="chapter-marker">अध्याय 2 — Chapter Two</div>
     <h3 class="chapter-title">WAM की छुपी खामियां — जो कभी नहीं सुधरीं</h3>
   </div>
@@ -294,7 +371,7 @@ p{margin-bottom:0.95rem;text-align:justify}
   <hr class="section-divider"/>
 
   <!-- CHAPTER 3 -->
-  <div class="chapter">
+  <div class="chapter" id="ch3">
     <div class="chapter-marker">अध्याय 3 — Chapter Three</div>
     <h3 class="chapter-title">IFMS 2.0 — महत्वाकांक्षी सुधार, नई उलझनें (जनवरी 2025)</h3>
   </div>
@@ -323,7 +400,7 @@ p{margin-bottom:0.95rem;text-align:justify}
   <hr class="section-divider"/>
 
   <!-- CHAPTER 4 -->
-  <div class="chapter">
+  <div class="chapter" id="ch4">
     <div class="chapter-marker">अध्याय 4 — Chapter Four</div>
     <h3 class="chapter-title">IFMS 2.0 का अंधेरा पहलू — Scam और Accountability का पतन</h3>
   </div>
@@ -339,7 +416,7 @@ p{margin-bottom:0.95rem;text-align:justify}
   <hr class="section-divider"/>
 
   <!-- CHAPTER 4B — BACKDATING & HO CREDENTIAL SCAM -->
-  <div class="chapter">
+  <div class="chapter" id="ch4b">
     <div class="chapter-marker">अध्याय 4ख — Chapter Four-B</div>
     <h3 class="chapter-title">सबसे गहरा भ्रष्टाचार — AS/FS ID में हेराफेरी और हेड ऑफिस Login की दलाली</h3>
   </div>
@@ -453,7 +530,7 @@ p{margin-bottom:0.95rem;text-align:justify}
   <p><strong>यह दोनों scams मिलकर एक complete corruption cycle बनाते हैं:</strong> पहले जानबूझकर AS-ID में देरी → contractor मजबूर होकर बिना ID के काम शुरू करे → payment के वक्त FS-ID की ज़रूरत → "secret bytes" मिलें → HO में रिश्वत → operator HO credentials से FS-ID generate करे → payment release। <strong>हर कड़ी में सरकारी धन का रिसाव।</strong></p>
 
   <hr class="section-divider"/>
-  <div class="chapter">
+  <div class="chapter" id="ch5">
     <div class="chapter-marker">अध्याय 5 — Chapter Five</div>
     <h3 class="chapter-title">वह काली जुलाई — WAM बंद, IFMS 3.0 तैयार नहीं (July 2026)</h3>
   </div>
@@ -484,7 +561,7 @@ p{margin-bottom:0.95rem;text-align:justify}
   <hr class="section-divider"/>
 
   <!-- CHAPTER 6 -->
-  <div class="chapter">
+  <div class="chapter" id="ch6">
     <div class="chapter-marker">अध्याय 6 — Chapter Six</div>
     <h3 class="chapter-title">IFMS 3.0 — कागज़ पर सुरक्षित, ज़मीन पर खोखली</h3>
   </div>
@@ -502,7 +579,7 @@ p{margin-bottom:0.95rem;text-align:justify}
   <hr class="section-divider"/>
 
   <!-- CHAPTER 6A — IDEAL DELEGATION MATRIX -->
-  <div class="chapter">
+  <div class="chapter" id="ch6a">
     <div class="chapter-marker">अध्याय 6क — Chapter Six-A</div>
     <h3 class="chapter-title">एक तकनीकी विशेषज्ञ का आदर्श प्रतिनिधित्व मॉडल — Ideal Delegation Matrix</h3>
   </div>
@@ -636,7 +713,7 @@ p{margin-bottom:0.95rem;text-align:justify}
   <hr class="section-divider"/>
 
   <!-- CHAPTER 6B — DIGITAL SIGNATURE ABUSE -->
-  <div class="chapter">
+  <div class="chapter" id="ch6b">
     <div class="chapter-marker">अध्याय 6ब — Chapter Six-B</div>
     <h3 class="chapter-title">Digital Signature का बाज़ार — जब सरकारी मुहर बिकने लगी</h3>
   </div>
@@ -701,7 +778,7 @@ p{margin-bottom:0.95rem;text-align:justify}
   <hr class="section-divider"/>
 
   <!-- CHAPTER 7 -->
-  <div class="chapter">
+  <div class="chapter" id="ch7">
     <div class="chapter-marker">अध्याय 7 — Chapter Seven</div>
     <h3 class="chapter-title">1 August 2026 — Portal Status: क्या टूटा है</h3>
   </div>
@@ -730,7 +807,7 @@ p{margin-bottom:0.95rem;text-align:justify}
   <hr class="section-divider"/>
 
   <!-- CHAPTER 8 — HELPLINE -->
-  <div class="chapter">
+  <div class="chapter" id="ch8">
     <div class="chapter-marker">अध्याय 8 — Chapter Eight</div>
     <h3 class="chapter-title">IFMS Helpline: संपर्क नहीं, समाधान नहीं</h3>
   </div>
@@ -788,7 +865,7 @@ p{margin-bottom:0.95rem;text-align:justify}
   <hr class="section-divider"/>
 
   <!-- NEWSPAPER CORROBORATION SLIDE -->
-  <div class="chapter">
+  <div class="chapter" id="press">
     <div class="chapter-marker">मीडिया साक्ष्य — Press Corroboration</div>
     <h3 class="chapter-title">प्रिंट मीडिया की पुष्टि — यह खबर अकेली नहीं है</h3>
   </div>
@@ -842,7 +919,7 @@ p{margin-bottom:0.95rem;text-align:justify}
   <p>यह समाचारपत्र की रिपोर्ट हमारी खोजी पत्रकारिता की independent पुष्टि है। जब दो अलग-अलग sources एक ही संकट को document करते हैं — तो यह अब सिर्फ एक complaint नहीं, <strong>यह एक documented systemic failure है।</strong></p>
 
   <!-- CHAPTER 8B — RESCINDED CONTRACTS & RECOVERY FAILURE -->
-  <div class="chapter">
+  <div class="chapter" id="ch8b">
     <div class="chapter-marker">अध्याय 8ख — Chapter Eight-B</div>
     <h3 class="chapter-title">~200 रद्द अनुबंध — और एक भी वसूली नहीं: PWD का सबसे बड़ा छिपा घोटाला</h3>
   </div>
@@ -985,7 +1062,7 @@ p{margin-bottom:0.95rem;text-align:justify}
   <hr class="section-divider"/>
 
   <!-- CHAPTER 8C — WHY NO RECOVERY PORTAL & LEGAL PURSUIT -->
-  <div class="chapter">
+  <div class="chapter" id="ch8c">
     <div class="chapter-marker">अध्याय 8ग — Chapter Eight-C</div>
     <h3 class="chapter-title">दो सवाल जो पूरे तंत्र को उघाड़ते हैं</h3>
   </div>
@@ -1113,7 +1190,7 @@ p{margin-bottom:0.95rem;text-align:justify}
   <hr class="section-divider"/>
 
   <!-- CHAPTER 9 -->
-  <div class="chapter">
+  <div class="chapter" id="ch9">
     <div class="chapter-marker">अध्याय 9 — Chapter Nine</div>
     <h3 class="chapter-title">छह तत्काल माँगें — क्या होना चाहिए?</h3>
   </div>
@@ -1133,7 +1210,7 @@ p{margin-bottom:0.95rem;text-align:justify}
   <hr class="section-divider"/>
 
   <!-- CHAPTER 10 -->
-  <div class="chapter">
+  <div class="chapter" id="ch10">
     <div class="chapter-marker">अध्याय 10 — Chapter Ten (Final)</div>
     <h3 class="chapter-title">लोकतंत्र के चौथे स्तंभ से आह्वान</h3>
   </div>

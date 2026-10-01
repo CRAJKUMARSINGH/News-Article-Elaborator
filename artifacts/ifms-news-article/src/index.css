@@ -146,6 +146,41 @@
     margin-top: 0.05em;
   }
 
+  /* Mobile: shrink drop cap, keep it readable */
+  @media (max-width: 640px) {
+    .article-opener::first-letter {
+      font-size: 3em;
+    }
+  }
+
+  /* Deck / standfirst — add left border */
+  .article-deck {
+    border-left: 3px solid hsl(var(--border));
+    padding-left: 1rem;
+    font-style: italic;
+    color: hsl(var(--muted-foreground));
+    margin-bottom: 1.2rem;
+  }
+
+  /* Mobile responsive fixes for the article */
+  @media (max-width: 640px) {
+    /* Headline scaling */
+    h1.text-4xl { font-size: 1.75rem !important; }
+    h1.md\:text-5xl { font-size: 1.75rem !important; }
+
+    /* Key facts grid — single column on very small screens */
+    .grid-cols-2.md\:grid-cols-3 { grid-template-columns: 1fr 1fr !important; }
+
+    /* Chapter number ghost — hide on mobile to avoid overflow */
+    .text-\[10rem\] { display: none !important; }
+
+    /* Chapter title padding */
+    .pl-8 { padding-left: 1rem !important; }
+
+    /* Pull quotes — simpler on mobile */
+    blockquote.my-12 { margin-top: 2rem !important; margin-bottom: 2rem !important; }
+  }
+
   /* Print styles — hide interactive chrome, show full article cleanly */
   @media print {
     /* Hide interactive elements */

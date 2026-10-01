@@ -251,13 +251,14 @@ function App() {
                 <span>Rajasthan</span>
               </div>
 
-              <h1 className="text-4xl md:text-5xl font-display font-bold text-primary mb-4 leading-tight">
+              <h1 className="text-4xl md:text-5xl font-display font-bold text-primary mb-3 leading-tight">
                 अपने दुर्भाग्य को कौसता स्टेट हाईवे 32
               </h1>
 
-              <h2 className="text-2xl md:text-3xl font-display font-semibold text-muted-foreground mb-6">
+              {/* English subtitle — visually subordinate: italic, smaller, muted */}
+              <p className="text-lg md:text-xl font-display font-normal italic text-muted-foreground mb-6 leading-snug">
                 State Highway 32: The Road of Misfortune
-              </h2>
+              </p>
 
               <div className="w-24 h-1 bg-accent mx-auto mb-8" />
 
@@ -283,47 +284,26 @@ function App() {
                 </div>
               </div>
 
-              <div className="bg-primary text-primary-foreground p-6 rounded-sm mb-8">
-                <h3 className="font-display font-bold text-lg mb-4 flex items-center gap-2">
-                  <AlertTriangle size={20} aria-hidden="true" />
-                  मुख्य तथ्य (Key Facts)
+              {/* Key Facts box — Playfair Display large numbers, 3-col grid */}
+              <div className="bg-primary text-primary-foreground p-6 rounded-sm mb-8 border-t-4 border-accent">
+                <h3 className="font-sans font-bold text-xs uppercase tracking-widest mb-5 opacity-60 flex items-center gap-2">
+                  <AlertTriangle size={16} aria-hidden="true" />
+                  मुख्य तथ्य — Key Facts at a Glance
                 </h3>
-                <div className="grid md:grid-cols-2 gap-4">
-                  <div className="flex items-start gap-3">
-                    <div className="w-2 h-2 bg-accent rounded-full mt-2 flex-shrink-0" />
-                    <div>
-                      <strong className="block">165 किमी</strong>
-                      <span className="text-sm opacity-90">Udaipur से Banswara तक की महत्वपूर्ण सड़क</span>
+                <div className="grid grid-cols-2 md:grid-cols-3 gap-5">
+                  {[
+                    { num: "165 KM", label: "Udaipur से Banswara तक की महत्वपूर्ण सड़क" },
+                    { num: "50 वर्ष", label: "राष्ट्रीय राजमार्ग घोषणा की प्रतीक्षा" },
+                    { num: "95 KM", label: "टोल सड़क — अवधि 2020 में समाप्त, नवीकरण शून्य" },
+                    { num: "15 वर्ष", label: "जनजाति यातायात का टोल बोझ — फिर भी टूटी सड़क" },
+                    { num: "9 KM", label: "डाक-पलटा घाटी — वन क्षेत्र में उपेक्षित खंड" },
+                    { num: "0", label: "NH के लिए दिल्ली में कोई फाइल नहीं भेजी गई" },
+                  ].map(({ num, label }) => (
+                    <div key={num}>
+                      <div className="font-display text-3xl font-bold text-primary-foreground leading-none mb-1">{num}</div>
+                      <div className="font-sans text-xs text-primary-foreground/60 leading-snug">{label}</div>
                     </div>
-                  </div>
-                  <div className="flex items-start gap-3">
-                    <div className="w-2 h-2 bg-accent rounded-full mt-2 flex-shrink-0" />
-                    <div>
-                      <strong className="block">50 वर्ष</strong>
-                      <span className="text-sm opacity-90">से राष्ट्रीय राजमार्ग घोषित होने की प्रतीक्षा</span>
-                    </div>
-                  </div>
-                  <div className="flex items-start gap-3">
-                    <div className="w-2 h-2 bg-accent rounded-full mt-2 flex-shrink-0" />
-                    <div>
-                      <strong className="block">95 किमी</strong>
-                      <span className="text-sm opacity-90">टोल सड़क जिसकी अवधि 2020 में समाप्त</span>
-                    </div>
-                  </div>
-                  <div className="flex items-start gap-3">
-                    <div className="w-2 h-2 bg-accent rounded-full mt-2 flex-shrink-0" />
-                    <div>
-                      <strong className="block">15 वर्ष</strong>
-                      <span className="text-sm opacity-90">जनजाति क्षेत्र के निवासियों को टोल देना पड़ा, फिर भी टूटी-फूटी सड़क</span>
-                    </div>
-                  </div>
-                  <div className="flex items-start gap-3">
-                    <div className="w-2 h-2 bg-accent rounded-full mt-2 flex-shrink-0" />
-                    <div>
-                      <strong className="block">9 किमी</strong>
-                      <span className="text-sm opacity-90">वन विभाग क्षेत्र से गुजर रही इस सड़क का हिस्सा जो 2026 तक उपेक्षित रही</span>
-                    </div>
-                  </div>
+                  ))}
                 </div>
               </div>
             </header>
