@@ -2,7 +2,6 @@
   "_comment": "Maps every INPUT source file to its output article. Edit this file to add new articles or rename outputs.",
   "_version": "1.0",
   "_workflow": "1. User edits INPUT/*.txt  2. Run: python scripts/revise_article.py --article <id>  3. Revised HTML is written to outputs/<outputFolder>/  4. Commit & push",
-
   "articles": [
     {
       "id": "sh32",
@@ -20,7 +19,7 @@
       "readTime": "8 min read",
       "category": "Infrastructure | Roads",
       "reportType": "Special Report",
-      "lastRevised": null
+      "lastRevised": "2026-10-01 22:02"
     },
     {
       "id": "rpcb",

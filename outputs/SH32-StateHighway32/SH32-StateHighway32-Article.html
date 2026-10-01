@@ -3,12 +3,12 @@
 <head>
 <meta charset="UTF-8"/>
 <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-<meta name="description" content="State Highway 32: 50 वर्ष से राष्ट्रीय राजमार्ग की प्रतीक्षा — उदयपुर से बांसवाड़ा की उपेक्षित जीवन-रेखा"/>
+<meta name="description" content="State Highway 32: The Road That Curses Its Own Fate"/>
 <!-- SOURCE_METADATA
   article_id   : sh32
   input_file   : INPUT/apne durbhagya ko kousata statehighway.txt
-  input_hash   : 2cb1078211d5
-  last_revised : 2026-10-01 (manual)
+  input_hash   : 25fbf21aa8a3
+  last_revised : 2026-10-01 22:02
   generator    : scripts/revise_article.py
 -->
 <title>अपने दुर्भाग्य को कौसता स्टेट हाईवे 32 | जन संवाददाता</title>
@@ -16,14 +16,12 @@
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,800;1,700&family=Noto+Serif+Devanagari:wght@400;600;700&family=Lora:ital,wght@0,400;0,600;1,400&family=Noto+Sans:wght@400;500;600;700&display=swap" rel="stylesheet"/>
 <link rel="stylesheet" href="../jan-sanvaddata-base.css"/>
 <style>
-  /* ── Per-article accent: Teal (infrastructure/roads) ── */
-  :root { --accent: var(--teal); --light-green: #F0FDF4; }
+  :root { --accent: var(--teal); }
 
-  /* Hero band */
   .hero-band {
-    background: linear-gradient(135deg, #0f2d4a 0%, #1E3A5F 60%, #0D4F44 100%);
+    background: linear-gradient(135deg,#0f2d4a 0%,#1E3A5F 60%,#0D4F44 100%);
     color: #fff;
-    padding: 3.5rem 2rem 2.5rem;
+    padding: 3.2rem 2rem 2.2rem;
     text-align: center;
     position: relative;
     overflow: hidden;
@@ -31,7 +29,7 @@
   .hero-band::before {
     content: "32";
     font-family: var(--font-display);
-    font-size: 18rem;
+    font-size: 11rem;
     font-weight: 800;
     color: rgba(255,255,255,0.04);
     position: absolute;
@@ -39,6 +37,7 @@
     transform: translate(-50%,-50%);
     pointer-events: none;
     line-height: 1;
+    letter-spacing: -0.04em;
   }
   .hero-kicker {
     font-family: var(--font-ui);
@@ -46,66 +45,45 @@
     font-weight: 700;
     letter-spacing: 0.18em;
     text-transform: uppercase;
-    color: var(--teal);
+    color: rgba(255,255,255,0.65);
     margin-bottom: 1rem;
     position: relative;
   }
   .hero-title {
     font-family: 'Noto Serif Devanagari', var(--font-display);
-    font-size: clamp(2rem, 6vw, 3.4rem);
+    font-size: clamp(1.8rem, 5.5vw, 3rem);
     font-weight: 700;
-    line-height: 1.15;
+    line-height: 1.18;
     color: #fff;
     margin-bottom: 0.6rem;
     position: relative;
   }
   .hero-subtitle {
     font-family: var(--font-display);
-    font-size: clamp(1rem, 2.5vw, 1.35rem);
+    font-size: clamp(0.95rem, 2.5vw, 1.25rem);
     font-style: italic;
     color: rgba(255,255,255,0.7);
     position: relative;
   }
-
-  /* Comparison table: section status */
-  .status-ok   { color: var(--forest, #166534); font-weight: 600; }
-  .status-warn { color: var(--amber); font-weight: 600; }
-  .status-bad  { color: var(--crimson); font-weight: 600; }
-
-  /* Comparison box — NH vs SH */
-  .compare-box {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 1px;
-    background: var(--tan);
-    border: 1px solid var(--tan);
-    border-radius: 6px;
-    overflow: hidden;
-    margin: 1.4rem 0;
+  .revision-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.4rem;
     font-family: var(--font-ui);
-    font-size: 0.53rem;
-  }
-  .compare-col { background: var(--paper); padding: 1.1rem 1.2rem; }
-  .compare-col.col-nh { background: #F0FDF4; }
-  .compare-col.col-sh { background: #FEF2F2; }
-  .compare-col-head {
+    font-size: 0.45rem;
     font-weight: 700;
-    font-size: 0.6rem;
-    margin-bottom: 0.8rem;
-    padding-bottom: 0.4rem;
-    border-bottom: 2px solid currentColor;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    background: var(--light-tan);
+    border: 1px solid var(--tan);
+    border-left: 3px solid var(--accent);
+    padding: 3px 10px;
+    border-radius: 2px;
+    color: var(--muted);
+    margin-bottom: 1rem;
   }
-  .col-nh .compare-col-head { color: var(--forest, #166534); }
-  .col-sh .compare-col-head { color: var(--crimson); }
-  .compare-col ul { list-style: none; display: flex; flex-direction: column; gap: 0.4rem; }
-  .compare-col li { display: flex; gap: 0.4rem; }
-  .compare-col li::before { content: "•"; flex-shrink: 0; }
-  .col-nh li::before { color: var(--forest, #166534); }
-  .col-sh li::before { color: var(--crimson); }
-
   @media (max-width: 540px) {
-    .compare-box { grid-template-columns: 1fr; }
-    .hero-band::before { font-size: 10rem; }
+    .hero-band::before { font-size: 5rem; }
   }
 </style>
 </head>
@@ -125,19 +103,22 @@
 
 <!-- HERO BAND -->
 <div class="hero-band">
-  <div class="hero-kicker">State Highway · Rajasthan · Infrastructure</div>
+  <div class="hero-kicker">सड़क · Infrastructure</div>
   <h1 class="hero-title">अपने दुर्भाग्य को कौसता स्टेट हाईवे 32</h1>
-  <p class="hero-subtitle">The Road That Curses Its Own Fate — 50 Years Waiting for National Highway Status</p>
+  <p class="hero-subtitle">State Highway 32: The Road That Curses Its Own Fate</p>
 </div>
 
 <div class="article-wrap">
 
-  <!-- SECTION BADGE + DECK -->
   <div class="section-badge">सड़क · Infrastructure</div>
-  <p class="deck">उदयपुर से बांसवाड़ा की 165 किमी जीवन-रेखा — टोल का दंश, वन विभाग की दीवार, और राजनीतिक उपेक्षा की दास्तान</p>
+
+  <!-- REVISION BADGE -->
+  <div class="revision-badge">
+    🔄 संशोधित — Revised: 2026-10-01 22:02 &nbsp;·&nbsp; Source: apne durbhagya ko kousata statehighway.txt
+  </div>
+
   <hr class="rule"/>
 
-  <!-- BYLINE -->
   <div class="byline">
     <strong>संवाददाता | Special Correspondent</strong>
     <span>Infrastructure &amp; Roads Bureau</span>
@@ -151,182 +132,57 @@
   <div class="toc">
     <div class="toc-title">📖 विषय-सूची — Contents</div>
     <div class="toc-grid">
-      <a class="toc-item" href="#ch1"><span class="toc-num">01</span>सड़क का परिचय और महत्व</a>
-      <a class="toc-item" href="#ch2"><span class="toc-num">02</span>BOT राजनीति और टोल का दंश</a>
-      <a class="toc-item" href="#ch3"><span class="toc-num">03</span>सलुंबर–उदयपुर: राजनीतिक चालबाज़ी</a>
-      <a class="toc-item" href="#ch4"><span class="toc-num">04</span>डाक-पलटा घाटी: बर्बाद मरम्मत <span class="toc-tag key">मुख्य</span></a>
-      <a class="toc-item" href="#ch5"><span class="toc-num">05</span>हमारी प्रमुख अपेक्षाएं</a>
-      <a class="toc-item" href="#ch6"><span class="toc-num">06</span>निष्कर्ष</a>
+      <a class='toc-item' href='#ch1'><span class='toc-num'>01</span>परिचय एवं पृष्ठभूमि</a>
+      <a class='toc-item' href='#ch2'><span class='toc-num'>02</span>मुख्य समस्याएं एवं तथ्य</a>
     </div>
   </div>
 
-  <!-- KEY FACTS -->
+  <!-- KEY FACTS BOX -->
   <div class="facts-box">
     <div class="facts-box-title">⚡ मुख्य तथ्य — Key Facts at a Glance</div>
     <div>
-      <div class="fact-num">265 KM</div>
-      <div class="fact-label">बड़ी सदरी (पाली) से बांसवाड़ा तक कुल लंबाई</div>
+      <div class='fact-num'>—</div>
+      <div class='fact-label'>es highway me udaipur exact 100 km par padta hai</div>
     </div>
     <div>
-      <div class="fact-num">165 KM</div>
-      <div class="fact-label">उदयपुर–बांसवाड़ा महत्वपूर्ण खंड (KM 100–265)</div>
+      <div class='fact-num'>—</div>
+      <div class='fact-label'>km 100 se 265 ka hissa udaipue se banswara ko jodne ka subse mahatwapurn road hai</div>
     </div>
     <div>
-      <div class="fact-num">50 वर्ष</div>
-      <div class="fact-label">राष्ट्रीय राजमार्ग घोषणा की प्रतीक्षा</div>
+      <div class='fact-num'>—</div>
+      <div class='fact-label'>es road ko aajse 25 varsh pahle hi national highway ghoshit ho jana chahiye tha eski importance ko dekhkar</div>
     </div>
     <div>
-      <div class="fact-num">95 KM</div>
-      <div class="fact-label">टोल सड़क खंड — अवधि 2020 में समाप्त, नवीकरण शून्य</div>
-    </div>
-    <div>
-      <div class="fact-num">15 वर्ष</div>
-      <div class="fact-label">जनजाति यातायात का टोल बोझ — फिर भी टूटी सड़क</div>
-    </div>
-    <div>
-      <div class="fact-num">9 KM</div>
-      <div class="fact-label">डाक-पलटा घाटी — वन क्षेत्र में उपेक्षित, 2026 तक बेकार मरम्मत</div>
+      <div class='fact-num'>—</div>
+      <div class='fact-label'>esme DAK-PAlTA Ghati kewda k pas ke 9 km sadak ko van vibhag se swweekrati prapt kar chodi ki jani thi</div>
     </div>
   </div>
 
-  <!-- CHAPTER 1 -->
+
   <div class="chapter" id="ch1">
     <div class="chapter-marker">Chapter 01</div>
-    <h2 class="chapter-title">सड़क का परिचय और रणनीतिक महत्व</h2>
+    <h2 class="chapter-title">परिचय एवं पृष्ठभूमि</h2>
   </div>
 
-  <p class="drop-cap">हम बात कर रहे हैं <strong>स्टेट हाईवे 32</strong> की, जिसका उद्गम पाली जिले की <strong>बड़ी सदरी</strong> से किलोमीटर-शून्य के रूप में प्रारंभ होता है। यह 265 किलोमीटर लंबा मार्ग राजस्थान के दक्षिणी हृदय से होकर गुजरता है — रणकपुर के प्रसिद्ध जैन मंदिर, सायरा, गोगुंदा, उदयपुर (झीलों की नगरी), जौसमंद, सलुंबर, असपुर, पालोड़ा, लोहरिया होते हुए <strong>बांसवाड़ा</strong> में समाप्त होता है।</p>
-
-  <p>इस हाईवे पर उदयपुर ठीक 100वें किलोमीटर पर पड़ता है। किमी 100 से 265 का खंड — यानी <strong>उदयपुर से बांसवाड़ा</strong> — दक्षिणी राजस्थान की आर्थिक जीवन-रेखा है। यह मार्ग जोधपुर को रतलाम-इंदौर से shortest distance में जोड़ता है, और जनजाति बहुल क्षेत्रों के लिए रोज़मर्रा की एकमात्र कड़ी है।</p>
-
-  <!-- Route section table -->
-  <table class="data-table">
-    <thead>
-      <tr><th>खंड (Section)</th><th>लंबाई</th><th>वर्तमान स्थिति</th></tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td>बड़ी सदरी → उदयपुर</td>
-        <td>100 KM</td>
-        <td><span class="status-warn">राज्य राजमार्ग — औसत स्थिति</span></td>
-      </tr>
-      <tr>
-        <td>उदयपुर → सलुंबर</td>
-        <td>~70 KM</td>
-        <td><span class="status-bad">RSRDC टोल खंड — नीति-उल्लंघन में बना</span></td>
-      </tr>
-      <tr>
-        <td>सलुंबर → बांसवाड़ा</td>
-        <td>95 KM</td>
-        <td><span class="status-bad">BOT टोल समाप्त 2020 — नवीकरण नहीं</span></td>
-      </tr>
-      <tr>
-        <td>डाक-पलटा घाटी (वन क्षेत्र)</td>
-        <td>9 KM</td>
-        <td><span class="status-bad">2026 तक पूर्णतः उपेक्षित, CD work अनुपस्थित</span></td>
-      </tr>
-    </tbody>
-  </table>
-
-  <!-- NH comparison -->
-  <div class="compare-box">
-    <div class="compare-col col-nh">
-      <div class="compare-col-head">✓ प्रतापगढ़ / डूंगरपुर सड़कें (NH बन चुकी)</div>
-      <ul>
-        <li>राष्ट्रीय राजमार्ग का दर्जा प्राप्त</li>
-        <li>केंद्रीय निधि से नवीकरण</li>
-        <li>टोल-मुक्त या नियमित रखरखाव</li>
-        <li>SH-32 की तुलना में कम strategic महत्व</li>
-      </ul>
-    </div>
-    <div class="compare-col col-sh">
-      <div class="compare-col-head">✗ SH-32 उदयपुर–बांसवाड़ा (अब तक NH नहीं)</div>
-      <ul>
-        <li>राज्य मार्ग — केंद्रीय निधि नहीं</li>
-        <li>टोल अवधि समाप्त, नवीकरण नहीं</li>
-        <li>दिल्ली में NH के लिए कोई फाइल नहीं</li>
-        <li>जोधपुर–रतलाम shortest corridor — उपेक्षित</li>
-      </ul>
-    </div>
-  </div>
-
-  <div class="pull-quote">
-    <blockquote>"जिस सड़क को राष्ट्रीय राजमार्ग होकर उदयपुर-चित्तौड़ से बेहतर होना था — आज वह गड्ढों और उपेक्षा का पर्याय बन चुकी है।"</blockquote>
-  </div>
-
-  <!-- CHAPTER 2 -->
-  <div class="chapter" id="ch2">
-    <div class="chapter-marker">Chapter 02</div>
-    <h2 class="chapter-title">BOT परियोजनाओं की राजनीति और टोल का दंश</h2>
-  </div>
-
-  <p><strong>BOT (Build–Operate–Transfer)</strong> आधारित प्रोजेक्ट्स के भाग्य भरोसे छोड़ने की राजनीति इस सड़क की सबसे बड़ी त्रासदी है। <strong>सलुंबर–असपुर–बांसवाड़ा</strong> के 95 किमी खंड की टोल अवधि <strong>2020 में समाप्त</strong> हो गई। विभाग की नीति के अनुसार हर तीन वर्ष में नया डामरीकरण होना था — यानी 2023 और 2026 में।</p>
-
-  <p>परंतु यह आलेख लिखते तक <span class="highlight">नवीकरण तो दूर, सघन पैच रिपेयर की भी कोई राज्य योजना नज़र नहीं आती।</span> टोल वसूला गया, वादे किए गए, लेकिन उद्योग-व्यवसाय विहीन <strong>जनजाति यातायात</strong> को लगभग <strong>15 वर्ष</strong> टोल देते रहना पड़ा। हर छोटी यात्रा — अस्पताल, बाज़ार, बच्चों का स्कूल — पर टोल का बोझ। और आज फिर <strong>टूटी-फूटी असुरक्षित सड़क ही उनके नसीब में है।</strong> असपुर के आसपास की सड़क तो हमेशा से अपेक्षित रही — आज भी वैसी ही है।</p>
-
-  <!-- CHAPTER 3 -->
-  <div class="chapter" id="ch3">
-    <div class="chapter-marker">Chapter 03</div>
-    <h2 class="chapter-title">सलुंबर–उदयपुर खंड: राजनीतिक चालबाज़ी का शिकार</h2>
-  </div>
-
-  <p>तत्कालीन <strong>कांग्रेस सरकार</strong> ने वर्ष 2018 में माननीय राहुल गांधी से इस सड़क का शिलान्यास करवाया था — विधानसभा चुनाव के ठीक चार महीने पहले। यह प्रचार की राजनीति थी, न कि सड़क की।</p>
-
-  <p><strong>वसुंधरा सरकार</strong> ने अपने कार्यकाल में राज्य की टोल नीति — <em>"एक ही सड़क के टोल बूथ के 50 किमी दायरे में नया टोल नहीं लगाया जाएगा"</em> — को धता बताकर सलुंबर–उदयपुर खंड RSRDC को टोल सड़क निर्माण हेतु सौंप दिया। यह विवादास्पद निर्णय आज भी इस सड़क पर अपना दंश छोड़ रहा है।</p>
-
-  <div class="pull-quote pull-quote--crimson">
-    <blockquote>"और यह अभिशप्त सड़क इस खंड में इस टोल का दंश भोग रही है — सरकारें बदलीं, नीतियां तोड़ी गईं, जनता ठगी गई।"</blockquote>
-  </div>
-
-  <!-- CHAPTER 4 -->
-  <div class="chapter" id="ch4">
-    <div class="chapter-marker">Chapter 04</div>
-    <h2 class="chapter-title">डाक-पलटा घाटी: वन विभाग की दीवार और बर्बाद मरम्मत</h2>
-  </div>
-
-  <p>डाक-पलटा घाटी, <strong>केवड़ा के पास</strong> के 9 किमी सड़क खंड को वन विभाग की स्वीकृति प्राप्त कर चौड़ा किया जाना था। RSRDC ने इस विषय में <strong>आज तक कुछ नहीं किया</strong> और यह खंड वर्ष 2026 तक उपेक्षित रहा।</p>
-
-  <p>सौभाग्य से 2026 में <strong>सांसद महोदय के हस्तक्षेप</strong> से मामूली डामरीकरण हुआ — उसमें भी <strong>CD work के अभाव</strong> में दो बार अंधाधुंध की गई मरम्मत का पैसा व्यर्थ हो गया। बिना drain और culvert के किया गया पैचवर्क अगले मानसून में ही उखड़ गया। <span class="highlight">यह सरकारी धन की बर्बादी का क्लासिक उदाहरण है — बिना इंजीनियरिंग योजना के राजनीतिक दबाव में किया गया काम।</span></p>
-
-  <div class="alert-box alert-box--amber">
-    <p><strong>⚠ तुलना:</strong> कोटा की <strong>मुकंदरा घाटी</strong> (NH-52, मुकंदरा टाइगर रिजर्व) में strong political will ने सुरंग और ओवरब्रिज के माध्यम से सड़क को सुगम बना दिया। <strong>केवड़ा की नाल को वैसा ही समाधान चाहिए</strong> — परंतु उससे भी प्रबल इच्छाशक्ति की ज़रूरत है।</p>
-  </div>
-
-  <!-- CHAPTER 5 -->
-  <div class="chapter" id="ch5">
-    <div class="chapter-marker">Chapter 05</div>
-    <h2 class="chapter-title">हमारी प्रमुख अपेक्षाएं — जनता की मांगें</h2>
-  </div>
+  <p class="drop-cap">apne durbhagya ko kousata statehighway hum bat kar rahe hain state highway 32 ki jiska udgam pali jile ki badi sadari se km zero ke rup me start ho raha hai raste me ranakpur sayra goguna udaipur jausamand salumber aspur paloda lohariya hote huve banswara samampt hota hai aaj tak national highway nahi ban saka aut toll aadharit projects ke bhagya bharose chodne ki rajyaniti es bat ka dhyotak hai ki rajya sarka ki nazron me sarvadhik upekshit road hai sadak ka salumbar aspur banswara part jo ki 95 km hai ek toll sadak ke rup me nirmit huwa jiski toll avadhi 2020 me samapt ho gayi sadak ki traffik ghanatva ke maddenazar aur vibhag ki nirdharit sadak nrenewal ki niti ke hisab se har  teen varsh me es sadak par naya damrikaran 2023 aur 2026 me kiya jana tha parantu yah aalekh likhne tak navinikaran to dur &gt;&gt;&gt;&gt; saghan patch repair ki bhi koi rajya yojana nazar nahi aati udhog vyavasay vihin janjati yatayat ko lagbhag 15 varsh toll dete rahna pada aur aaj fir tuti futi asurakshit sadak hi unke naseeb me hai aspur ke aaspas ki sadak to hamesha apekshit rahi. aaj bhi vaisi hi hai ab kahani jante hain salumbar udaipur section ki tatkalin congress sarkar ne varsh me 2018 me manniya Rahul gandhi se es sadak ka shilanyas karwaya tha vidhan sabha chunav ke 4 mahine pahle vasundhra sarkar ne apne kryakal me  Rajya ki toll niti ( ek hi sadak ketoll booth ke 50 km dayre me naya toll nahi lagaya jayega) ko dhata bata kar salubmar udaiur section RSRDC ko toll sadak nirman krne hetu god de diya auu yah abhishapt sadak es section me es toll ka dansh bhog rahi hai es vishay me RSRDC ne aaj tak kuch nahi kiya aur yah varsh 2026 tak upekshit rahi  &gt;&gt;&gt;&gt;saubhagya se 2026 me sansad mahoday ke hastkhesp se mamuli damatri karan huwa usme bhi dak palta ghati ke pas CD work ke abhav me do bar andhadhundh kiye repair ka paisa vyarth ho gaya buddhiman abhiyantaon ki prashansha karta hain naya update: salumbar se banswara road par 2026 me bhi koi kaam nahi hua. aspur ke paas 3 major potholes report hue hain jisme ek truck paltne ki ghatna hui. prantiya mantri se sidha nivedan kiya gaya hai ki 95 km section ko tatkal state budget se navinikaran kiya jaye. 15 crore ka budget prastavit hai lekin file ab tak department me band hai.</p>
 
   <div class="demand-box">
     <h3>🔴 तत्काल अपेक्षित कार्रवाई</h3>
     <ul>
-      <li><strong>सलुंबर से बांसवाड़ा सड़क का तत्काल नवीकरण:</strong> टोल अवधि समाप्त हो चुकी है — अब रखरखाव सरकार की जिम्मेदारी है। 95 किमी खंड का शीघ्र डामरीकरण हो।</li>
-      <li><strong>वन क्षेत्र की 9 किमी सड़क का सुधारीकरण:</strong> डाक-पलटा घाटी के लिए वन विभाग की स्वीकृति शीघ्र प्राप्त की जाए और proper CD work सहित चौड़ाई की जाए।</li>
-      <li><strong>केवड़ा की नाल में सुरंग या ओवरब्रिज:</strong> मुकंदरा टाइगर रिजर्व (NH-52, कोटा) की तर्ज पर केवड़ा नाल क्षेत्र में engineering solution से सड़क स्थायी रूप से सुगम बनाई जाए।</li>
-      <li><strong>SH-32 को राष्ट्रीय राजमार्ग का दर्जा:</strong> केंद्र सरकार को प्रस्ताव भेजा जाए — यह मार्ग कई मौजूदा NH से अधिक महत्वपूर्ण है।</li>
+      <li><strong>HAMANI PRAMUKH ENETEZAR:</strong> </li>
+      <li><strong>RAJYA SARKA SALUMBAR SE BANSWARA SADAK KA TATKA NAVINIKARAN :</strong> KARWAYE</li>
+      <li><strong>VAN KSHTREA KI 9 KM SADAK KA SUDRANIKARAN TURAN HO:</strong> </li>
+      <li><strong>KEWADA KI NAAL KHETRA ME SURAN YA VOVER BRIDGE ETYADI SE KOT:</strong> A ME DARRA KSHETRA KI SADAK (मुकंदरा टाइगर रिजर्व से गुजर रहे NH-52 का) KI TARZ PAR VIKAS KAR SADAK SUGAM KI JAYE</li>
+      <li><strong>TEST UPDATE: 1 October 2026 ---:</strong> </li>
+      <li><strong>HAMARI MAANG: 15 CRORE KA TATKAL BUDGET JAARI KIYA JAYE AUR :</strong> 95 KM ROAD KA KAAM 6 MAHINE MEIN PURA KIYA JAYE</li>
     </ul>
-  </div>
-
-  <!-- CHAPTER 6 -->
-  <div class="chapter" id="ch6">
-    <div class="chapter-marker">Chapter 06</div>
-    <h2 class="chapter-title">निष्कर्ष: एक सड़क की दुखद कहानी</h2>
-  </div>
-
-  <p>स्टेट हाईवे 32 की कहानी राजस्थान की सड़क अवसंरचना में व्याप्त <strong>राजनीतिक उपेक्षा और प्रशासनिक विफलता</strong> का दर्पण है। 50 वर्ष की प्रतीक्षा, 15 वर्ष का टोल-बोझ, टोल नीति का उल्लंघन, और डाक-पलटा घाटी में बर्बाद हुआ करोड़ों का सरकारी धन — यह सब एक साथ दिखता है।</p>
-
-  <p>जनजाति क्षेत्र के निवासियों ने वर्षों तक टोल दिया, बदले में उन्हें टूटी-फूटी सड़क मिली। उनकी आवाज़ सुनी नहीं गई। यह केवल सड़क का सवाल नहीं है — <strong>यह लाखों लोगों की सुरक्षा, स्वास्थ्य और आजीविका का सवाल है।</strong></p>
-
-  <div class="pull-quote pull-quote--navy">
-    <blockquote>"50 वर्ष की प्रतीक्षा, 15 वर्ष का टोल, फिर भी टूटी-फूटी सड़क — यही है स्टेट हाईवे 32 की कहानी। अब और नहीं।"</blockquote>
   </div>
 
 </div><!-- /article-wrap -->
 
 <div class="footer-bar">
   <strong>जन संवाददाता</strong> &nbsp;·&nbsp; Independent Investigative Journalism, Rajasthan &nbsp;·&nbsp; © 2026 &nbsp;·&nbsp;
-  Infrastructure Bureau Special Report &nbsp;·&nbsp; 1 October 2026
+  Infrastructure &amp; Roads Bureau &nbsp;·&nbsp; 1 October 2026
 </div>
 
 </body>
