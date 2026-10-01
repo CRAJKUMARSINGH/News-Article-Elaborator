@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>अधूरे हस्तांतरण का जहर — मंगलम ऑर्किड और RPCB की आंखमूंदी | जन संवाददाता</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"/>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;0,800;1,700&family=Noto+Serif+Devanagari:wght@400;600;700&family=Lora:ital,wght@0,400;0,600;1,400&family=Noto+Sans:wght@400;500;600;700&display=swap" rel="stylesheet"/>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+:root{
+  --navy:#1E3A5F;
+  --teal:#0D9488;
+  --crimson:#9B1C1C;
+  --amber:#B45309;
+  --paper:#FAFAF8;
+  --ink:#1C1917;
+  --tan:#D4C5A9;
+  --light-tan:#EDE5D6;
+  --muted:#6B6355;
+  --red-light:#FEF2F2;
+}
+body{background:#fff;color:var(--ink);font-family:'Lora',Georgia,serif;font-size:11.5pt;line-height:1.75;}
+.masthead{background:var(--navy);color:#fff;padding:1.4rem 2.5rem 1rem;display:flex;align-items:flex-end;justify-content:space-between;border-bottom:4px solid var(--crimson);}
+.pub-tag{font-family:'Noto Sans',sans-serif;font-size:8pt;font-weight:700;letter-spacing:0.15em;text-transform:uppercase;color:rgba(255,255,255,0.55);margin-bottom:0.3rem}
+.pub-name{font-family:'Noto Serif Devanagari','Playfair Display',serif;font-size:2.2rem;font-weight:700;color:#fff;}
+.masthead-meta{text-align:right;font-family:'Noto Sans',sans-serif;font-size:8.5pt;color:rgba(255,255,255,0.6)}
+.masthead-meta strong{display:block;color:#fff;font-size:9pt;margin-bottom:2px}
+.article-wrap{max-width:800px;margin:0 auto;padding:2.5rem 1.5rem 5rem}
+.section-badge{display:inline-block;font-family:'Noto Sans',sans-serif;font-size:7.5pt;font-weight:700;letter-spacing:0.12em;text-transform:uppercase;color:var(--crimson);border:1px solid var(--crimson);padding:3px 10px;border-radius:2px;margin-bottom:1.1rem}
+.headline-hi{font-family:'Noto Serif Devanagari',serif;font-size:2.6rem;font-weight:700;color:var(--navy);line-height:1.2;margin-bottom:0.5rem}
+.headline-en{font-family:'Playfair Display',serif;font-size:1.45rem;font-style:italic;color:var(--muted);line-height:1.3;margin-bottom:1rem}
+.deck{font-family:'Lora',serif;font-size:1.05rem;font-style:italic;color:var(--muted);line-height:1.6;margin-bottom:1rem}
+.rule{border:none;border-top:2px solid var(--crimson);margin:1rem 0;width:60px}
+.byline{display:flex;align-items:center;gap:1.2rem;font-family:'Noto Sans',sans-serif;font-size:8.5pt;color:var(--muted);border-top:1px solid var(--tan);border-bottom:1px solid var(--tan);padding:0.6rem 0;margin-bottom:1.8rem;flex-wrap:wrap}
+.byline strong{color:var(--ink);font-weight:700}
+.facts-box{background:var(--crimson);color:#fff;border-radius:4px;padding:1.4rem 1.6rem;margin:1.5rem 0 2rem;display:grid;grid-template-columns:repeat(3,1fr);gap:0.8rem 1.2rem}
+.facts-box-title{grid-column:1/-1;font-family:'Noto Sans',sans-serif;font-size:8pt;font-weight:700;letter-spacing:0.12em;text-transform:uppercase;color:#FCA5A5;margin-bottom:0.3rem;border-bottom:1px solid rgba(255,255,255,0.2);padding-bottom:0.5rem}
+.fact-num{font-family:'Playfair Display',serif;font-size:1.6rem;font-weight:700;color:#fff;line-height:1}
+.fact-label{font-family:'Noto Sans',sans-serif;font-size:7.5pt;color:rgba(255,255,255,0.7);margin-top:2px}
+.chapter{margin:2.5rem 0 0.5rem}
+.chapter-marker{font-family:'Noto Sans',sans-serif;font-size:7.5pt;font-weight:700;letter-spacing:0.12em;text-transform:uppercase;color:var(--crimson);margin-bottom:0.4rem}
+.chapter-title{font-family:'Noto Serif Devanagari','Playfair Display',serif;font-size:1.35rem;font-weight:700;color:var(--navy);line-height:1.3;border-left:4px solid var(--crimson);padding-left:0.8rem;margin-bottom:1rem}
+p{margin-bottom:1rem;text-align:justify}
+.pull-quote{border-left:4px solid var(--crimson);margin:2rem 0;padding:0.9rem 1.5rem;background:var(--red-light);}
+.pull-quote blockquote{font-family:'Lora',serif;font-size:1.1rem;font-style:italic;color:var(--navy);line-height:1.6}
+.alert-box{background:var(--red-light);border:1.5px solid var(--crimson);border-radius:4px;padding:1.2rem 1.5rem;margin:1.5rem 0}
+.alert-box strong{color:var(--crimson)}
+.demand-box{background:var(--light-tan);border:1px solid var(--tan);border-radius:4px;padding:1.4rem 1.6rem;margin:2rem 0}
+.demand-box h3{font-family:'Noto Serif Devanagari',serif;font-size:1.1rem;font-weight:700;color:var(--navy);margin-bottom:1rem;border-bottom:1px solid var(--tan);padding-bottom:0.5rem}
+.demand-box ul{list-style:none;padding:0;display:flex;flex-direction:column;gap:0.7rem}
+.demand-box li{display:flex;align-items:flex-start;gap:0.7rem;font-family:'Noto Sans',sans-serif;font-size:9.5pt;line-height:1.5}
+.demand-box li::before{content:"▶";color:var(--crimson);font-size:0.65rem;margin-top:4px;flex-shrink:0}
+.actors-table{width:100%;border-collapse:collapse;margin:1rem 0 1.5rem;font-family:'Noto Sans',sans-serif;font-size:9pt}
+.actors-table th{background:var(--navy);color:#fff;padding:7px 10px;text-align:left;font-weight:600}
+.actors-table td{padding:7px 10px;border-bottom:1px solid var(--tan);vertical-align:top}
+.actors-table tr:nth-child(even) td{background:var(--light-tan)}
+.tag-fail{display:inline-block;background:#FEE2E2;color:var(--crimson);font-size:7.5pt;font-weight:700;padding:1px 6px;border-radius:2px;font-family:'Noto Sans',sans-serif}
+.tag-absent{display:inline-block;background:#FEF3C7;color:var(--amber);font-size:7.5pt;font-weight:700;padding:1px 6px;border-radius:2px;font-family:'Noto Sans',sans-serif}
+.highlight-red{background:#FEE2E2;padding:0.15em 0.3em;border-radius:2px;font-weight:600;color:var(--crimson)}
+.footer-bar{background:var(--navy);color:rgba(255,255,255,0.6);text-align:center;padding:1.2rem;font-family:'Noto Sans',sans-serif;font-size:8pt;margin-top:3rem}
+.footer-bar strong{color:#fff}
+@media print{
+  .masthead,.facts-box,.alert-box{-webkit-print-color-adjust:exact;print-color-adjust:exact}
+}
+</style>
+</head>
+<body>
+
+<!-- MASTHEAD -->
+<div class="masthead">
+  <div>
+    <div class="pub-tag">Independent Investigative Journalism · Rajasthan</div>
+    <div class="pub-name">जन संवाददाता</div>
+  </div>
+  <div class="masthead-meta">
+    <strong>Environment | Housing | Governance</strong>
+    1 October 2026 &nbsp;·&nbsp; Investigative Report
+  </div>
+</div>
+
+<div class="article-wrap">
+
+  <!-- SECTION BADGE -->
+  <div class="section-badge">पर्यावरण · Environment &amp; Housing</div>
+
+  <!-- HEADLINES -->
+  <h1 class="headline-hi">अधूरे हस्तांतरण का जहर — मंगलम ऑर्किड और RPCB की आंखमूंदी</h1>
+  <p class="headline-en">Mangalam Orchid, Udaipur: Untreated Sewage Flows Freely While the Pollution Board Sleeps</p>
+  <p class="deck">भूवाना, उदयपुर — 240 परिवारों का आवास, बिना STP के 15 वर्ष, बिना मेंटेनेंस हस्तांतरण के प्रमोटर फरार, और RPCB का नोटिस-नाटक</p>
+  <hr class="rule"/>
+
+  <!-- BYLINE -->
+  <div class="byline">
+    <strong>संवाददाता | Special Correspondent</strong>
+    <span>Environment &amp; Urban Affairs Bureau</span>
+    <span>·</span>
+    <span>1 October 2026</span>
+    <span>·</span>
+    <span>⏱ 7 min read</span>
+  </div>
+
+  <!-- KEY FACTS -->
+  <div class="facts-box">
+    <div class="facts-box-title">⚠ मुख्य तथ्य — Key Facts at a Glance</div>
+    <div>
+      <div class="fact-num">240</div>
+      <div class="fact-label">फ्लैट — RERA पूर्व बेचे गए, बिना पूर्णता प्रमाण के</div>
+    </div>
+    <div>
+      <div class="fact-num">4 टावर</div>
+      <div class="fact-label">मंगलम ऑर्किड, भूवाना, उदयपुर</div>
+    </div>
+    <div>
+      <div class="fact-num">~15 वर्ष</div>
+      <div class="fact-label">बिना STP के अनुपचारित सीवेज नाली में</div>
+    </div>
+    <div>
+      <div class="fact-num">₹3 करोड़</div>
+      <div class="fact-label">मेंटेनेंस राशि — प्रमोटर ने नई समिति को नहीं सौंपी</div>
+    </div>
+    <div>
+      <div class="fact-num">हर 2 वर्ष</div>
+      <div class="fact-label">RPCB निरीक्षण — नोटिस वर्तमान समिति को, प्रमोटर बेदाग</div>
+    </div>
+    <div>
+      <div class="fact-num">शून्य</div>
+      <div class="fact-label">प्रमोटर पर कार्रवाई — अब तक</div>
+    </div>
+  </div>
+
+  <!-- CHAPTER 1 -->
+  <div class="chapter">
+    <div class="chapter-marker">Chapter 01</div>
+    <h2 class="chapter-title">परियोजना का परिचय — झिलमिलाता सपना, अधूरी जिम्मेदारी</h2>
+  </div>
+
+  <p>उदयपुर के <strong>भूवाना</strong> क्षेत्र में जयपुर की प्रतिष्ठित कंपनी <strong>मंगलम प्रॉपर्टीज़</strong> (<a href="https://www.manglamgroup.com/" target="_blank">manglamgroup.com</a>) ने लगभग <strong>15 वर्ष पूर्व</strong> "मंगलम ऑर्किड" के नाम से चार बड़ी आवासीय टावरें खड़ी कीं। इन टावरों में <strong>लगभग 240 फ्लैट</strong> बेचे गए और परिवारों को आबाद कर दिया गया।</p>
+
+  <p>उस समय <strong>RERA अधिनियम लागू नहीं था</strong> — इसलिए खरीददारों को सुरक्षा का कोई कानूनी कवच नहीं था। कंपनी ने खरीददारों से कई सुविधाओं का वादा किया था — जिनमें <strong>सीवेज ट्रीटमेंट प्लांट (STP)</strong> और treated water को सीवर लाइन से जोड़ने की पाइपलाइन प्रमुख थी। परंतु न STP बना, न पाइपलाइन — और कंपनी उदयपुर से चली गई।</p>
+
+  <p>इससे भी गंभीर बात यह है कि कंपनी ने <strong>पूर्णता प्रमाण-पत्र (Completion Certificate)</strong> प्राप्त किए बिना ही कॉलोनी को आबाद कर दिया। यह नागरिक कानून का स्पष्ट उल्लंघन है।</p>
+
+  <!-- CHAPTER 2 -->
+  <div class="chapter">
+    <div class="chapter-marker">Chapter 02</div>
+    <h2 class="chapter-title">तीन अपराध — एक प्रमोटर के</h2>
+  </div>
+
+  <table class="actors-table">
+    <thead>
+      <tr><th>#</th><th>उल्लंघन</th><th>स्थिति</th></tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>1</td>
+        <td>पूर्णता प्रमाण-पत्र (CC) के बिना कॉलोनी आबाद करना</td>
+        <td><span class="tag-fail">उल्लंघन</span></td>
+      </tr>
+      <tr>
+        <td>2</td>
+        <td>STP और treated water pipeline का निर्माण नहीं कराना</td>
+        <td><span class="tag-fail">उल्लंघन</span></td>
+      </tr>
+      <tr>
+        <td>3</td>
+        <td>~₹3 करोड़ मेंटेनेंस राशि नई रखरखाव समिति को हस्तांतरित नहीं करना</td>
+        <td><span class="tag-fail">उल्लंघन</span></td>
+      </tr>
+    </tbody>
+  </table>
+
+  <div class="alert-box">
+    <p><strong>🚨 सबसे जघन्य अपराध:</strong> बिना STP के अनुपचारित सीवेज को सीधे नाली में प्रवाहित करना केवल नागरिक समस्या नहीं — <span class="highlight-red">यह पर्यावरण कानून के तहत एक संज्ञेय अपराध है।</span> 240 परिवारों का कच्चा मल-जल सीधे सार्वजनिक नालियों में बह रहा है — 15 वर्षों से। यह भूजल, स्थानीय जल-स्रोतों और सार्वजनिक स्वास्थ्य के लिए गंभीर खतरा है।</p>
+  </div>
+
+  <!-- CHAPTER 3 -->
+  <div class="chapter">
+    <div class="chapter-marker">Chapter 03</div>
+    <h2 class="chapter-title">RPCB की भूमिका — नोटिस-नाटक और जिम्मेदारी से पलायन</h2>
+  </div>
+
+  <p><strong>राजस्थान प्रदूषण नियंत्रण बोर्ड (RPCB)</strong> की उदयपुर इकाई हर दो वर्ष में निरीक्षण करती है। निरीक्षण के बाद <span class="highlight-red">नोटिस जारी होता है — परंतु वर्तमान रखरखाव समिति को, न कि मूल प्रमोटर मंगलम प्रॉपर्टीज़ को।</span></p>
+
+  <p>यह नोटिस-नाटक 15 वर्षों से चल रहा है। वर्तमान समिति के पास न तो STP बनाने की क्षमता है, न संसाधन — क्योंकि <strong>₹3 करोड़ की मेंटेनेंस राशि</strong> प्रमोटर ने कभी हस्तांतरित नहीं की। RPCB को भली-भांति पता है कि STP की जिम्मेदारी <strong>मूल प्रमोटर</strong> की है — फिर भी प्रमोटर को कोई नोटिस नहीं, कोई कार्रवाई नहीं।</p>
+
+  <table class="actors-table">
+    <thead>
+      <tr><th>पक्ष (Actor)</th><th>जिम्मेदारी</th><th>वास्तविक स्थिति</th></tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><strong>मंगलम प्रॉपर्टीज़</strong> (प्रमोटर)</td>
+        <td>STP निर्माण, CC प्राप्त करना, ₹3 करोड़ हस्तांतरित करना</td>
+        <td><span class="tag-fail">कुछ नहीं किया — उदयपुर छोड़ दिया</span></td>
+      </tr>
+      <tr>
+        <td><strong>RPCB उदयपुर</strong></td>
+        <td>प्रमोटर पर कार्रवाई, STP लगवाना सुनिश्चित करना</td>
+        <td><span class="tag-absent">नोटिस केवल समिति को — प्रमोटर बेदाग</span></td>
+      </tr>
+      <tr>
+        <td><strong>UIT / नगर निगम</strong></td>
+        <td>CC के बिना आबादी रोकना, प्रमोटर पर कार्रवाई</td>
+        <td><span class="tag-absent">कोई कार्रवाई नहीं</span></td>
+      </tr>
+      <tr>
+        <td><strong>वर्तमान रखरखाव समिति</strong></td>
+        <td>रखरखाव — परंतु ₹3 करोड़ बिना मिले यह असंभव</td>
+        <td><span class="tag-absent">बिना संसाधन के नोटिस का शिकार</span></td>
+      </tr>
+    </tbody>
+  </table>
+
+  <div class="pull-quote">
+    <blockquote>"जो करना था वो प्रमोटर ने नहीं किया — और जो नहीं करना था वो RPCB कर रही है: वर्तमान समिति को नोटिस देकर खानापूर्ति। यह जवाबदेही नहीं, जवाबदेही से पलायन है।"</blockquote>
+  </div>
+
+  <!-- CHAPTER 4 -->
+  <div class="chapter">
+    <div class="chapter-marker">Chapter 04</div>
+    <h2 class="chapter-title">निवासियों की पीड़ा — नागरिक अधिकारों का हनन</h2>
+  </div>
+
+  <p>240 परिवारों ने अपनी जीवनभर की बचत लगाकर इन फ्लैटों को खरीदा था। उन्हें भरोसा दिलाया गया था कि <strong>सभी सुविधाएं पूर्ण होंगी</strong> — STP, treated water pipeline, proper maintenance। आज वे एक ऐसी कॉलोनी में रह रहे हैं जहां:</p>
+
+  <ul style="margin:0.5rem 0 1rem 1.5rem;display:flex;flex-direction:column;gap:0.4rem">
+    <li>अनुपचारित सीवेज नालियों में बह रहा है</li>
+    <li>मेंटेनेंस के लिए ₹3 करोड़ की राशि गायब है</li>
+    <li>पूर्णता प्रमाण-पत्र नहीं है — यानी कागज़ों पर यह इमारत "अपूर्ण" है</li>
+    <li>RPCB के नोटिस उन्हीं की समिति को आते हैं जिनके हाथ बंधे हैं</li>
+  </ul>
+
+  <p>यह मामला केवल एक आवासीय कॉलोनी का नहीं है — <strong>यह राजस्थान में RERA-पूर्व युग के हज़ारों ऐसे प्रोजेक्ट्स की प्रतिनिधि कहानी है</strong> जहां प्रमोटर अपनी जिम्मेदारियां बिना पूरी किए बाज़ार से निकल गए।</p>
+
+  <!-- CHAPTER 5 -->
+  <div class="chapter">
+    <div class="chapter-marker">Chapter 05</div>
+    <h2 class="chapter-title">हमारी प्रमुख मांगें</h2>
+  </div>
+
+  <div class="demand-box">
+    <h3>🔴 तत्काल अपेक्षित कार्रवाई</h3>
+    <ul>
+      <li><strong>STP लगवाने के लिए प्रमोटर को बाध्य किया जाए:</strong> RPCB और UIT दोनों मिलकर मंगलम प्रॉपर्टीज़ को नोटिस जारी करें और STP निर्माण की समय-सीमा तय करें।</li>
+      <li><strong>₹3 करोड़ मेंटेनेंस राशि की वसूली:</strong> प्रमोटर से ब्याज सहित राशि वापस दिलाई जाए और वर्तमान रखरखाव समिति को हस्तांतरित की जाए।</li>
+      <li><strong>पूर्णता प्रमाण-पत्र की स्थिति स्पष्ट हो:</strong> UIT/नगर निगम यह स्पष्ट करे कि CC जारी हुआ था या नहीं — और यदि नहीं, तो प्रमोटर के विरुद्ध कानूनी कार्रवाई हो।</li>
+      <li><strong>जब तक STP न बने — सार्वजनिक स्वास्थ्य सुरक्षा के उपाय:</strong> RPCB नाली प्रदूषण रोकने के लिए तत्काल interim उपाय सुझाए।</li>
+      <li><strong>RPCB नीति में बदलाव:</strong> RERA-पूर्व परियोजनाओं में नोटिस केवल मूल प्रमोटर को जारी हो — वर्तमान समिति को नहीं, जब तक प्रमोटर की जिम्मेदारी बकाया हो।</li>
+    </ul>
+  </div>
+
+  <!-- CHAPTER 6 — CONCLUSION -->
+  <div class="chapter">
+    <div class="chapter-marker">Chapter 06</div>
+    <h2 class="chapter-title">निष्कर्ष: यह व्यक्तिगत मामला नहीं — सार्वजनिक अपराध है</h2>
+  </div>
+
+  <p>मंगलम ऑर्किड की कहानी तीन स्तरों पर विफलता की कहानी है। <strong>पहला:</strong> प्रमोटर की नैतिक और कानूनी विफलता — वादे तोड़कर, बिना CC के, बिना STP के, बिना मेंटेनेंस राशि सौंपे कंपनी ने उदयपुर छोड़ दिया। <strong>दूसरा:</strong> RPCB की प्रशासनिक विफलता — हर दो वर्ष में निरीक्षण, फिर गलत पते पर नोटिस, और प्रमोटर पर शून्य कार्रवाई। <strong>तीसरा:</strong> UIT/नगर निगम की विफलता — CC के बिना आबाद कॉलोनी को वर्षों तक अनदेखा करना।</p>
+
+  <p>यह नागरिकों का नागरिक मामला नहीं है — <span class="highlight-red">अनुपचारित सीवेज को सार्वजनिक नाली में बहाना एक जघन्य अपराध है।</span> इसका शिकार केवल 240 परिवार नहीं, बल्कि भूवाना का पूरा इलाका और उदयपुर का जल-तंत्र है।</p>
+
+  <div class="pull-quote">
+    <blockquote>"प्रमोटर ने बेचा, कमाया, और चला गया। RPCB ने देखा, नोटिस दिया — गलत पते पर। 240 परिवार आज भी इंतज़ार में हैं। यह सिस्टम की सामूहिक विफलता है।"</blockquote>
+  </div>
+
+</div><!-- /article-wrap -->
+
+<div class="footer-bar">
+  <strong>जन संवाददाता</strong> &nbsp;·&nbsp; Independent Investigative Journalism, Rajasthan &nbsp;·&nbsp; © 2026 &nbsp;·&nbsp;
+  Environment &amp; Urban Affairs Bureau &nbsp;·&nbsp; 1 October 2026
+</div>
+
+</body>
+</html>

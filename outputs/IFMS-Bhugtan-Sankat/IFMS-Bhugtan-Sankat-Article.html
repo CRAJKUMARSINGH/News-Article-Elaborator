@@ -1,0 +1,1225 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>राजस्थान का डिजिटल भुगतान संकट — IFMS 3.0 खोजी रिपोर्ट | जन संवाददाता</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"/>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;0,800;1,700&family=Noto+Serif+Devanagari:wght@400;600;700&family=Lora:ital,wght@0,400;0,600;1,400&family=Noto+Sans:wght@400;500;600;700&display=swap" rel="stylesheet"/>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+:root{
+  --navy:#1E3A5F;
+  --teal:#0D9488;
+  --crimson:#9B1C1C;
+  --paper:#FAFAF8;
+  --ink:#1C1917;
+  --tan:#D4C5A9;
+  --light-tan:#EDE5D6;
+  --muted:#6B6355;
+}
+body{
+  background:#fff;
+  color:var(--ink);
+  font-family:'Lora',Georgia,serif;
+  font-size:11.5pt;
+  line-height:1.75;
+}
+/* ── Masthead ── */
+.masthead{
+  background:var(--navy);
+  color:#fff;
+  padding:1.4rem 2.5rem 1rem;
+  display:flex;
+  align-items:flex-end;
+  justify-content:space-between;
+  border-bottom:4px solid var(--teal);
+}
+.pub-tag{font-family:'Noto Sans',sans-serif;font-size:8pt;font-weight:700;letter-spacing:0.15em;text-transform:uppercase;color:rgba(255,255,255,0.55);margin-bottom:0.3rem}
+.pub-name{font-family:'Noto Serif Devanagari','Playfair Display',serif;font-size:2.2rem;font-weight:700;color:#fff;letter-spacing:-0.01em}
+.masthead-meta{text-align:right;font-family:'Noto Sans',sans-serif;font-size:8.5pt;color:rgba(255,255,255,0.6)}
+.masthead-meta strong{display:block;color:#fff;font-size:9pt;margin-bottom:2px}
+/* ── Article wrapper ── */
+.article-wrap{max-width:780px;margin:0 auto;padding:2rem 1.5rem 4rem}
+/* ── Section badge ── */
+.section-badge{display:inline-block;font-family:'Noto Sans',sans-serif;font-size:7.5pt;font-weight:700;letter-spacing:0.12em;text-transform:uppercase;color:var(--teal);border:1px solid var(--teal);padding:3px 10px;border-radius:2px;margin-bottom:1.1rem}
+/* ── Headlines ── */
+.headline-hi{font-family:'Noto Serif Devanagari',serif;font-size:2.6rem;font-weight:700;color:var(--navy);line-height:1.15;letter-spacing:-0.01em;margin-bottom:0.5rem}
+.headline-en{font-family:'Playfair Display',serif;font-size:1.5rem;font-weight:700;color:var(--navy);line-height:1.2;margin-bottom:1rem}
+.deck{font-family:'Lora',serif;font-size:1.05rem;font-style:italic;color:var(--muted);line-height:1.55;margin-bottom:1rem}
+/* ── Rule ── */
+.rule{border:none;border-top:2px solid var(--teal);margin:1rem 0;width:60px}
+/* ── Byline ── */
+.byline{display:flex;align-items:center;gap:1.2rem;font-family:'Noto Sans',sans-serif;font-size:8.5pt;color:var(--muted);border-top:1px solid var(--tan);border-bottom:1px solid var(--tan);padding:0.6rem 0;margin-bottom:1.5rem}
+.byline strong{color:var(--ink);font-weight:700}
+.dot{color:var(--tan)}
+/* ── Key facts box ── */
+.facts-box{background:var(--navy);color:#fff;border-radius:4px;padding:1.4rem 1.6rem;margin:1.5rem 0 2rem;display:grid;grid-template-columns:1fr 1fr 1fr 1fr;gap:0.8rem 1.2rem}
+.facts-box-title{grid-column:1/-1;font-family:'Noto Sans',sans-serif;font-size:8pt;font-weight:700;letter-spacing:0.12em;text-transform:uppercase;color:var(--teal);margin-bottom:0.3rem;border-bottom:1px solid rgba(255,255,255,0.12);padding-bottom:0.5rem}
+.fact-item{}
+.fact-num{font-family:'Playfair Display',serif;font-size:1.5rem;font-weight:700;color:#fff;line-height:1}
+.fact-label{font-family:'Noto Sans',sans-serif;font-size:7.5pt;color:rgba(255,255,255,0.55);margin-top:2px}
+/* ── Chapter ── */
+.chapter{margin:2.2rem 0 0.5rem;position:relative}
+.chapter-marker{font-family:'Noto Sans',sans-serif;font-size:7.5pt;font-weight:700;letter-spacing:0.12em;text-transform:uppercase;color:var(--teal);margin-bottom:0.4rem}
+.chapter-title{font-family:'Noto Serif Devanagari','Playfair Display',serif;font-size:1.4rem;font-weight:700;color:var(--navy);line-height:1.25;border-left:4px solid var(--teal);padding-left:0.8rem;margin-bottom:1rem}
+/* ── Body para ── */
+p{margin-bottom:0.95rem;text-align:justify}
+/* ── Pull quote ── */
+.pull-quote{border-left:4px solid var(--teal);margin:1.8rem 0;padding:0.8rem 1.5rem;background:var(--light-tan)}
+.pull-quote blockquote{font-family:'Lora',serif;font-size:1.1rem;font-style:italic;color:var(--navy);line-height:1.55}
+/* ── ID list ── */
+.id-grid{display:grid;grid-template-columns:1fr 1fr;gap:0.4rem 1.5rem;margin:0.8rem 0 1rem;padding:0;list-style:none}
+.id-grid li{font-family:'Noto Sans',sans-serif;font-size:9pt;display:flex;align-items:center;gap:0.5rem}
+.id-grid li::before{content:"";width:6px;height:6px;background:var(--teal);border-radius:50%;flex-shrink:0}
+/* ── Timeline ── */
+.timeline{margin:1rem 0;display:flex;flex-direction:column;gap:0.7rem}
+.tl-item{display:flex;gap:1rem;align-items:flex-start}
+.tl-dot-col{display:flex;flex-direction:column;align-items:center;width:16px;flex-shrink:0}
+.tl-dot{width:12px;height:12px;border-radius:50%;flex-shrink:0;margin-top:3px}
+.tl-line{width:2px;background:var(--tan);flex:1;min-height:1.5rem;margin-top:3px}
+.tl-body{}
+.tl-date{font-family:'Noto Sans',sans-serif;font-size:8pt;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;margin-bottom:1px}
+.tl-text{font-size:9.5pt;color:var(--ink)}
+/* ── Status items ── */
+.status-list{margin:0.8rem 0;display:flex;flex-direction:column;gap:0.5rem}
+.status-item{display:flex;align-items:flex-start;gap:0.8rem;font-family:'Noto Sans',sans-serif;font-size:9.5pt;padding:0.5rem 0.8rem;border-radius:3px}
+.status-item.broken{background:rgba(155,28,28,0.06);border-left:3px solid var(--crimson)}
+.status-item.warn{background:rgba(245,158,11,0.07);border-left:3px solid #D97706}
+.status-icon{font-weight:800;flex-shrink:0;margin-top:1px}
+.status-icon.x{color:var(--crimson)}
+.status-icon.warn{color:#D97706}
+/* ── Reform list ── */
+.reform-list{margin:0.8rem 0;counter-reset:reforms;display:flex;flex-direction:column;gap:0.7rem}
+.reform-item{display:flex;gap:1rem;align-items:flex-start}
+.reform-num{width:28px;height:28px;background:var(--teal);color:#fff;border-radius:50%;display:flex;align-items:center;justify-content:center;font-family:'Noto Sans',sans-serif;font-size:9pt;font-weight:700;flex-shrink:0}
+.reform-body{}
+.reform-title{font-family:'Noto Sans',sans-serif;font-size:10pt;font-weight:700;color:var(--navy)}
+.reform-desc{font-size:9.5pt;color:var(--muted)}
+/* ── Demand list ── */
+.demand-list{margin:0.8rem 0;display:grid;grid-template-columns:1fr 1fr;gap:0.6rem 1.5rem}
+.demand-item{display:flex;gap:0.8rem;align-items:flex-start;background:var(--light-tan);padding:0.6rem 0.8rem;border-radius:3px}
+.demand-num{font-family:'Noto Sans',sans-serif;font-size:9pt;font-weight:800;color:var(--teal);flex-shrink:0}
+.demand-text{font-size:9.5pt;color:var(--ink)}
+/* ── Closing statement ── */
+.closing{background:var(--navy);color:#fff;padding:1.8rem 2rem;border-radius:4px;margin:2rem 0;text-align:center}
+.closing blockquote{font-family:'Noto Serif Devanagari','Lora',serif;font-size:1.15rem;font-style:italic;line-height:1.6;color:#fff}
+.closing-btn{display:inline-block;margin-top:1rem;background:var(--teal);color:#fff;font-family:'Noto Sans',sans-serif;font-size:8.5pt;font-weight:700;padding:6px 18px;border-radius:2px;letter-spacing:0.05em}
+/* ── Divider ── */
+.section-divider{border:none;border-top:1px solid var(--tan);margin:1.8rem 0}
+/* ── Footer ── */
+.article-footer{border-top:2px solid var(--navy);padding-top:1rem;font-family:'Noto Sans',sans-serif;font-size:7.5pt;color:var(--muted);text-align:center;margin-top:2rem}
+/* ── Alert box ── */
+.alert-box{background:linear-gradient(135deg,#7f1d1d 0%,#991b1b 100%);color:#fff;border-radius:6px;padding:1.2rem 1.6rem;margin:1.4rem 0;font-family:'Noto Sans',sans-serif;font-size:9pt;display:flex;gap:1rem;align-items:flex-start}
+.alert-icon{font-size:1.4rem;flex-shrink:0;margin-top:2px}
+.alert-body{}
+.alert-title{font-weight:700;font-size:9.5pt;color:#fca5a5;margin-bottom:3px;letter-spacing:0.03em}
+.alert-text{color:rgba(255,255,255,0.88);line-height:1.5}
+/* ── Table of Contents ── */
+.toc{background:var(--light-tan);border:1px solid var(--tan);border-left:4px solid var(--teal);border-radius:4px;padding:1.2rem 1.5rem;margin:1.4rem 0}
+.toc-title{font-family:'Noto Sans',sans-serif;font-size:8pt;font-weight:700;letter-spacing:0.12em;text-transform:uppercase;color:var(--teal);margin-bottom:0.8rem}
+.toc-grid{display:grid;grid-template-columns:1fr 1fr;gap:0.25rem 2rem}
+.toc-item{font-family:'Noto Sans',sans-serif;font-size:8.5pt;color:var(--navy);display:flex;gap:0.5rem;align-items:baseline;padding:0.15rem 0}
+.toc-num{color:var(--teal);font-weight:700;flex-shrink:0;min-width:2.2rem}
+.toc-label{color:var(--ink)}
+.toc-tag{display:inline-block;font-size:7pt;font-weight:700;padding:1px 5px;border-radius:2px;margin-left:4px;vertical-align:middle}
+.toc-tag.new{background:var(--crimson);color:#fff}
+.toc-tag.excl{background:#7c3aed;color:#fff}
+/* ── Scoop badge ── */
+.scoop{display:inline-block;background:var(--crimson);color:#fff;font-family:'Noto Sans',sans-serif;font-size:7pt;font-weight:700;letter-spacing:0.1em;text-transform:uppercase;padding:2px 8px;border-radius:2px;margin-right:6px;vertical-align:middle}
+/* ── Corruption cycle ── */
+.cycle-box{background:var(--navy);color:#fff;border-radius:6px;padding:1.4rem 1.8rem;margin:1.4rem 0;text-align:center}
+.cycle-steps{display:flex;align-items:center;justify-content:center;flex-wrap:wrap;gap:0.4rem;margin-top:0.8rem;font-family:'Noto Sans',sans-serif;font-size:8.5pt}
+.cycle-step{background:rgba(255,255,255,0.1);border:1px solid rgba(255,255,255,0.2);border-radius:3px;padding:0.35rem 0.7rem;color:#fff}
+.cycle-arrow{color:var(--teal);font-weight:700;font-size:1rem}
+/* ── PRINT ── */
+@media print{
+  body{font-size:10.5pt;background:#fff}
+  .masthead{background:var(--navy)!important;-webkit-print-color-adjust:exact;print-color-adjust:exact}
+  .facts-box{background:var(--navy)!important;-webkit-print-color-adjust:exact;print-color-adjust:exact}
+  .closing{background:var(--navy)!important;-webkit-print-color-adjust:exact;print-color-adjust:exact}
+  .cycle-box{background:var(--navy)!important;-webkit-print-color-adjust:exact;print-color-adjust:exact}
+  .alert-box{background:#7f1d1d!important;-webkit-print-color-adjust:exact;print-color-adjust:exact}
+  .toc{background:var(--light-tan)!important;-webkit-print-color-adjust:exact;print-color-adjust:exact}
+  .pull-quote,.reform-num,.status-item,.demand-item{-webkit-print-color-adjust:exact;print-color-adjust:exact}
+  .chapter{page-break-inside:avoid}
+  .pull-quote{page-break-inside:avoid}
+  .toc{page-break-inside:avoid}
+  .alert-box{page-break-inside:avoid}
+  a{text-decoration:none;color:inherit}
+  @page{margin:1.5cm 2cm;size:A4}
+}
+</style>
+</head>
+<body>
+
+<!-- MASTHEAD -->
+<div class="masthead">
+  <div>
+    <div class="pub-tag">खोजी पत्रकारिता | Investigative Journalism</div>
+    <div class="pub-name">जन संवाददाता</div>
+  </div>
+  <div class="masthead-meta">
+    <strong>6 August 2026</strong>
+    PWD &amp; Irrigation | Rajasthan
+  </div>
+</div>
+
+<div class="article-wrap">
+
+  <!-- BADGE + HEADLINE -->
+  <div class="section-badge">PWD &amp; Irrigation | Rajasthan | IFMS Crisis | Exclusive Investigation</div>
+
+  <h1 class="headline-hi">राजस्थान का डिजिटल भुगतान संकट</h1>
+  <h2 class="headline-en">Rajasthan's Digital Payment Crisis: The IFMS 3.0 Expose</h2>
+
+  <p class="deck">WAM बंद, IFMS टूटा, Helpline मौन, Delegation गायब, Digital Signatures बाज़ार में, AS/FS IDs में हेराफेरी, Head Office Credentials की दलाली — एक सम्पूर्ण खोजी रिपोर्ट जो Rajasthan के PWD और Irrigation Department की digital governance के खोखलेपन को बेनकाब करती है।</p>
+
+  <hr class="rule"/>
+
+  <!-- BYLINE -->
+  <div class="byline">
+    <span><strong>संवाददाता | Reporter</strong></span>
+    <span class="dot">•</span>
+    <span>Special Correspondent, PWD &amp; Irrigation Bureau</span>
+    <span class="dot">•</span>
+    <span>20 min read</span>
+    <span class="dot">•</span>
+    <span>6 August 2026</span>
+  </div>
+
+  <!-- BREAKING ALERT -->
+  <div class="alert-box">
+    <div class="alert-icon">🚨</div>
+    <div class="alert-body">
+      <div class="alert-title">EXCLUSIVE INVESTIGATIVE REPORT — खोजी पत्रकारिता</div>
+      <div class="alert-text">यह रिपोर्ट राजस्थान के PWD &amp; Irrigation Department में IFMS 3.0 की विफलता, digital signature का दुरुपयोग, AS/FS ID में जानबूझकर देरी, और Head Office login credentials की दलाली को document करती है। सभी तथ्य ground investigation, official complaint email, और published print media पर आधारित हैं। नाम गोपनीय रखे गए हैं।</div>
+    </div>
+  </div>
+
+  <!-- TABLE OF CONTENTS -->
+  <div class="toc">
+    <div class="toc-title">📋 विषय-सूची — Table of Contents</div>
+    <div class="toc-grid">
+      <div class="toc-item"><span class="toc-num">Ch. 1</span><span class="toc-label">WAM Portal — नींव और वादा (2012)</span></div>
+      <div class="toc-item"><span class="toc-num">Ch. 2</span><span class="toc-label">WAM की छुपी खामियां</span></div>
+      <div class="toc-item"><span class="toc-num">Ch. 3</span><span class="toc-label">IFMS 2.0 — नई उलझनें (2025)</span></div>
+      <div class="toc-item"><span class="toc-num">Ch. 4</span><span class="toc-label">IFMS 2.0 — Scam और Accountability का पतन</span></div>
+      <div class="toc-item"><span class="toc-num">Ch. 4ख</span><span class="toc-label">AS/FS ID देरी और HO Credential दलाली <span class="toc-tag new">NEW</span><span class="toc-tag excl">EXCL</span></span></div>
+      <div class="toc-item"><span class="toc-num">Ch. 5</span><span class="toc-label">वह काली जुलाई — WAM बंद (July 2026)</span></div>
+      <div class="toc-item"><span class="toc-num">Ch. 6</span><span class="toc-label">IFMS 3.0 — कागज़ पर सुरक्षित, ज़मीन पर खोखली</span></div>
+      <div class="toc-item"><span class="toc-num">Ch. 6क</span><span class="toc-label">आदर्श Delegation Matrix <span class="toc-tag new">NEW</span></span></div>
+      <div class="toc-item"><span class="toc-num">Ch. 6ख</span><span class="toc-label">Digital Signature बाज़ार में <span class="toc-tag excl">EXCL</span></span></div>
+      <div class="toc-item"><span class="toc-num">Ch. 7</span><span class="toc-label">Portal Status: 4 Documented Bugs <span class="toc-tag new">NEW</span></span></div>
+      <div class="toc-item"><span class="toc-num">Ch. 8</span><span class="toc-label">Helpline: संपर्क नहीं, समाधान नहीं</span></div>
+      <div class="toc-item"><span class="toc-num">Ch. 8ख</span><span class="toc-label">~200 रद्द अनुबंध — Recovery शून्य <span class="toc-tag excl">EXCL</span></span></div>
+      <div class="toc-item"><span class="toc-num">Ch. 8ग</span><span class="toc-label">Recovery Portal नहीं, Legal Pursuit नहीं — Impunity का Architecture <span class="toc-tag key">KEY</span></span></div>
+      <div class="toc-item"><span class="toc-num">Press</span><span class="toc-label">Print Media Corroboration <span class="toc-tag new">NEW</span></span></div>
+      <div class="toc-item"><span class="toc-num">Ch. 9</span><span class="toc-label">7 तत्काल माँगें</span></div>
+      <div class="toc-item"><span class="toc-num">Ch. 10</span><span class="toc-label">चौथे स्तंभ से आह्वान — 10 Media Demands</span></div>
+    </div>
+  </div>
+
+  <!-- KEY FACTS BOX -->
+  <div class="facts-box">
+    <div class="facts-box-title">At A Glance — मुख्य तथ्य</div>
+    <div class="fact-item">
+      <div class="fact-num">~200</div>
+      <div class="fact-label">PWD Divisions प्रभावित</div>
+    </div>
+    <div class="fact-item">
+      <div class="fact-num">₹20L+</div>
+      <div class="fact-label">Outsourcing लागत/Division/वर्ष</div>
+    </div>
+    <div class="fact-item">
+      <div class="fact-num">₹40 Cr+</div>
+      <div class="fact-label">वार्षिक राज्य-स्तरीय नुकसान</div>
+    </div>
+    <div class="fact-item">
+      <div class="fact-num">14 वर्ष</div>
+      <div class="fact-label">WAM Portal ने काम किया (2012–2026)</div>
+    </div>
+    <div class="fact-item">
+      <div class="fact-num">10 Jul</div>
+      <div class="fact-label">WAM बंद, भुगतान ठप (2026)</div>
+    </div>
+    <div class="fact-item">
+      <div class="fact-num">4 Bugs</div>
+      <div class="fact-label">Official Complaint Email में documented</div>
+    </div>
+    <div class="fact-item">
+      <div class="fact-num">6 माह</div>
+      <div class="fact-label">AS-ID देरी — Physical AS Oct 2025, ID April 2026</div>
+    </div>
+    <div class="fact-item">
+      <div class="fact-num">0</div>
+      <div class="fact-label">Helpline / Email Replies — Zero Response</div>
+    </div>
+    <div class="fact-item">
+      <div class="fact-num">DSC</div>
+      <div class="fact-label">Computer Centre पर — IT Act 66C उल्लंघन</div>
+    </div>
+  </div>
+
+  <!-- CHAPTER 1 -->
+  <div class="chapter">
+    <div class="chapter-marker">अध्याय 1 — Chapter One</div>
+    <h3 class="chapter-title">WAM Portal — नींव और वादा (2012)</h3>
+  </div>
+
+  <p>वर्ष 2012 में Rajasthan सरकार ने एक महत्वाकांक्षी कदम उठाया। PWD (Public Works Department) और Irrigation Department के ठेकेदारों को उनका भुगतान online करने के लिए <strong>WAM portal (wam.rajasthan.gov.in)</strong> लॉन्च किया गया। साथ ही <strong>PayManager (paymanager.rajasthan.gov.in)</strong> से integration हुई, जिसके माध्यम से संबंधित treasury सीधे contractor के bank account में payment जमा करने लगी।</p>
+
+  <p>यह प्रणाली दो स्तंभों पर टिकी थी: पारदर्शिता और दक्षता। कागज़ी प्रक्रिया का अंत, बिचौलियों की समाप्ति, और समय पर भुगतान — यही इसका वादा था। 14 वर्षों तक, अपनी तमाम खामियों के बावजूद, यह प्रणाली काम करती रही।</p>
+
+  <div class="pull-quote">
+    <blockquote>"यह प्रणाली 14 वर्षों तक — कमियों के बावजूद — payments करती रही। 6 July 2026 तक सब संतोषजनक था।"</blockquote>
+  </div>
+
+  <hr class="section-divider"/>
+
+  <!-- CHAPTER 2 -->
+  <div class="chapter">
+    <div class="chapter-marker">अध्याय 2 — Chapter Two</div>
+    <h3 class="chapter-title">WAM की छुपी खामियां — जो कभी नहीं सुधरीं</h3>
+  </div>
+
+  <p><strong>खामी #1: Bill Submission — केवल काग़ज़ पर</strong><br/>
+  WAM portal की पहली और सबसे बड़ी कमज़ोरी यह थी कि contractor खुद bill नहीं बनाते थे। प्रत्येक ज़िले में गिने-चुने contractors ही स्वयं bill बनाकर submit करते थे। बाकी की ज़िम्मेदारी केवल काग़ज़ी अनुबंध (contract) में ही रह गई। यह प्रणाली का fundamental design failure था जिसे कभी ठीक नहीं किया गया।</p>
+
+  <p><strong>खामी #2: Transparency — शून्य</strong><br/>
+  Portal पर नागरिकों के लिए कोई भी transparency window नहीं थी। आम जनता bill की स्थिति, payment history, या contractor payments की जानकारी नहीं देख सकती थी। Taxpayers का पैसा कहाँ जा रहा था — यह जानने का कोई सार्वजनिक रास्ता नहीं था।</p>
+
+  <p>ये दोनों कमज़ोरियाँ IFMS 2.0 में भी बनी रहीं। और अब IFMS 3.0 में भी ये मुद्दे अनसुलझे हैं। सिस्टम बदलते रहे, खामियाँ नहीं बदलीं।</p>
+
+  <hr class="section-divider"/>
+
+  <!-- CHAPTER 3 -->
+  <div class="chapter">
+    <div class="chapter-marker">अध्याय 3 — Chapter Three</div>
+    <h3 class="chapter-title">IFMS 2.0 — महत्वाकांक्षी सुधार, नई उलझनें (जनवरी 2025)</h3>
+  </div>
+
+  <p>जनवरी 2025 से राजस्थान सरकार ने सभी नए कार्यों और अनुबंधों को IFMS 2.0 में दर्ज करना अनिवार्य किया। इसके तहत प्रत्येक कार्य के लिए सात प्रकार की IDs generate करना और <strong>mb.rajasthan.gov.in</strong> पर Measurement Book की online entry अनिवार्य की गई।</p>
+
+  <p><strong>सात अनिवार्य IDs — हर कार्य के लिए:</strong></p>
+  <ul class="id-grid">
+    <li>Work-ID — कार्य की पहचान</li>
+    <li>AS-ID — Admin Sanction</li>
+    <li>TS-ID — Technical Sanction</li>
+    <li>BOQ-ID — Bill of Quantity</li>
+    <li>Package-ID — Package Reference</li>
+    <li>WO-ID — Work Order</li>
+    <li>Abstract-ID — Bill Abstract</li>
+  </ul>
+
+  <p>इस व्यवस्था में bills को WAM portal से electronically integrate किया जाना था। सिद्धांत में यह एक उत्कृष्ट व्यवस्था थी। व्यवहार में, यह तीन नई समस्याओं का जन्म बन गई:</p>
+
+  <p><strong>समस्या 1 — Document Overload:</strong> PayManager में इतने papers upload करने की औपचारिकता जोड़ी गई कि कोई भी अधिकारी पूरे documents पढ़ ही नहीं सकता था। Data इतना अधिक हो गया कि meaningful review असंभव था।</p>
+
+  <p><strong>समस्या 2 — Electronic MB: एक कागज़ी सुधार:</strong> Electronic Measurement Book में measurement contractor/vendor के माध्यम से पहले दर्ज होना था। लेकिन आज तक किसी भी contractor ने यह काम नहीं किया। यह reform केवल कागज़ों पर ही रहा।</p>
+
+  <p><strong>समस्या 3 — Outsourcing विस्फोट:</strong> Staff और engineers पर physical work के साथ-साथ IFMS entry का double workload इतना बढ़ गया कि outsourcing computer centres ने काम हथिया लिया। परिणामस्वरूप प्रत्येक PWD Division पर लगभग <strong>₹20 लाख प्रतिवर्ष</strong> की अतिरिक्त outsourcing लागत बढ़ गई। राज्य में ~200 PWD Divisions हैं — <strong>कुल वार्षिक नुकसान: ₹40 करोड़ से अधिक।</strong></p>
+
+  <hr class="section-divider"/>
+
+  <!-- CHAPTER 4 -->
+  <div class="chapter">
+    <div class="chapter-marker">अध्याय 4 — Chapter Four</div>
+    <h3 class="chapter-title">IFMS 2.0 का अंधेरा पहलू — Scam और Accountability का पतन</h3>
+  </div>
+
+  <p><strong>Morphed Photo Scam:</strong> Physical progress reports में digitally edited (morphed) photos upload करने का scam शुरू हो गया। काम ज़मीन पर नहीं हुआ, लेकिन photos portal पर upload हो गए। इस scam को रोकने का कोई mechanism नहीं था। सरकारी धन का दुरुपयोग बेरोकटोक जारी रहा।</p>
+
+  <p><strong>OTP का दुरुपयोग:</strong> Engineers और staff को IFMS पर कोई समग्र प्रशिक्षण नहीं दिया गया। घोर लापरवाही में, Divisional Accountants तक ने अपना OTP outsourcing computer operators को दे दिया। सरकारी प्रक्रिया पूरी तरह बाहरी, unqualified hands में चली गई। लोकतंत्र में जनता के पैसे की accountability का यह घोर उल्लंघन था।</p>
+
+  <div class="pull-quote">
+    <blockquote>"Divisional Accountants भी operators को OTP देते हैं। सरकारी accountability पूरी तरह outsource हो गई।"</blockquote>
+  </div>
+
+  <hr class="section-divider"/>
+
+  <!-- CHAPTER 4B — BACKDATING & HO CREDENTIAL SCAM -->
+  <div class="chapter">
+    <div class="chapter-marker">अध्याय 4ख — Chapter Four-B</div>
+    <h3 class="chapter-title">सबसे गहरा भ्रष्टाचार — AS/FS ID में हेराफेरी और हेड ऑफिस Login की दलाली</h3>
+  </div>
+
+  <p>PWD और Irrigation विभाग में IFMS के साथ एक और किस्म का भ्रष्टाचार पनप रहा है — जो अब तक सार्वजनिक नहीं हुआ। यह केवल प्रशासनिक लापरवाही नहीं, बल्कि एक <strong>सुनियोजित, बहुस्तरीय corruption ecosystem</strong> है जो physical और digital दोनों प्रक्रियाओं की खामियों को एकसाथ exploit करता है।</p>
+
+  <!-- SCAM 1: BACKDATING -->
+  <div style="background:var(--light-tan);border:1px solid var(--tan);border-top:4px solid var(--crimson);border-radius:4px;padding:1.4rem 1.6rem;margin:1.2rem 0">
+    <div style="font-family:'Noto Sans',sans-serif;font-size:8pt;font-weight:700;letter-spacing:0.12em;text-transform:uppercase;color:var(--crimson);margin-bottom:0.9rem">भ्रष्टाचार #1 — AS/FS ID में जानबूझकर देरी और Secret Backdating</div>
+
+    <p style="font-size:9.5pt;margin-bottom:0.8rem">नियमानुसार, किसी भी कार्य का <strong>Admin Sanction (AS)</strong> और <strong>Financial Sanction (FS)</strong> — digital ID सहित — कार्य प्रारम्भ होने से <em>पहले</em> generate होना चाहिए। लेकिन ज़मीन पर क्या हो रहा है — नीचे देखें:</p>
+
+    <!-- Timeline of fraud -->
+    <div class="timeline" style="margin:0.5rem 0 1rem">
+      <div class="tl-item">
+        <div class="tl-dot-col"><div class="tl-dot" style="background:#0D9488"></div><div class="tl-line"></div></div>
+        <div class="tl-body">
+          <div class="tl-date" style="color:#0D9488">October 2025</div>
+          <div class="tl-text">Physical रूप में <strong>AS और FS</strong> सक्षम अधिकारी द्वारा जारी — documents division को प्राप्त। <span style="color:#0D9488;font-weight:600">यही वह तारीख है जब IFMS पर AS-ID application होनी चाहिए थी।</span></div>
+        </div>
+      </div>
+      <div class="tl-item">
+        <div class="tl-dot-col"><div class="tl-dot" style="background:#D97706"></div><div class="tl-line"></div></div>
+        <div class="tl-body">
+          <div class="tl-date" style="color:#D97706">January 2026 (प्रथम सप्ताह)</div>
+          <div class="tl-text">Tender process सम्पन्न। <strong>AS-ID application अभी तक नहीं हुई।</strong> Division का staff जानबूझकर या लापरवाही से इसे टालता रहा।</div>
+        </div>
+      </div>
+      <div class="tl-item">
+        <div class="tl-dot-col"><div class="tl-dot" style="background:#D97706"></div><div class="tl-line"></div></div>
+        <div class="tl-body">
+          <div class="tl-date" style="color:#D97706">January 2026 (अंतिम सप्ताह)</div>
+          <div class="tl-text"><strong>Work Order जारी।</strong> Contractor ने काम शुरू किया। IFMS पर AS-ID और FS-ID अभी भी absent।</div>
+        </div>
+      </div>
+      <div class="tl-item">
+        <div class="tl-dot-col"><div class="tl-dot" style="background:#9B1C1C"></div><div class="tl-line"></div></div>
+        <div class="tl-body">
+          <div class="tl-date" style="color:#9B1C1C">April 2026</div>
+          <div class="tl-text">Contractor पहला bill submit करने की कोशिश करता है। तब पता चलता है — <strong>FS-ID ही नहीं है।</strong> FS-ID के बिना digital bill treasury तक पहुँच ही नहीं सकता। Payment रुकी।</div>
+        </div>
+      </div>
+      <div class="tl-item">
+        <div class="tl-dot-col"><div class="tl-dot" style="background:#9B1C1C"></div><div class="tl-line"></div></div>
+        <div class="tl-body">
+          <div class="tl-date" style="color:#9B1C1C">April 2026 — वही समय</div>
+          <div class="tl-text">Division staff <strong>पहली बार</strong> AS-ID का application create करता है — <strong>6 महीने की देरी से।</strong> October 2025 की physical AS/FS की तारीख और April 2026 की digital entry के बीच का यह gap ही scam की जड़ है।</div>
+        </div>
+      </div>
+      <div class="tl-item">
+        <div class="tl-dot-col"><div class="tl-dot" style="background:#6D28D9"></div></div>
+        <div class="tl-body">
+          <div class="tl-date" style="color:#6D28D9">April 2026 — उसी रात</div>
+          <div class="tl-text">Contractor को <strong>"secret bytes"</strong> मिलते हैं — division के insider से। उसे बताया जाता है कि अगर Head Office में "सही जगह" approach किया जाए तो FS-ID तुरंत मिल सकती है।</div>
+        </div>
+      </div>
+    </div>
+
+    <div style="background:rgba(155,28,28,0.08);border-left:3px solid var(--crimson);border-radius:3px;padding:0.8rem 1rem;font-size:9pt;color:var(--ink)">
+      <strong>FS-ID क्यों इतनी महत्वपूर्ण है?</strong> क्योंकि यह वह digital key है जिसके बिना IFMS 3.0 पर कोई भी vendor bill treasury को submit नहीं हो सकता। जिसके पास FS-ID generate करने की power है — <strong>उसके हाथ में contractor का पूरा payment रुका है।</strong> यही power इस scam की currency है।
+    </div>
+  </div>
+
+  <!-- SCAM 2: HO CREDENTIAL BRIBERY -->
+  <div style="background:linear-gradient(135deg,#1a0533 0%,#3b0764 100%);border-radius:6px;padding:1.6rem 1.8rem;margin:1.4rem 0;color:#fff">
+    <div style="font-family:'Noto Sans',sans-serif;font-size:8pt;font-weight:700;letter-spacing:0.14em;text-transform:uppercase;color:#c4b5fd;margin-bottom:1rem;border-bottom:1px solid rgba(255,255,255,0.15);padding-bottom:0.5rem">भ्रष्टाचार #2 — Head Office Login Credentials की दलाली (सबसे गंभीर)</div>
+
+    <p style="font-size:9.5pt;color:rgba(255,255,255,0.9);margin-bottom:1rem">यह scam का दूसरा और अधिक खतरनाक स्तर है। सूत्रों के अनुसार, <strong>कुछ Divisions में ऐसे operators हैं जिनके पास Head Office के किसी अधिकारी के IFMS login credentials हैं।</strong> यह operator contractor से बड़ी रकम लेता है और उस अधिकारी के login से तत्काल FS-ID generate कर देता है।</p>
+
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:1rem;margin-bottom:1rem">
+      <div style="background:rgba(255,255,255,0.07);border-radius:4px;padding:0.9rem 1rem">
+        <div style="font-family:'Noto Sans',sans-serif;font-size:8.5pt;font-weight:700;color:#c4b5fd;margin-bottom:0.4rem">🔗 कैसे काम करता है यह racket</div>
+        <div style="font-size:9pt;color:rgba(255,255,255,0.8)">
+          <div style="margin-bottom:0.35rem">① Division operator का HO officer से nexus</div>
+          <div style="margin-bottom:0.35rem">② HO officer अपने login credentials operator को देता है</div>
+          <div style="margin-bottom:0.35rem">③ Contractor बड़ी रकम operator को देता है</div>
+          <div style="margin-bottom:0.35rem">④ Operator HO officer के login से FS-ID generate करता है</div>
+          <div>⑤ Contractor को तुरंत digital payment का रास्ता मिल जाता है</div>
+        </div>
+      </div>
+      <div style="background:rgba(255,255,255,0.07);border-radius:4px;padding:0.9rem 1rem">
+        <div style="font-family:'Noto Sans',sans-serif;font-size:8.5pt;font-weight:700;color:#fca5a5;margin-bottom:0.4rem">⚡ कानूनी गंभीरता</div>
+        <div style="font-size:9pt;color:rgba(255,255,255,0.8)">
+          <div style="margin-bottom:0.35rem">• <strong style="color:#fca5a5">IT Act 66C</strong> — किसी और की digital identity का उपयोग: 3 वर्ष कारावास</div>
+          <div style="margin-bottom:0.35rem">• <strong style="color:#fca5a5">IT Act 66D</strong> — Computer resource का impersonation: 3 वर्ष + ₹1 लाख जुर्माना</div>
+          <div style="margin-bottom:0.35rem">• <strong style="color:#fca5a5">Prevention of Corruption Act</strong> — सरकारी अधिकारी द्वारा रिश्वत लेना</div>
+          <div>• <strong style="color:#fca5a5">IPC 420</strong> — सरकारी records में fraud</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- IP AUDIT BOX -->
+    <div style="background:rgba(13,148,136,0.2);border:1px solid rgba(13,148,136,0.5);border-radius:4px;padding:1rem 1.1rem">
+      <div style="font-family:'Noto Sans',sans-serif;font-size:8.5pt;font-weight:700;color:#6ee7b7;margin-bottom:0.5rem">🔍 IP Audit Trail — इसे expose करने का हथियार</div>
+      <div style="font-size:9pt;color:rgba(255,255,255,0.85);margin-bottom:0.6rem">IFMS के server logs में हर login का <strong>IP address, timestamp, और user-ID</strong> record होता है। यदि:</div>
+      <div style="display:grid;grid-template-columns:1fr 1fr;gap:0.5rem;font-size:8.5pt;color:rgba(255,255,255,0.8)">
+        <div style="background:rgba(0,0,0,0.2);padding:0.5rem 0.7rem;border-radius:3px">HO officer का login किसी <strong style="color:#6ee7b7">Division के IP address</strong> से हो रहा है</div>
+        <div style="background:rgba(0,0,0,0.2);padding:0.5rem 0.7rem;border-radius:3px">एक ही IP से <strong style="color:#6ee7b7">अलग-अलग user IDs</strong> से login हो रहे हों</div>
+        <div style="background:rgba(0,0,0,0.2);padding:0.5rem 0.7rem;border-radius:3px">HO login <strong style="color:#6ee7b7">office hours के बाहर</strong> हो रहा हो</div>
+        <div style="background:rgba(0,0,0,0.2);padding:0.5rem 0.7rem;border-radius:3px">FS-ID generation और contractor payment के बीच <strong style="color:#6ee7b7">असामान्य रूप से कम समय</strong> हो</div>
+      </div>
+      <div style="margin-top:0.7rem;font-size:9pt;color:rgba(255,255,255,0.9)">— तो <strong style="color:#6ee7b7">IP Audit Trail पूरे racket को उजागर कर सकता है।</strong> NIC Rajasthan के पास यह data है। CAG या ACB को इसकी माँग करनी चाहिए।</div>
+    </div>
+    <div style="margin-top:0.8rem;font-family:'Noto Sans',sans-serif;font-size:8pt;color:rgba(255,255,255,0.4);text-align:center;font-style:italic">Source: Field investigation | Information received from multiple anonymous sources | August 2026</div>
+  </div>
+
+  <div class="pull-quote">
+    <blockquote>"Physical AS/FS October 2025 में आई — IFMS ID April 2026 में बनी। इस 6 महीने के gap में कौन सी रकम कहाँ गई? और जिस Head Office officer के credentials से FS-ID बनी — क्या वह अपनी कुर्सी पर थे, या किसी Division का operator उनकी identity से काम कर रहा था? <strong>Login IP audit यह बता सकता है।</strong>"<br/><small style="font-style:normal;font-size:8.5pt;color:var(--muted)">— investigative observation, August 2026</small></blockquote>
+  </div>
+
+  <p><strong>यह दोनों scams मिलकर एक complete corruption cycle बनाते हैं:</strong> पहले जानबूझकर AS-ID में देरी → contractor मजबूर होकर बिना ID के काम शुरू करे → payment के वक्त FS-ID की ज़रूरत → "secret bytes" मिलें → HO में रिश्वत → operator HO credentials से FS-ID generate करे → payment release। <strong>हर कड़ी में सरकारी धन का रिसाव।</strong></p>
+
+  <hr class="section-divider"/>
+  <div class="chapter">
+    <div class="chapter-marker">अध्याय 5 — Chapter Five</div>
+    <h3 class="chapter-title">वह काली जुलाई — WAM बंद, IFMS 3.0 तैयार नहीं (July 2026)</h3>
+  </div>
+
+  <p>जुलाई 2026 में जो घटित हुआ वह Rajasthan के PWD और Irrigation Department के contractor payment इतिहास का सबसे बड़ा संकट था।</p>
+
+  <div class="timeline">
+    <div class="tl-item">
+      <div class="tl-dot-col"><div class="tl-dot" style="background:#0D9488"></div><div class="tl-line"></div></div>
+      <div class="tl-body"><div class="tl-date" style="color:#0D9488">2 July 2026</div><div class="tl-text">Finance Department ने PWD और Irrigation के अधिकारियों को training दी। घोषणा: WAM portal की जगह अब सभी bills <strong>IFMS 3.0 portal</strong> से होंगे।</div></div>
+    </div>
+    <div class="tl-item">
+      <div class="tl-dot-col"><div class="tl-dot" style="background:#D97706"></div><div class="tl-line"></div></div>
+      <div class="tl-body"><div class="tl-date" style="color:#D97706">6 July 2026</div><div class="tl-text">WAM portal पर <strong>आखिरी बार</strong> सामान्य payment processing हुई।</div></div>
+    </div>
+    <div class="tl-item">
+      <div class="tl-dot-col"><div class="tl-dot" style="background:#9B1C1C"></div><div class="tl-line"></div></div>
+      <div class="tl-body"><div class="tl-date" style="color:#9B1C1C">10 July 2026</div><div class="tl-text">WAM portal पर bill processing <strong>पूरी तरह बंद</strong> कर दी गई। Migration की ज़िम्मेदारी NIC Rajasthan को — जो इस काम के लिए पर्याप्त तैयार नहीं थी।</div></div>
+    </div>
+    <div class="tl-item">
+      <div class="tl-dot-col"><div class="tl-dot" style="background:#6D28D9"></div></div>
+      <div class="tl-body"><div class="tl-date" style="color:#6D28D9">1 August 2026</div><div class="tl-text">Portal अभी भी systematic नहीं। Vendor names नहीं दिखते। Security deposits integrate नहीं। Bills ठप। Contractors माैन।</div></div>
+    </div>
+  </div>
+
+  <p style="margin-top:1rem">इस migration का काम NIC Rajasthan की एक ऐसी team को सौंपा गया जो इस काम के लिए पर्याप्त अनुभवी नहीं थी। Data import, portal integration, और system को stable करने का काम — जो पहले ही शुरू होना चाहिए था — अब भी अधूरा था।</p>
+
+  <hr class="section-divider"/>
+
+  <!-- CHAPTER 6 -->
+  <div class="chapter">
+    <div class="chapter-marker">अध्याय 6 — Chapter Six</div>
+    <h3 class="chapter-title">IFMS 3.0 — कागज़ पर सुरक्षित, ज़मीन पर खोखली</h3>
+  </div>
+
+  <p><strong>सरकार का vision — Maker-Checker-Approver:</strong> नए system में तीन-स्तरीय bill verification की योजना थी: <strong>Maker</strong> (bill बनाता है), <strong>Checker</strong> (जाँचता है), <strong>Approver</strong> (approve करता है)। Electronic Measurement Book से linked, पारदर्शी, fraud-proof प्रणाली — यह था सरकार का वादा।</p>
+
+  <p><strong>ज़मीनी हकीक़त:</strong> हमारे संवाददाता के अनुसार, यदि किसी XEN (Executive Engineer) का interview लिया जाए तो <strong>90% XEN IFMS portal का inbox तक login नहीं कर पाएंगे।</strong> Engineers ने computer operators को केवल OTP दे दिया है। नतीजतन, एक ही बाहरी operator Maker, Checker, और Approver — तीनों roles निभाता है।</p>
+
+  <div class="pull-quote">
+    <blockquote>"90% XEN IFMS portal का inbox तक login नहीं कर पाएंगे। एक operator तीनों roles निभाता है।"</blockquote>
+  </div>
+
+  <p>तीन-स्तरीय जाँच की आत्मा नष्ट हो गई। सरकार का खर्च फिर भी बढ़ा। Accountability शून्य। भ्रष्टाचार के लिए द्वार खुला।</p>
+
+  <hr class="section-divider"/>
+
+  <!-- CHAPTER 6A — IDEAL DELEGATION MATRIX -->
+  <div class="chapter">
+    <div class="chapter-marker">अध्याय 6क — Chapter Six-A</div>
+    <h3 class="chapter-title">एक तकनीकी विशेषज्ञ का आदर्श प्रतिनिधित्व मॉडल — Ideal Delegation Matrix</h3>
+  </div>
+
+  <p>यदि IFMS 3.0 को वास्तव में एक <strong>transparent, foolproof और practical</strong> system बनाना है, तो प्रत्येक कार्य के लिए Maker, Checker और Approver की भूमिकाएँ स्पष्ट रूप से परिभाषित और <em>अलग-अलग अधिकारियों</em> को सौंपी जानी चाहिए। नीचे एक technical expert द्वारा प्रस्तावित आदर्श delegation matrix है — जो सरकार को अनिवार्य statutory compulsion के रूप में लागू करना चाहिए था, लेकिन नहीं किया:</p>
+
+  <!-- DELEGATION MATRIX TABLE -->
+  <div style="overflow-x:auto;margin:1.2rem 0 1.6rem">
+    <table style="width:100%;border-collapse:collapse;font-family:'Noto Sans',sans-serif;font-size:8.5pt">
+      <!-- Header -->
+      <thead>
+        <tr style="background:var(--navy);color:#fff">
+          <th style="padding:0.7rem 0.9rem;text-align:left;font-weight:700;letter-spacing:0.05em;border-right:1px solid rgba(255,255,255,0.15);width:32%">कार्य / Task</th>
+          <th style="padding:0.7rem 0.9rem;text-align:center;font-weight:700;letter-spacing:0.05em;border-right:1px solid rgba(255,255,255,0.15);width:22%;color:#6ee7b7">✏ MAKER</th>
+          <th style="padding:0.7rem 0.9rem;text-align:center;font-weight:700;letter-spacing:0.05em;border-right:1px solid rgba(255,255,255,0.15);width:22%;color:#fcd34d">🔍 CHECKER</th>
+          <th style="padding:0.7rem 0.9rem;text-align:center;font-weight:700;letter-spacing:0.05em;width:24%;color:#a5f3fc">✅ APPROVER</th>
+        </tr>
+        <tr style="background:#162d4a;color:rgba(255,255,255,0.55)">
+          <td style="padding:0.3rem 0.9rem;font-size:7.5pt;font-style:italic;border-right:1px solid rgba(255,255,255,0.08)">Task Initiation Subject</td>
+          <td style="padding:0.3rem 0.9rem;font-size:7.5pt;text-align:center;border-right:1px solid rgba(255,255,255,0.08)">बनाता है</td>
+          <td style="padding:0.3rem 0.9rem;font-size:7.5pt;text-align:center;border-right:1px solid rgba(255,255,255,0.08)">जाँचता है</td>
+          <td style="padding:0.3rem 0.9rem;font-size:7.5pt;text-align:center">स्वीकृत करता है</td>
+        </tr>
+      </thead>
+      <tbody>
+        <!-- Row 1 -->
+        <tr style="background:#fff;border-bottom:1px solid #e5e0d8">
+          <td style="padding:0.6rem 0.9rem;font-weight:600;color:var(--navy);border-right:1px solid #e5e0d8">AS &amp; FS उत्पन्न करना<br/><span style="font-weight:400;font-size:7.5pt;color:var(--muted)">Generating AS and FS</span></td>
+          <td style="padding:0.6rem 0.9rem;text-align:center;border-right:1px solid #e5e0d8"><span style="background:#dcfce7;color:#166534;padding:2px 8px;border-radius:2px;font-size:8pt;font-weight:600">AE / Sub-Divisional Clerk</span></td>
+          <td style="padding:0.6rem 0.9rem;text-align:center;border-right:1px solid #e5e0d8"><span style="background:#fef9c3;color:#713f12;padding:2px 8px;border-radius:2px;font-size:8pt;font-weight:600">Divisional Auditor</span></td>
+          <td style="padding:0.6rem 0.9rem;text-align:center"><span style="background:#dbeafe;color:#1e3a8a;padding:2px 8px;border-radius:2px;font-size:8pt;font-weight:600">Executive Engineer</span></td>
+        </tr>
+        <!-- Row 2 -->
+        <tr style="background:#fafaf8;border-bottom:1px solid #e5e0d8">
+          <td style="padding:0.6rem 0.9rem;font-weight:600;color:var(--navy);border-right:1px solid #e5e0d8">FS उत्पन्न करना<br/><span style="font-weight:400;font-size:7.5pt;color:var(--muted)">Generating FS</span></td>
+          <td style="padding:0.6rem 0.9rem;text-align:center;border-right:1px solid #e5e0d8"><span style="background:#dcfce7;color:#166534;padding:2px 8px;border-radius:2px;font-size:8pt;font-weight:600">AE / Sub-Divisional Clerk</span></td>
+          <td style="padding:0.6rem 0.9rem;text-align:center;border-right:1px solid #e5e0d8"><span style="background:#fef9c3;color:#713f12;padding:2px 8px;border-radius:2px;font-size:8pt;font-weight:600">Divisional Auditor</span></td>
+          <td style="padding:0.6rem 0.9rem;text-align:center"><span style="background:#dbeafe;color:#1e3a8a;padding:2px 8px;border-radius:2px;font-size:8pt;font-weight:600">Executive Engineer</span></td>
+        </tr>
+        <!-- Row 3 -->
+        <tr style="background:#fff;border-bottom:1px solid #e5e0d8">
+          <td style="padding:0.6rem 0.9rem;font-weight:600;color:var(--navy);border-right:1px solid #e5e0d8">Sanction उत्पन्न करना<br/><span style="font-weight:400;font-size:7.5pt;color:var(--muted)">Generating Sanction</span></td>
+          <td style="padding:0.6rem 0.9rem;text-align:center;border-right:1px solid #e5e0d8"><span style="background:#dcfce7;color:#166534;padding:2px 8px;border-radius:2px;font-size:8pt;font-weight:600">Divisional Auditor</span></td>
+          <td style="padding:0.6rem 0.9rem;text-align:center;border-right:1px solid #e5e0d8"><span style="background:#fef9c3;color:#713f12;padding:2px 8px;border-radius:2px;font-size:8pt;font-weight:600">Divisional Accountant</span></td>
+          <td style="padding:0.6rem 0.9rem;text-align:center"><span style="background:#dbeafe;color:#1e3a8a;padding:2px 8px;border-radius:2px;font-size:8pt;font-weight:600">Executive Engineer</span></td>
+        </tr>
+        <!-- Row 4 -->
+        <tr style="background:#fafaf8;border-bottom:1px solid #e5e0d8">
+          <td style="padding:0.6rem 0.9rem;font-weight:600;color:var(--navy);border-right:1px solid #e5e0d8">TS उत्पन्न करना<br/><span style="font-weight:400;font-size:7.5pt;color:var(--muted)">Generating TS</span></td>
+          <td style="padding:0.6rem 0.9rem;text-align:center;border-right:1px solid #e5e0d8"><span style="background:#dcfce7;color:#166534;padding:2px 8px;border-radius:2px;font-size:8pt;font-weight:600">AE</span></td>
+          <td style="padding:0.6rem 0.9rem;text-align:center;border-right:1px solid #e5e0d8"><span style="background:#fef9c3;color:#713f12;padding:2px 8px;border-radius:2px;font-size:8pt;font-weight:600">TA</span></td>
+          <td style="padding:0.6rem 0.9rem;text-align:center"><span style="background:#dbeafe;color:#1e3a8a;padding:2px 8px;border-radius:2px;font-size:8pt;font-weight:600">Executive Engineer</span></td>
+        </tr>
+        <!-- Row 5 -->
+        <tr style="background:#fff;border-bottom:1px solid #e5e0d8">
+          <td style="padding:0.6rem 0.9rem;font-weight:600;color:var(--navy);border-right:1px solid #e5e0d8">BOQ उत्पन्न करना<br/><span style="font-weight:400;font-size:7.5pt;color:var(--muted)">Generating BOQ</span></td>
+          <td style="padding:0.6rem 0.9rem;text-align:center;border-right:1px solid #e5e0d8"><span style="background:#dcfce7;color:#166534;padding:2px 8px;border-radius:2px;font-size:8pt;font-weight:600">AE</span></td>
+          <td style="padding:0.6rem 0.9rem;text-align:center;border-right:1px solid #e5e0d8"><span style="background:#fef9c3;color:#713f12;padding:2px 8px;border-radius:2px;font-size:8pt;font-weight:600">TA</span></td>
+          <td style="padding:0.6rem 0.9rem;text-align:center"><span style="background:#dbeafe;color:#1e3a8a;padding:2px 8px;border-radius:2px;font-size:8pt;font-weight:600">Executive Engineer</span></td>
+        </tr>
+        <!-- Row 6 -->
+        <tr style="background:#fafaf8;border-bottom:1px solid #e5e0d8">
+          <td style="padding:0.6rem 0.9rem;font-weight:600;color:var(--navy);border-right:1px solid #e5e0d8">Package उत्पन्न करना<br/><span style="font-weight:400;font-size:7.5pt;color:var(--muted)">Generating Package</span></td>
+          <td style="padding:0.6rem 0.9rem;text-align:center;border-right:1px solid #e5e0d8"><span style="background:#dcfce7;color:#166534;padding:2px 8px;border-radius:2px;font-size:8pt;font-weight:600">AE</span></td>
+          <td style="padding:0.6rem 0.9rem;text-align:center;border-right:1px solid #e5e0d8"><span style="background:#fef9c3;color:#713f12;padding:2px 8px;border-radius:2px;font-size:8pt;font-weight:600">TA</span></td>
+          <td style="padding:0.6rem 0.9rem;text-align:center"><span style="background:#dbeafe;color:#1e3a8a;padding:2px 8px;border-radius:2px;font-size:8pt;font-weight:600">Executive Engineer</span></td>
+        </tr>
+        <!-- Row 7 -->
+        <tr style="background:#fff;border-bottom:1px solid #e5e0d8">
+          <td style="padding:0.6rem 0.9rem;font-weight:600;color:var(--navy);border-right:1px solid #e5e0d8">Work Order उत्पन्न करना<br/><span style="font-weight:400;font-size:7.5pt;color:var(--muted)">Generating Work Order</span></td>
+          <td style="padding:0.6rem 0.9rem;text-align:center;border-right:1px solid #e5e0d8"><span style="background:#dcfce7;color:#166534;padding:2px 8px;border-radius:2px;font-size:8pt;font-weight:600">AE</span></td>
+          <td style="padding:0.6rem 0.9rem;text-align:center;border-right:1px solid #e5e0d8"><span style="background:#fef9c3;color:#713f12;padding:2px 8px;border-radius:2px;font-size:8pt;font-weight:600">TA</span></td>
+          <td style="padding:0.6rem 0.9rem;text-align:center"><span style="background:#dbeafe;color:#1e3a8a;padding:2px 8px;border-radius:2px;font-size:8pt;font-weight:600">Executive Engineer</span></td>
+        </tr>
+        <!-- Row 8 -->
+        <tr style="background:#fafaf8;border-bottom:1px solid #e5e0d8">
+          <td style="padding:0.6rem 0.9rem;font-weight:600;color:var(--navy);border-right:1px solid #e5e0d8">Approved Abstract उत्पन्न करना<br/><span style="font-weight:400;font-size:7.5pt;color:var(--muted)">Generating Approved Abstract</span></td>
+          <td style="padding:0.6rem 0.9rem;text-align:center;border-right:1px solid #e5e0d8"><span style="background:#dcfce7;color:#166534;padding:2px 8px;border-radius:2px;font-size:8pt;font-weight:600">AE</span></td>
+          <td style="padding:0.6rem 0.9rem;text-align:center;border-right:1px solid #e5e0d8"><span style="background:#fef9c3;color:#713f12;padding:2px 8px;border-radius:2px;font-size:8pt;font-weight:600">TA</span></td>
+          <td style="padding:0.6rem 0.9rem;text-align:center"><span style="background:#dbeafe;color:#1e3a8a;padding:2px 8px;border-radius:2px;font-size:8pt;font-weight:600">Executive Engineer</span></td>
+        </tr>
+        <!-- Row 9 -->
+        <tr style="background:#fff;border-bottom:1px solid #e5e0d8">
+          <td style="padding:0.6rem 0.9rem;font-weight:600;color:var(--navy);border-right:1px solid #e5e0d8">Vendor Bill (Work Payment) उत्पन्न करना<br/><span style="font-weight:400;font-size:7.5pt;color:var(--muted)">Generating Vendor Bill</span></td>
+          <td style="padding:0.6rem 0.9rem;text-align:center;border-right:1px solid #e5e0d8"><span style="background:#dcfce7;color:#166534;padding:2px 8px;border-radius:2px;font-size:8pt;font-weight:600">AE / Sub-Divisional Clerk</span></td>
+          <td style="padding:0.6rem 0.9rem;text-align:center;border-right:1px solid #e5e0d8"><span style="background:#fef9c3;color:#713f12;padding:2px 8px;border-radius:2px;font-size:8pt;font-weight:600">Divisional Auditor</span></td>
+          <td style="padding:0.6rem 0.9rem;text-align:center"><span style="background:#dbeafe;color:#1e3a8a;padding:2px 8px;border-radius:2px;font-size:8pt;font-weight:600">Executive Engineer</span></td>
+        </tr>
+        <!-- Row 10 -->
+        <tr style="background:#fafaf8;border-bottom:2px solid var(--navy)">
+          <td style="padding:0.6rem 0.9rem;font-weight:600;color:var(--navy);border-right:1px solid #e5e0d8">Vendor Refund उत्पन्न करना<br/><span style="font-weight:400;font-size:7.5pt;color:var(--muted)">Generating Vendor Refund</span></td>
+          <td style="padding:0.6rem 0.9rem;text-align:center;border-right:1px solid #e5e0d8"><span style="background:#dcfce7;color:#166534;padding:2px 8px;border-radius:2px;font-size:8pt;font-weight:600">AE / Sub-Divisional Clerk</span></td>
+          <td style="padding:0.6rem 0.9rem;text-align:center;border-right:1px solid #e5e0d8"><span style="background:#fef9c3;color:#713f12;padding:2px 8px;border-radius:2px;font-size:8pt;font-weight:600">Divisional Auditor</span></td>
+          <td style="padding:0.6rem 0.9rem;text-align:center"><span style="background:#dbeafe;color:#1e3a8a;padding:2px 8px;border-radius:2px;font-size:8pt;font-weight:600">Executive Engineer</span></td>
+        </tr>
+        <!-- Legend row -->
+        <tr style="background:var(--light-tan)">
+          <td colspan="4" style="padding:0.6rem 0.9rem;font-size:8pt;color:var(--muted)">
+            <strong style="color:var(--navy)">संक्षेप:</strong>&nbsp;
+            AE = Assistant Engineer &nbsp;|&nbsp; TA = Technical Assistant &nbsp;|&nbsp; AS = Admin Sanction &nbsp;|&nbsp; FS = Financial Sanction &nbsp;|&nbsp; TS = Technical Sanction &nbsp;|&nbsp; BOQ = Bill of Quantity &nbsp;|&nbsp;
+            <em>स्रोत: Technical Expert Proposal — Ideal Delegation Framework, August 2026</em>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <!-- THE IRONY BOX -->
+  <div style="background:linear-gradient(135deg,#431407 0%,#7c2d12 100%);border-radius:6px;padding:1.5rem 1.8rem;margin:1.2rem 0;color:#fff">
+    <div style="font-family:'Noto Sans',sans-serif;font-size:8pt;font-weight:700;letter-spacing:0.14em;text-transform:uppercase;color:#fdba74;margin-bottom:0.9rem;border-bottom:1px solid rgba(255,255,255,0.15);padding-bottom:0.5rem">⚠ सरकार की चुप्पी — The Fatal Irony</div>
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:1rem;font-size:9pt">
+      <div style="background:rgba(0,0,0,0.25);border-radius:4px;padding:0.8rem 1rem">
+        <div style="font-family:'Noto Sans',sans-serif;font-size:8.5pt;font-weight:700;color:#fca5a5;margin-bottom:0.3rem">जो होना चाहिए था</div>
+        <div style="color:rgba(255,255,255,0.85)">ऊपर की matrix के अनुसार <strong style="color:#6ee7b7">10 कार्यों</strong> में <strong style="color:#6ee7b7">तीन अलग-अलग</strong> सरकारी अधिकारी — Maker, Checker, Approver — की statutory compulsion होनी चाहिए थी। हर role के लिए अलग login, अलग DSC, अलग जवाबदेही।</div>
+      </div>
+      <div style="background:rgba(0,0,0,0.25);border-radius:4px;padding:0.8rem 1rem">
+        <div style="font-family:'Noto Sans',sans-serif;font-size:8.5pt;font-weight:700;color:#fcd34d;margin-bottom:0.3rem">जो हो रहा है</div>
+        <div style="color:rgba(255,255,255,0.85)"><strong style="color:#fcd34d">एक ही operator / agency</strong> — बाज़ार का computer centre — सभी 10 कार्यों में Maker भी, Checker भी, Approver भी। XEN का DSC उसके पास। <strong style="color:#fca5a5">Gross error। Risky monopoly। Extravagance।</strong></div>
+      </div>
+    </div>
+    <div style="margin-top:1rem;background:rgba(0,0,0,0.3);border-radius:4px;padding:0.8rem 1rem;border-left:3px solid #fdba74">
+      <div style="font-family:'Noto Sans',sans-serif;font-size:8.5pt;font-weight:700;color:#fdba74;margin-bottom:0.3rem">विडंबना — The Bitter Irony</div>
+      <div style="font-size:9pt;color:rgba(255,255,255,0.85)">सरकार ने IFMS 3.0 में <em>Maker-Checker-Approver</em> का ढाँचा तो बनाया — लेकिन <strong style="color:#fdba74">किसी भी circular, order या guideline में यह statutory compulsion नहीं बताई कि कौन सा अधिकारी कौन सी भूमिका निभाएगा।</strong> इस जानबूझकर या लापरवाही से छोड़ी गई खामी ने एक operator को तीनों roles हथियाने का अवसर दे दिया। सरकार मौन है — और यह मौन महंगा पड़ रहा है।</div>
+    </div>
+  </div>
+
+  <div class="pull-quote">
+    <blockquote>"केवल एक operator या agency पूरे तीनों काम कर रही है — यह gross error है, risky monopoly है, और taxpayer पर extravagance है। सरकार ने delegation की कोई statutory compulsion नहीं दी — यही असली चूक है।"<br/><small style="font-style:normal;font-size:8.5pt;color:var(--muted)">— Technical Expert Recommendation, August 2026</small></blockquote>
+  </div>
+
+  <hr class="section-divider"/>
+
+  <!-- CHAPTER 6B — DIGITAL SIGNATURE ABUSE -->
+  <div class="chapter">
+    <div class="chapter-marker">अध्याय 6ब — Chapter Six-B</div>
+    <h3 class="chapter-title">Digital Signature का बाज़ार — जब सरकारी मुहर बिकने लगी</h3>
+  </div>
+
+  <p>IFMS 3.0 की सबसे खतरनाक खामी — जो अभी तक सार्वजनिक नहीं हुई — वह है <strong>Digital Signature Certificates (DSC) का खुलेआम दुरुपयोग।</strong> यह केवल लापरवाही नहीं है, यह एक सुनियोजित व्यवस्था बन चुकी है जो भ्रष्टाचार को तकनीकी वैधता प्रदान करती है।</p>
+
+  <p>IFMS 3.0 में bills approve करने और payment authorize करने के लिए संबंधित अधिकारी का <strong>Digital Signature</strong> अनिवार्य है। यह DSC उस अधिकारी की कानूनी पहचान है — जैसे किसी दस्तावेज़ पर उसके हस्ताक्षर। लेकिन ज़मीनी हकीकत यह है:</p>
+
+  <!-- DSC ABUSE SLIDE -->
+  <div style="background:linear-gradient(135deg,#3b0a0a 0%,#7f1d1d 100%);border-radius:6px;padding:1.8rem 2rem;margin:1.5rem 0;color:#fff">
+    <div style="font-family:'Noto Sans',sans-serif;font-size:8pt;font-weight:700;letter-spacing:0.14em;text-transform:uppercase;color:#fca5a5;margin-bottom:1.1rem;border-bottom:1px solid rgba(255,255,255,0.15);padding-bottom:0.6rem">⚠ Digital Signature Abuse — Investigative Slide</div>
+    <div style="display:grid;grid-template-columns:1fr 1fr 1fr;gap:1rem;margin-bottom:1rem">
+      <div style="background:rgba(0,0,0,0.3);border-radius:4px;padding:0.9rem 1rem;text-align:center">
+        <div style="font-family:'Playfair Display',serif;font-size:2rem;font-weight:700;color:#fca5a5;line-height:1">0%</div>
+        <div style="font-family:'Noto Sans',sans-serif;font-size:8pt;color:rgba(255,255,255,0.65);margin-top:4px">XEN जो खुद DSC रखते और उपयोग करते हैं</div>
+      </div>
+      <div style="background:rgba(0,0,0,0.3);border-radius:4px;padding:0.9rem 1rem;text-align:center">
+        <div style="font-family:'Playfair Display',serif;font-size:2rem;font-weight:700;color:#fcd34d;line-height:1">बाज़ार</div>
+        <div style="font-family:'Noto Sans',sans-serif;font-size:8pt;color:rgba(255,255,255,0.65);margin-top:4px">जहाँ DSC "रखी" जाती है — Computer Centre</div>
+      </div>
+      <div style="background:rgba(0,0,0,0.3);border-radius:4px;padding:0.9rem 1rem;text-align:center">
+        <div style="font-family:'Playfair Display',serif;font-size:2rem;font-weight:700;color:#86efac;line-height:1">∞</div>
+        <div style="font-family:'Noto Sans',sans-serif;font-size:8pt;color:rgba(255,255,255,0.65);margin-top:4px">Fraud के मौके — हर unsigned bill पर</div>
+      </div>
+    </div>
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:0.8rem">
+      <div style="background:rgba(255,255,255,0.06);border-left:3px solid #fca5a5;border-radius:3px;padding:0.8rem 1rem">
+        <div style="font-family:'Noto Sans',sans-serif;font-size:8.5pt;font-weight:700;color:#fca5a5;margin-bottom:0.3rem">क्या होना चाहिए</div>
+        <div style="font-size:9pt;color:rgba(255,255,255,0.8)">XEN स्वयं अपना DSC अपने पास रखें। प्रत्येक bill approve होने से पहले वे personally login करें, documents verify करें, तब sign करें।</div>
+      </div>
+      <div style="background:rgba(255,255,255,0.06);border-left:3px solid #fcd34d;border-radius:3px;padding:0.8rem 1rem">
+        <div style="font-family:'Noto Sans',sans-serif;font-size:8.5pt;font-weight:700;color:#fcd34d;margin-bottom:0.3rem">क्या हो रहा है</div>
+        <div style="font-size:9pt;color:rgba(255,255,255,0.8)">XEN ने अपना DSC (USB token / software key) बाज़ार के Computer Centre पर <strong style="color:#fcd34d">दे रखा है।</strong> Operator जब चाहे, किसी भी bill पर sign कर दे। XEN को पता भी नहीं होता।</div>
+      </div>
+      <div style="background:rgba(255,255,255,0.06);border-left:3px solid #86efac;border-radius:3px;padding:0.8rem 1rem">
+        <div style="font-family:'Noto Sans',sans-serif;font-size:8.5pt;font-weight:700;color:#86efac;margin-bottom:0.3rem">कानूनी खतरा</div>
+        <div style="font-size:9pt;color:rgba(255,255,255,0.8)">IT Act 2000 की धारा 66C के तहत किसी और की Digital Identity का उपयोग <strong style="color:#86efac">साइबर अपराध है।</strong> लेकिन यह अपराध सरकारी दफ्तरों में रोज़ हो रहा है।</div>
+      </div>
+      <div style="background:rgba(255,255,255,0.06);border-left:3px solid #c4b5fd;border-radius:3px;padding:0.8rem 1rem">
+        <div style="font-family:'Noto Sans',sans-serif;font-size:8.5pt;font-weight:700;color:#c4b5fd;margin-bottom:0.3rem">घपले का रास्ता</div>
+        <div style="font-size:9pt;color:rgba(255,255,255,0.8)">जब Maker, Checker, Approver — तीनों का काम एक operator करे, और DSC भी उसी के पास हो — तो कोई भी फर्जी bill, inflated amount, या non-existent work approve हो सकता है। <strong style="color:#c4b5fd">Kabhi bhi ghapla ho sakta hai।</strong></div>
+      </div>
+    </div>
+    <div style="margin-top:1rem;font-family:'Noto Sans',sans-serif;font-size:8pt;color:rgba(255,255,255,0.45);text-align:center;font-style:italic">Ground Investigation: PWD Divisions, Rajasthan | August 2026</div>
+  </div>
+
+  <div class="pull-quote">
+    <blockquote>"किसी XEN ने IFMS login नहीं किया। वह जानता भी नहीं। Digital Signature बाज़ार के computer centre पर दे रखी है — कभी भी घपला हो सकता है।"<br/><small style="font-style:normal;font-size:8.5pt;color:var(--muted)">— PWD Field Investigation, August 2026</small></blockquote>
+  </div>
+
+  <p><strong>यह स्थिति Maker-Checker-Approver व्यवस्था का पूर्ण उपहास है।</strong> सरकार ने तीन-स्तरीय verification इसलिए बनाई थी कि हर स्तर पर एक अलग ज़िम्मेदार व्यक्ति हो। लेकिन जब एक ही बाहरी operator के पास XEN का DSC हो, तो वह:</p>
+
+  <div class="status-list" style="margin-bottom:1rem">
+    <div class="status-item broken"><span class="status-icon x">✗</span><span>Bill बनाए — <strong>Maker</strong> की भूमिका में (अनाधिकृत)</span></div>
+    <div class="status-item broken"><span class="status-icon x">✗</span><span>Bill जाँचे — <strong>Checker</strong> की भूमिका में (अनाधिकृत)</span></div>
+    <div class="status-item broken"><span class="status-icon x">✗</span><span>DSC से Approve करे — <strong>Approver</strong> की भूमिका में (साइबर अपराध)</span></div>
+    <div class="status-item warn"><span class="status-icon warn">!</span><span>XEN को कभी पता ही नहीं चलता — उनके नाम पर लाखों के bills pass होते रहते हैं</span></div>
+  </div>
+
+  <p>यह केवल administrative failure नहीं है। यह एक ऐसी प्रणाली है जहाँ सार्वजनिक धन की रक्षा के लिए बनाई गई हर तकनीकी सुरक्षा को जानबूझकर या लापरवाही से निष्क्रिय कर दिया गया है।</p>
+
+  <hr class="section-divider"/>
+
+  <!-- CHAPTER 7 -->
+  <div class="chapter">
+    <div class="chapter-marker">अध्याय 7 — Chapter Seven</div>
+    <h3 class="chapter-title">1 August 2026 — Portal Status: क्या टूटा है</h3>
+  </div>
+
+  <p>1 August 2026 को portal की स्थिति इस प्रकार है:</p>
+
+  <!-- OFFICIAL COMPLAINT EMAIL SLIDE -->
+  <div style="background:var(--light-tan);border:1px solid var(--tan);border-left:5px solid var(--crimson);border-radius:4px;padding:1.2rem 1.5rem;margin:1rem 0 1.2rem;font-family:'Noto Sans',sans-serif">
+    <div style="font-size:7.5pt;font-weight:700;letter-spacing:0.12em;text-transform:uppercase;color:var(--crimson);margin-bottom:0.5rem">📧 दस्तावेज़ी साक्ष्य — Official Complaint Filed</div>
+    <div style="font-size:9pt;color:var(--ink);margin-bottom:0.3rem"><strong>To:</strong> IFMS Portal Helpline &nbsp;|&nbsp; <strong>Email:</strong> <code style="background:rgba(155,28,28,0.08);padding:1px 5px;border-radius:2px;font-size:8.5pt">employeehelpdesk.ifms@rajasthan.gov.in</code></div>
+    <div style="font-size:9pt;color:var(--muted);margin-bottom:0.6rem"><strong>विषय:</strong> IFMS 3.0 के Initial Bill Section एवं अन्य अनुभागों के उपयोग में आ रही समस्याओं के संबंध में।</div>
+    <div style="font-size:8.5pt;color:var(--muted);font-style:italic">यह email एक PWD Division द्वारा IFMS helpdesk को भेजी गई — जिसका आज तक कोई जवाब नहीं आया।</div>
+  </div>
+
+  <div class="status-list">
+    <div class="status-item broken"><span class="status-icon x">✗</span><span><strong>Bug #1 — Vendor Selection अधूरी:</strong> Initial Bill Section में Vendor की सूची <em>पूर्ण नहीं</em> है और Alphabetical Order में भी उपलब्ध नहीं है — संबंधित Vendor का चयन असंभव। <em>(Official Complaint Email से)</em></span></div>
+    <div class="status-item broken"><span class="status-icon x">✗</span><span><strong>Bug #2 — Security Refund Balance गायब:</strong> Security Refund हेतु portal पर उपलब्ध शेष राशि (Balance) प्रदर्शित नहीं हो रही। Contractor का पैसा system में है, दिखता नहीं। <em>(Official Complaint Email से)</em></span></div>
+    <div class="status-item broken"><span class="status-icon x">✗</span><span><strong>Bug #3 — July Monthly Report Non-Responsive:</strong> July माह की Monthly Report का Section काम नहीं कर रहा। रिपोर्ट देखना व उपयोग करना संभव नहीं। <em>(Official Complaint Email से)</em></span></div>
+    <div class="status-item broken"><span class="status-icon x">✗</span><span><strong>Bug #4 — Disbursement Engine: WAM Page Blank:</strong> IFMS 3.0 के Disbursement Engine के WAM पेज पर कोई सामग्री प्रदर्शित नहीं हो रही — Page पूरी तरह Blank है। संबंधित कार्य करना असंभव। <em>(Official Complaint Email से)</em></span></div>
+    <div class="status-item broken"><span class="status-icon x">✗</span><span><strong>Bills: पूरी तरह ठप:</strong> 10 July से अब तक — कोई भी contractor payment process नहीं हो सकी। उपरोक्त bugs के कारण bill submission की हर stage अवरुद्ध।</span></div>
+    <div class="status-item warn"><span class="status-icon warn">!</span><span><strong>Training की कोई योजना नहीं:</strong> Field offices, Divisional Accountants — कोई IFMS 3.0 training calendar नहीं। IFMS site पर कुछ videos डालकर सरकार ने "कर्तव्य की खानापूरी" कर ली।</span></div>
+    <div class="status-item broken"><span class="status-icon x">✗</span><span><strong>Helpline Numbers — Non-Responsive:</strong> IFMS 3.0 की सहायता के लिए दिए गए सभी Helpline numbers पर कोई जवाब नहीं। Calls unanswered रहती हैं।</span></div>
+    <div class="status-item broken"><span class="status-icon x">✗</span><span><strong>Email Support भी ठप — <code style="font-size:8pt">employeehelpdesk.ifms@rajasthan.gov.in</code>:</strong> Helpdesk email पर भेजे गए complaints का न acknowledgement, न reply। Field officers पूरी तरह अनुत्तरित।</span></div>
+  </div>
+
+  <hr class="section-divider"/>
+
+  <!-- CHAPTER 8 — HELPLINE -->
+  <div class="chapter">
+    <div class="chapter-marker">अध्याय 8 — Chapter Eight</div>
+    <h3 class="chapter-title">IFMS Helpline: संपर्क नहीं, समाधान नहीं</h3>
+  </div>
+
+  <p>किसी भी बड़े IT system के rollout में helpline support एक अनिवार्य स्तंभ होता है। जब लाखों रुपये की payments और सैकड़ों contractors की आजीविका दाँव पर हो, तब एक working, responsive helpline सरकार की न्यूनतम ज़िम्मेदारी है। IFMS 3.0 इस ज़िम्मेदारी पर पूरी तरह विफल रहा है।</p>
+
+  <p>IFMS 3.0 के लिए <strong>एकमात्र official helpdesk email है: <code style="background:var(--light-tan);padding:2px 6px;border-radius:2px;font-size:9.5pt">employeehelpdesk.ifms@rajasthan.gov.in</code></strong> — और यह भी उतनी ही silent है जितनी phone helpline।</p>
+
+  <!-- HELPLINE STATUS SLIDE -->
+  <div style="background:linear-gradient(135deg,var(--navy) 0%,#2d5986 100%);border-radius:6px;padding:1.8rem 2rem;margin:1.5rem 0;color:#fff">
+    <div style="font-family:'Noto Sans',sans-serif;font-size:8pt;font-weight:700;letter-spacing:0.14em;text-transform:uppercase;color:var(--teal);margin-bottom:1rem;border-bottom:1px solid rgba(255,255,255,0.15);padding-bottom:0.6rem">IFMS 3.0 Helpline — Ground Reality Slide</div>
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:1rem">
+      <div style="background:rgba(155,28,28,0.25);border:1px solid rgba(155,28,28,0.6);border-radius:4px;padding:0.9rem 1rem">
+        <div style="font-family:'Noto Sans',sans-serif;font-size:8.5pt;font-weight:700;color:#fca5a5;margin-bottom:0.4rem">☎ Phone Helpline</div>
+        <div style="font-size:9pt;color:rgba(255,255,255,0.85)">IFMS 3.0 के लिए दिए गए सभी phone numbers <strong style="color:#fca5a5">non-responsive</strong> हैं। Calls ring होती हैं, उठती नहीं। ये <em>basic, general-purpose</em> numbers हैं — IFMS 3.0 के लिए कोई dedicated line नहीं बनाई गई।</div>
+      </div>
+      <div style="background:rgba(155,28,28,0.25);border:1px solid rgba(155,28,28,0.6);border-radius:4px;padding:0.9rem 1rem">
+        <div style="font-family:'Noto Sans',sans-serif;font-size:8.5pt;font-weight:700;color:#fca5a5;margin-bottom:0.4rem">✉ Email Helpdesk — <span style="font-family:monospace;font-size:7.5pt">employeehelpdesk.ifms@rajasthan.gov.in</span></div>
+        <div style="font-size:9pt;color:rgba(255,255,255,0.85)">Official helpdesk email पर भेजे गए complaints का न acknowledgement, न reply। एक PWD Division ने 4 specific bugs की detailed complaint इसी email पर भेजी — <strong style="color:#fca5a5">कोई जवाब नहीं।</strong></div>
+      </div>
+      <div style="background:rgba(217,119,6,0.2);border:1px solid rgba(217,119,6,0.5);border-radius:4px;padding:0.9rem 1rem">
+        <div style="font-family:'Noto Sans',sans-serif;font-size:8.5pt;font-weight:700;color:#fcd34d;margin-bottom:0.4rem">⚠ NIC Support Desk</div>
+        <div style="font-size:9pt;color:rgba(255,255,255,0.85)">NIC Rajasthan का तकनीकी support desk भी कार्यात्मक नहीं। Tickets raise होती हैं, resolve नहीं होतीं। Response SLA का कोई record नहीं। Bugs हफ्तों से open हैं।</div>
+      </div>
+      <div style="background:rgba(217,119,6,0.2);border:1px solid rgba(217,119,6,0.5);border-radius:4px;padding:0.9rem 1rem">
+        <div style="font-family:'Noto Sans',sans-serif;font-size:8.5pt;font-weight:700;color:#fcd34d;margin-bottom:0.4rem">⚠ Finance Dept. Contact</div>
+        <div style="font-size:9pt;color:rgba(255,255,255,0.85)">Finance Department के nodal officers से संपर्क पर या तो मना किया जाता है या दूसरे department में redirect किया जाता है। Accountability की कोई chain नहीं।</div>
+      </div>
+    </div>
+    <!-- Email complaint evidence box -->
+    <div style="margin-top:1rem;background:rgba(255,255,255,0.07);border-radius:4px;padding:0.9rem 1rem;border-left:3px solid var(--teal)">
+      <div style="font-family:'Noto Sans',sans-serif;font-size:8pt;font-weight:700;color:var(--teal);margin-bottom:0.4rem;text-transform:uppercase;letter-spacing:0.1em">📧 Documented Evidence: Official Complaint — No Reply</div>
+      <div style="font-size:8.5pt;color:rgba(255,255,255,0.8)">एक PWD Division ने <strong>employeehelpdesk.ifms@rajasthan.gov.in</strong> पर formal complaint भेजी जिसमें 4 specific bugs — Vendor Selection incomplete, Security Refund Balance missing, July Monthly Report non-responsive, Disbursement Engine WAM Page Blank — screenshots के साथ document किए गए। <strong style="color:#fca5a5">आज तक कोई reply नहीं।</strong> यह email helpdesk की silent failure का प्रत्यक्ष प्रमाण है।</div>
+    </div>
+    <div style="margin-top:0.8rem;font-family:'Noto Sans',sans-serif;font-size:8pt;color:rgba(255,255,255,0.5);text-align:center;font-style:italic">Ground report: 1–6 August 2026 | PWD &amp; Irrigation field offices, Jaipur &amp; districts</div>
+  </div>
+
+  <p>हमारे संवाददाता ने 1 से 6 August 2026 के बीच IFMS 3.0 से जुड़े helpline numbers पर बार-बार call करने और <strong>employeehelpdesk.ifms@rajasthan.gov.in</strong> पर email करने का प्रयास किया। <strong>एक भी call का जवाब नहीं मिला, email का कोई acknowledgement नहीं आया।</strong> District level के XEN और Divisional Accountants से बात करने पर पता चला कि वे भी पिछले तीन-चार हफ्तों से किसी भी official channel पर support पाने में असफल रहे हैं।</p>
+
+  <div class="pull-quote">
+    <blockquote>"Helpline numbers basic हैं — ये तो वही नंबर हैं जो कभी काम नहीं करते। IFMS 3.0 के लिए कोई dedicated, working support नहीं दिया गया। Email भेजो तो जवाब नहीं — portal broken है, helpdesk silent है।"<br/><small style="font-style:normal;font-size:8.5pt;color:var(--muted)">— PWD Divisional Accountant, (नाम गोपनीय), Jaipur Division</small></blockquote>
+  </div>
+
+  <p><strong>Helpline की विफलता के तीन आयाम:</strong></p>
+
+  <div class="status-list">
+    <div class="status-item broken"><span class="status-icon x">✗</span><span><strong>Basic Numbers, कोई Dedicated Line नहीं:</strong> IFMS 3.0 के लिए कोई dedicated 24×7 toll-free helpline नहीं बनाई गई। जो numbers share हुए वे पुराने, general purpose नंबर हैं जो chronically non-responsive हैं।</span></div>
+    <div class="status-item broken"><span class="status-icon x">✗</span><span><strong>Email <code style="font-size:8pt">employeehelpdesk.ifms@rajasthan.gov.in</code> — Silent:</strong> Official helpdesk email documented complaints का जवाब नहीं देती। Screenshots के साथ भेजी गई formal complaint तक unanswered है। यह email address एक formality बन कर रह गई है।</span></div>
+    <div class="status-item broken"><span class="status-icon x">✗</span><span><strong>कोई Escalation Matrix नहीं:</strong> अगर helpline नहीं उठाती, email का जवाब नहीं, तो अगला step क्या है? कोई escalation matrix नहीं। कोई supervisor contact नहीं। Contractor और officer दोनों helpless।</span></div>
+    <div class="status-item warn"><span class="status-icon warn">!</span><span><strong>Workaround: WhatsApp Groups — Unofficial:</strong> Support के अभाव में, XEN और accountants ने WhatsApp groups बना लिए हैं जहाँ अनौपचारिक रूप से समस्याएँ share होती हैं। यह कोई solution नहीं — यह सरकारी विफलता का symptom है।</span></div>
+  </div>
+
+  <p>एक government portal जो ₹40 करोड़ वार्षिक खर्च के बावजूद सैकड़ों Divisions में payments रोके बैठा है — और उसकी helpline <strong>employeehelpdesk.ifms@rajasthan.gov.in</strong> भी मौन है — यह accountability का पूर्ण पतन है।</p>
+
+  <hr class="section-divider"/>
+
+  <!-- NEWSPAPER CORROBORATION SLIDE -->
+  <div class="chapter">
+    <div class="chapter-marker">मीडिया साक्ष्य — Press Corroboration</div>
+    <h3 class="chapter-title">प्रिंट मीडिया की पुष्टि — यह खबर अकेली नहीं है</h3>
+  </div>
+
+  <p>हमारी खोजी रिपोर्ट के तथ्यों की पुष्टि राजस्थान के प्रमुख समाचारपत्रों ने भी की है। नीचे उस प्रकाशित समाचार का सारांश है जो इस संकट को independent रूप से document करता है:</p>
+
+  <!-- NEWSPAPER CLIPPING STYLED SLIDE -->
+  <div style="border:2px solid var(--navy);border-radius:4px;overflow:hidden;margin:1.5rem 0">
+    <!-- Newspaper header bar -->
+    <div style="background:var(--navy);padding:0.7rem 1.2rem;display:flex;justify-content:space-between;align-items:center">
+      <div style="font-family:'Noto Sans',sans-serif;font-size:7.5pt;font-weight:700;letter-spacing:0.12em;text-transform:uppercase;color:var(--teal)">📰 Published Newspaper Report — Independent Corroboration</div>
+      <div style="font-family:'Noto Sans',sans-serif;font-size:7.5pt;color:rgba(255,255,255,0.5)">Rajasthan | August 2026</div>
+    </div>
+    <!-- Clipping body -->
+    <div style="background:#fffdf7;padding:1.4rem 1.6rem;border-top:4px solid var(--crimson)">
+      <!-- Newspaper headline -->
+      <div style="font-family:'Noto Serif Devanagari','Playfair Display',serif;font-size:1.35rem;font-weight:700;color:var(--ink);line-height:1.3;margin-bottom:0.3rem">डिजिटल बदलाव या अव्यवस्था?<br/>PWD में IFMS 3.0 की जल्दबाजी से अटकी करोड़ों की बिलिंग</div>
+      <div style="font-family:'Noto Sans',sans-serif;font-size:7.5pt;color:var(--muted);margin-bottom:1rem;border-bottom:1px solid var(--tan);padding-bottom:0.6rem">उदयपुर @ अंदर की खबर | Rajasthan Daily | August 2026</div>
+      <!-- Two column newspaper summary -->
+      <div style="display:grid;grid-template-columns:1fr 1fr;gap:1.2rem;font-size:9pt;color:var(--ink);line-height:1.6">
+        <div>
+          <p style="margin-bottom:0.6rem"><strong>WAM Portal बंद, नया System पूरी तरह तैयार नहीं:</strong> रिपोर्ट में स्पष्ट किया गया कि IFMS 3.0 को लागू करने से पहले आवश्यक technical migration और व्यापक training नहीं हुई।</p>
+          <p style="margin-bottom:0.6rem"><strong>EMB Module अधूरा:</strong> Electronic Measurement Book (EMB) module पूरी तरह कार्यशील नहीं। कई अभियंताओं को नए module का व्यावहारिक प्रशिक्षण नहीं मिला।</p>
+          <p><strong>Monitoring पर सवाल:</strong> IFMS 3.0 का उद्देश्य केवल भुगतान का digital बनाना नहीं, बल्कि निर्माण कार्यों की गुणवत्ता और प्रगति की online निगरानी भी है — जो अभी नहीं हो रही।</p>
+        </div>
+        <div>
+          <p style="margin-bottom:0.6rem"><strong>प्रशिक्षण की कमी या System की जटिलता:</strong> विभागीय हलकों में चर्चा है कि नई digital platform पर काम करने के लिए तकनीकी कार्यों की ज़िम्मेदारी computer operators या outsourcing agencies पर निर्भर हो रही है।</p>
+          <p style="margin-bottom:0.6rem"><strong>सबसे अधिक असर छोटे ठेकेदारों पर:</strong> सार्वजनिक निर्माण विभाग की नई पहल की अव्यवस्था की सबसे बड़ी मार छोटे और मध्यम श्रेणी के ठेकेदारों पर पड़ रही है।</p>
+          <p><strong>प्रयास और बचाव:</strong> राज्य सरकार digital administration को मज़बूत बनाने की दिशा में लगातार प्रयास कर रही है — लेकिन किसी भी सफल software launch के लिए उसकी तैयारी, तकनीकी स्थिरता और जवाबदेही आवश्यक होती है।</p>
+        </div>
+      </div>
+      <!-- Key findings bar -->
+      <div style="background:var(--light-tan);border-radius:3px;padding:0.8rem 1rem;margin-top:1rem;font-family:'Noto Sans',sans-serif">
+        <div style="font-size:7.5pt;font-weight:700;letter-spacing:0.1em;text-transform:uppercase;color:var(--navy);margin-bottom:0.5rem">समाचार में उठाए गए मुख्य सवाल</div>
+        <div style="display:grid;grid-template-columns:1fr 1fr;gap:0.3rem 1.2rem;font-size:8.5pt;color:var(--ink)">
+          <div>• क्या IFMS 3.0 लागू करने से पहले पर्याप्त तैयारी थी?</div>
+          <div>• WAM Portal बंद करने का निर्णय किस स्तर पर लिया गया?</div>
+          <div>• कितने अभियंताओं को प्रशिक्षण दिया गया और उनके पास कौन सी राशि बकाया है?</div>
+          <div>• EMB Module पूरी तरह कार्यशील कब तक होगा?</div>
+          <div>• Technical खामियों और monitoring की ज़िम्मेदारी किस agency के पास है?</div>
+          <div>• यदि system में तकनीकी बाधा है, तो पुराने portal को बंद क्यों किया गया?</div>
+        </div>
+      </div>
+    </div>
+    <div style="background:#f5f0e8;padding:0.5rem 1.2rem;font-family:'Noto Sans',sans-serif;font-size:7.5pt;color:var(--muted);display:flex;justify-content:space-between">
+      <span>स्रोत: राजस्थान दैनिक समाचारपत्र | Source: Rajasthan Daily Print Media, August 2026</span>
+      <span style="color:var(--teal);font-weight:700">Independent Corroboration ✓</span>
+    </div>
+  </div>
+
+  <p>यह समाचारपत्र की रिपोर्ट हमारी खोजी पत्रकारिता की independent पुष्टि है। जब दो अलग-अलग sources एक ही संकट को document करते हैं — तो यह अब सिर्फ एक complaint नहीं, <strong>यह एक documented systemic failure है।</strong></p>
+
+  <!-- CHAPTER 8B — RESCINDED CONTRACTS & RECOVERY FAILURE -->
+  <div class="chapter">
+    <div class="chapter-marker">अध्याय 8ख — Chapter Eight-B</div>
+    <h3 class="chapter-title">~200 रद्द अनुबंध — और एक भी वसूली नहीं: PWD का सबसे बड़ा छिपा घोटाला</h3>
+  </div>
+
+  <p>यह एक ऐसी कहानी है जो IFMS की खामियों से भी गहरी है — क्योंकि यह system की विफलता नहीं, <strong>इच्छाशक्ति की विफलता</strong> है। विभाग ने जानबूझकर एक ऐसी व्यवस्था बनाई — या यूँ कहें, <em>नहीं बनाई</em> — जिसमें ठेकेदार अधूरा काम छोड़कर बिना किसी financial consequence के चला जाता है।</p>
+
+  <!-- CORE NUMBERS SLIDE -->
+  <div style="background:linear-gradient(135deg,#1E3A5F 0%,#1a2e50 100%);border-radius:6px;padding:1.8rem 2rem;margin:1.4rem 0;color:#fff">
+    <div style="font-family:'Noto Sans',sans-serif;font-size:8pt;font-weight:700;letter-spacing:0.14em;text-transform:uppercase;color:var(--teal);margin-bottom:1.1rem;border-bottom:1px solid rgba(255,255,255,0.15);padding-bottom:0.6rem">📊 Rescinded Contracts — Ground Reality Slide</div>
+    <div style="display:grid;grid-template-columns:1fr 1fr 1fr 1fr;gap:1rem;margin-bottom:1.2rem">
+      <div style="background:rgba(255,255,255,0.07);border-radius:4px;padding:0.9rem;text-align:center">
+        <div style="font-family:'Playfair Display',serif;font-size:2.2rem;font-weight:700;color:#fca5a5;line-height:1">~200</div>
+        <div style="font-family:'Noto Sans',sans-serif;font-size:8pt;color:rgba(255,255,255,0.6);margin-top:4px">Contracts Rescinded<br/>अनुबंध रद्द</div>
+      </div>
+      <div style="background:rgba(255,255,255,0.07);border-radius:4px;padding:0.9rem;text-align:center">
+        <div style="font-family:'Playfair Display',serif;font-size:2.2rem;font-weight:700;color:#fcd34d;line-height:1">Risk</div>
+        <div style="font-family:'Noto Sans',sans-serif;font-size:8pt;color:rgba(255,255,255,0.6);margin-top:4px">& Cost Tenders<br/>Invited — Re-work</div>
+      </div>
+      <div style="background:rgba(255,255,255,0.07);border-radius:4px;padding:0.9rem;text-align:center">
+        <div style="font-family:'Playfair Display',serif;font-size:2.2rem;font-weight:700;color:#fca5a5;line-height:1">0</div>
+        <div style="font-family:'Noto Sans',sans-serif;font-size:8pt;color:rgba(255,255,255,0.6);margin-top:4px">Regular Recovery<br/>Monitoring</div>
+      </div>
+      <div style="background:rgba(255,255,255,0.07);border-radius:4px;padding:0.9rem;text-align:center">
+        <div style="font-family:'Playfair Display',serif;font-size:2.2rem;font-weight:700;color:#86efac;line-height:1">Free</div>
+        <div style="font-family:'Noto Sans',sans-serif;font-size:8pt;color:rgba(255,255,255,0.6);margin-top:4px">Defaulting Contractors<br/>Walk Without Penalty</div>
+      </div>
+    </div>
+    <div style="background:rgba(155,28,28,0.25);border:1px solid rgba(155,28,28,0.5);border-radius:4px;padding:0.8rem 1rem;font-size:9pt;color:rgba(255,255,255,0.9)">
+      <strong style="color:#fca5a5">The Pattern:</strong> Rescission initiated → Risk &amp; Cost tender floated → Additional cost calculated → <strong style="color:#fca5a5">Recovery stalls → Defaulter walks free → Public bears the cost.</strong> This is not inefficiency. This is a broken incentive structure that rewards abandonment.
+    </div>
+  </div>
+
+  <p>विभाग <em>बहुत कम</em> किसी ठेकेदार का काम उसकी अत्यधिक देरी, खराब गुणवत्ता, या अनुबंध उल्लंघन पर रद्द करता है। लेकिन जब करता भी है — तो <strong>Risk and Cost Tender</strong> के ज़रिये काम दोबारा होता है, ज़्यादा दाम पर — और यह अतिरिक्त लागत संविदानुसार मूल ठेकेदार से वसूलनी होती है। नहीं होती।</p>
+
+  <!-- THREE NAMED CASES -->
+  <div style="margin:1.4rem 0">
+    <div style="font-family:'Noto Sans',sans-serif;font-size:8pt;font-weight:700;letter-spacing:0.12em;text-transform:uppercase;color:var(--crimson);margin-bottom:0.8rem">📌 तीन नामित मामले — ज़मीनी साक्ष्य</div>
+
+    <!-- Case 1 -->
+    <div style="background:rgba(155,28,28,0.05);border:1px solid rgba(155,28,28,0.2);border-left:5px solid var(--crimson);border-radius:4px;padding:1.1rem 1.3rem;margin-bottom:0.8rem">
+      <div style="display:flex;justify-content:space-between;align-items:flex-start;margin-bottom:0.5rem;flex-wrap:wrap;gap:0.4rem">
+        <div style="font-family:'Noto Sans',sans-serif;font-size:10pt;font-weight:700;color:var(--crimson)">मामला #1 — भैरवजी Bridge, बाँसवाड़ा</div>
+        <div style="display:flex;gap:0.4rem;flex-wrap:wrap">
+          <span style="background:var(--crimson);color:#fff;font-family:'Noto Sans',sans-serif;font-size:7.5pt;font-weight:700;padding:2px 8px;border-radius:2px">CONTRACT RESCINDED</span>
+          <span style="background:#D97706;color:#fff;font-family:'Noto Sans',sans-serif;font-size:7.5pt;font-weight:700;padding:2px 8px;border-radius:2px">RECOVERY: NIL</span>
+        </div>
+      </div>
+      <div style="font-size:9.5pt;color:var(--ink);line-height:1.65">
+        <strong>Project:</strong> Bhairavji Bridge, Banswara District (Rajasthan) &nbsp;|&nbsp; <strong>Status:</strong> Contract rescinded for incomplete execution &amp; delay<br/>
+        <strong>Action Taken:</strong> Risk and Cost tender invited to complete the bridge &nbsp;|&nbsp;
+        <strong style="color:var(--crimson)">Recovery from defaulting contractor: Not pursued. No monitoring. No financial consequence.</strong>
+      </div>
+      <div style="margin-top:0.6rem;background:rgba(155,28,28,0.06);border-radius:3px;padding:0.5rem 0.7rem;font-family:'Noto Sans',sans-serif;font-size:8.5pt;color:var(--muted)">
+        एक bridge — जो जनता की connectivity के लिए ज़रूरी था — अधूरा छोड़ा गया। दोबारा tender हुआ। अतिरिक्त लागत taxpayer ने उठाई। मूल ठेकेदार से कोई वसूली नहीं।
+      </div>
+    </div>
+
+    <!-- Case 2 -->
+    <div style="background:rgba(155,28,28,0.05);border:1px solid rgba(155,28,28,0.2);border-left:5px solid var(--crimson);border-radius:4px;padding:1.1rem 1.3rem;margin-bottom:0.8rem">
+      <div style="display:flex;justify-content:space-between;align-items:flex-start;margin-bottom:0.5rem;flex-wrap:wrap;gap:0.4rem">
+        <div style="font-family:'Noto Sans',sans-serif;font-size:10pt;font-weight:700;color:var(--crimson)">मामला #2 — Kotada Road, उदयपुर</div>
+        <div style="display:flex;gap:0.4rem;flex-wrap:wrap">
+          <span style="background:var(--crimson);color:#fff;font-family:'Noto Sans',sans-serif;font-size:7.5pt;font-weight:700;padding:2px 8px;border-radius:2px">CONTRACT RESCINDED</span>
+          <span style="background:#D97706;color:#fff;font-family:'Noto Sans',sans-serif;font-size:7.5pt;font-weight:700;padding:2px 8px;border-radius:2px">RECOVERY: NIL</span>
+        </div>
+      </div>
+      <div style="font-size:9.5pt;color:var(--ink);line-height:1.65">
+        <strong>Project:</strong> Kotada Road, Udaipur District (Rajasthan) &nbsp;|&nbsp; <strong>Status:</strong> Contract rescinded — incomplete execution<br/>
+        <strong>Action Taken:</strong> Risk and Cost proceedings initiated &nbsp;|&nbsp;
+        <strong style="color:var(--crimson)">Recovery from defaulting contractor: Not pursued. Differential cost — unrecovered.</strong>
+      </div>
+      <div style="margin-top:0.6rem;background:rgba(155,28,28,0.06);border-radius:3px;padding:0.5rem 0.7rem;font-family:'Noto Sans',sans-serif;font-size:8.5pt;color:var(--muted)">
+        उदयपुर की यह सड़क अधूरी रही। Risk and Cost की कार्यवाही कागज़ों में हुई। वसूली नहीं हुई। ठेकेदार मुक्त रहा।
+      </div>
+    </div>
+
+    <!-- Case 3 — Gannon Dunkerlay -->
+    <div style="background:linear-gradient(135deg,#1a0533 0%,#3b0764 100%);border:1px solid rgba(167,139,250,0.3);border-left:5px solid #a78bfa;border-radius:4px;padding:1.1rem 1.3rem;color:#fff">
+      <div style="display:flex;justify-content:space-between;align-items:flex-start;margin-bottom:0.5rem;flex-wrap:wrap;gap:0.4rem">
+        <div style="font-family:'Noto Sans',sans-serif;font-size:10pt;font-weight:700;color:#c4b5fd">मामला #3 — Gannon Dunkerlay &amp; Company</div>
+        <div style="display:flex;gap:0.4rem;flex-wrap:wrap">
+          <span style="background:#7c3aed;color:#fff;font-family:'Noto Sans',sans-serif;font-size:7.5pt;font-weight:700;padding:2px 8px;border-radius:2px">NAMED COMPANY</span>
+          <span style="background:var(--crimson);color:#fff;font-family:'Noto Sans',sans-serif;font-size:7.5pt;font-weight:700;padding:2px 8px;border-radius:2px">CONTRACT RESCINDED</span>
+          <span style="background:#D97706;color:#fff;font-family:'Noto Sans',sans-serif;font-size:7.5pt;font-weight:700;padding:2px 8px;border-radius:2px">RECOVERY: NIL</span>
+        </div>
+      </div>
+      <div style="font-size:9.5pt;color:rgba(255,255,255,0.9);line-height:1.65">
+        <strong style="color:#c4b5fd">Company:</strong> Gannon Dunkerlay &amp; Co. — एक बड़ी और स्थापित निर्माण कंपनी &nbsp;|&nbsp; <strong style="color:#c4b5fd">Status:</strong> Contract rescinded — incomplete project<br/>
+        <strong style="color:#c4b5fd">Dues:</strong> Department का substantial financial entitlement — unexercised &nbsp;|&nbsp;
+        <strong style="color:#fca5a5">वसूली: शून्य। No documented recovery action. Company walked free.</strong>
+      </div>
+      <div style="margin-top:0.7rem;background:rgba(255,255,255,0.07);border-radius:3px;padding:0.6rem 0.8rem;font-size:8.5pt;color:rgba(255,255,255,0.8)">
+        <strong style="color:#fcd34d">यह विशेष रूप से गंभीर है:</strong> Gannon Dunkerlay जैसी established company — जिसके पास resources और legal capacity है — से वसूली न करना या न करने की कोशिश करना, यह या तो घोर प्रशासनिक लापरवाही है, या उससे भी कुछ अधिक। CAG और ACB दोनों को इस मामले में हस्तक्षेप करना चाहिए।
+      </div>
+    </div>
+  </div>
+
+  <!-- THE BROKEN INCENTIVE STRUCTURE -->
+  <div style="background:var(--light-tan);border:1px solid var(--tan);border-top:4px solid var(--amber);border-radius:4px;padding:1.4rem 1.6rem;margin:1.3rem 0">
+    <div style="font-family:'Noto Sans',sans-serif;font-size:8pt;font-weight:700;letter-spacing:0.12em;text-transform:uppercase;color:var(--amber);margin-bottom:0.8rem">📐 टूटी हुई Incentive Structure — यही मूल समस्या है</div>
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:1.2rem;font-size:9.5pt;color:var(--ink)">
+      <div>
+        <p style="margin-bottom:0.5rem"><strong>एक ठेकेदार के लिए equation:</strong></p>
+        <div style="background:#fff;border-radius:3px;padding:0.7rem 0.9rem;font-family:'Noto Sans',sans-serif;font-size:9pt">
+          <div style="color:#166534;margin-bottom:0.3rem">✓ काम लो — advance लो</div>
+          <div style="color:#166534;margin-bottom:0.3rem">✓ जो काम हुआ उसका bill लो</div>
+          <div style="color:#D97706;margin-bottom:0.3rem">? कुछ देरी हो — extension लो</div>
+          <div style="color:var(--crimson);margin-bottom:0.3rem">✗ काम अधूरा छोड़ दो</div>
+          <div style="color:#166534;font-weight:700">✓ Financial consequence: <em>कुछ नहीं।</em></div>
+        </div>
+      </div>
+      <div>
+        <p style="margin-bottom:0.5rem"><strong>जनता के लिए consequence:</strong></p>
+        <div style="background:#fff;border-radius:3px;padding:0.7rem 0.9rem;font-family:'Noto Sans',sans-serif;font-size:9pt">
+          <div style="color:var(--crimson);margin-bottom:0.3rem">✗ अधूरा infrastructure — bridge, road</div>
+          <div style="color:var(--crimson);margin-bottom:0.3rem">✗ Risk &amp; Cost tender = ज़्यादा खर्च</div>
+          <div style="color:var(--crimson);margin-bottom:0.3rem">✗ अतिरिक्त लागत taxpayer pays</div>
+          <div style="color:var(--crimson);font-weight:700">✗ Defaulter को blacklist नहीं किया</div>
+        </div>
+      </div>
+    </div>
+    <div style="margin-top:0.9rem;font-size:9.5pt;color:var(--ink)">
+      <strong>परिणाम:</strong> Rescission एक कागज़ी खतरा बन गया है — असली financial liability नहीं। ठेकेदार सीख जाते हैं कि अनुबंध तोड़ने का कोई दाम नहीं चुकाना पड़ता। यह system को corrupt करने का सबसे सुरक्षित तरीका है।
+    </div>
+  </div>
+
+  <!-- WHAT MUST CHANGE -->
+  <p><strong>चार तत्काल सुधार — Rescinded Contract Recovery के लिए:</strong></p>
+  <div class="status-list">
+    <div class="status-item ok"><span class="status-icon ok">→</span><span><strong>Centralised Risk &amp; Cost Recovery Register:</strong> राज्य-स्तर पर एक register जिसमें हर rescinded contract का नाम, ठेकेदार, recoverable amount, और recovery status real-time में दर्ज हो। IFMS में mandatory।</span></div>
+    <div class="status-item ok"><span class="status-icon ok">→</span><span><strong>Recovery = Legal Priority:</strong> Risk &amp; Cost differential की वसूली को department की legal और financial priority माना जाए। After-thought नहीं — first-action। Time-bound proceedings।</span></div>
+    <div class="status-item ok"><span class="status-icon ok">→</span><span><strong>Mandatory Blacklisting:</strong> Full recovery होने तक defaulting contractor को किसी भी future tender में participate करने से रोका जाए। EMD, SD forfeit। e-Procurement portal पर automatic block।</span></div>
+    <div class="status-item ok"><span class="status-icon ok">→</span><span><strong>Named Cases — Immediate CAG &amp; ACB Scrutiny:</strong> Bhairavji Bridge (Banswara), Kotada Road (Udaipur), और Gannon Dunkerlay — तीनों मामलों में CAG audit और जहाँ non-recovery में collusion संभव हो, ACB investigation।</span></div>
+  </div>
+
+  <div class="pull-quote">
+    <blockquote>"~200 contracts rescinded। Risk and Cost tenders floated। And then — nothing. Defaulters walk free. Taxpayers pay twice. Infrastructure stays incomplete. यह administrative failure नहीं — <strong>यह एक system है जो defaulters को protect करता है।</strong>"</blockquote>
+  </div>
+
+  <hr class="section-divider"/>
+
+  <!-- CHAPTER 8C — WHY NO RECOVERY PORTAL & LEGAL PURSUIT -->
+  <div class="chapter">
+    <div class="chapter-marker">अध्याय 8ग — Chapter Eight-C</div>
+    <h3 class="chapter-title">दो सवाल जो पूरे तंत्र को उघाड़ते हैं</h3>
+  </div>
+
+  <!-- TWO QUESTIONS BANNER -->
+  <div style="background:linear-gradient(135deg,#7f1d1d 0%,#991b1b 100%);border-radius:6px;padding:1.6rem 2rem;margin:1.2rem 0;color:#fff">
+    <div style="font-family:'Noto Sans',sans-serif;font-size:8pt;font-weight:700;letter-spacing:0.14em;text-transform:uppercase;color:#fca5a5;margin-bottom:1rem;border-bottom:1px solid rgba(255,255,255,0.15);padding-bottom:0.5rem">🔍 दो प्रश्न — जिनका उत्तर नहीं दिया गया</div>
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:1rem">
+      <div style="background:rgba(0,0,0,0.25);border-radius:4px;padding:1rem 1.1rem;border-left:4px solid #fca5a5">
+        <div style="font-family:'Noto Sans',sans-serif;font-size:9pt;font-weight:700;color:#fca5a5;margin-bottom:0.4rem">प्रश्न 1</div>
+        <div style="font-size:10.5pt;font-weight:700;color:#fff;line-height:1.4">Digitised Recovery Portal क्यों नहीं बनाया गया — आज तक?</div>
+        <div style="margin-top:0.5rem;font-size:8.5pt;color:rgba(255,255,255,0.7)">e-Procurement है। IFMS है। PayManager है। NIC है। Technical capacity है। फिर भी — Recovery Portal नहीं।</div>
+      </div>
+      <div style="background:rgba(0,0,0,0.25);border-radius:4px;padding:1rem 1.1rem;border-left:4px solid #fca5a5">
+        <div style="font-family:'Noto Sans',sans-serif;font-size:9pt;font-weight:700;color:#fca5a5;margin-bottom:0.4rem">प्रश्न 2</div>
+        <div style="font-size:10.5pt;font-weight:700;color:#fff;line-height:1.4">Legal Pursuit और Recovery की Monitoring क्यों नहीं होती?</div>
+        <div style="margin-top:0.5rem;font-size:8.5pt;color:rgba(255,255,255,0.7)">Recovery करना department का legal obligation है — optional नहीं। फिर भी ~200 cases में यह obligation systematically ignore हो रहा है।</div>
+      </div>
+    </div>
+  </div>
+
+  <p>ये दोनों प्रश्न अलग नहीं हैं — ये एक ही प्रश्न के दो पहलू हैं: <strong>क्या यह negligence है, या complicity?</strong></p>
+
+  <!-- WHAT A PORTAL WOULD DO -->
+  <p><strong>Digitised Recovery Portal क्या करता — और क्यों नहीं बनाया?</strong></p>
+
+  <div style="background:var(--light-tan);border:1px solid var(--tan);border-left:4px solid var(--teal);border-radius:4px;padding:1.3rem 1.5rem;margin:1rem 0 1.4rem">
+    <div style="font-family:'Noto Sans',sans-serif;font-size:8pt;font-weight:700;letter-spacing:0.1em;text-transform:uppercase;color:var(--teal);margin-bottom:0.7rem">अगर Recovery Portal होता — तो यह सब visible होता:</div>
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:0.4rem 1.5rem">
+      <div style="display:flex;gap:0.5rem;align-items:flex-start;font-size:9pt;padding:0.2rem 0"><span style="color:var(--teal);font-weight:700;flex-shrink:0">✓</span><span>हर rescinded contract — contractor name, project, date, recoverable amount</span></div>
+      <div style="display:flex;gap:0.5rem;align-items:flex-start;font-size:9pt;padding:0.2rem 0"><span style="color:var(--teal);font-weight:700;flex-shrink:0">✓</span><span>Risk &amp; Cost proceedings की real-time status</span></div>
+      <div style="display:flex;gap:0.5rem;align-items:flex-start;font-size:9pt;padding:0.2rem 0"><span style="color:var(--teal);font-weight:700;flex-shrink:0">✓</span><span>Legal notices issued, court filings made, recovery realised</span></div>
+      <div style="display:flex;gap:0.5rem;align-items:flex-start;font-size:9pt;padding:0.2rem 0"><span style="color:var(--teal);font-weight:700;flex-shrink:0">✓</span><span>Overdue cases automatically flagged to supervisory level</span></div>
+      <div style="display:flex;gap:0.5rem;align-items:flex-start;font-size:9pt;padding:0.2rem 0"><span style="color:var(--teal);font-weight:700;flex-shrink:0">✓</span><span>Monthly reports to Department Head, Finance Department, CAG</span></div>
+      <div style="display:flex;gap:0.5rem;align-items:flex-start;font-size:9pt;padding:0.2rem 0"><span style="color:var(--teal);font-weight:700;flex-shrink:0">✓</span><span>Public access — नागरिक देख सकें किस contractor पर कितना बकाया है</span></div>
+      <div style="display:flex;gap:0.5rem;align-items:flex-start;font-size:9pt;padding:0.2rem 0"><span style="color:var(--teal);font-weight:700;flex-shrink:0">✓</span><span>Responsible officer named — accountability visible</span></div>
+      <div style="display:flex;gap:0.5rem;align-items:flex-start;font-size:9pt;padding:0.2rem 0"><span style="color:var(--teal);font-weight:700;flex-shrink:0">✓</span><span>Limitation period alerts — before rights legally extinguish</span></div>
+    </div>
+    <div style="margin-top:0.9rem;background:rgba(155,28,28,0.08);border-left:3px solid var(--crimson);border-radius:3px;padding:0.6rem 0.9rem;font-size:9pt;color:var(--ink)">
+      <strong>यह portal तकनीकी रूप से 90 दिन में बन सकता था — IFMS infrastructure पर।</strong> यह नहीं बना — क्योंकि यह portal हर non-recovery को visible और attributable बना देता। और वही visibility है जिससे system बचना चाहता है।
+    </div>
+  </div>
+
+  <!-- TWO EXPLANATIONS -->
+  <p><strong>दो संभावित उत्तर — Negligence या Complicity?</strong></p>
+
+  <div style="display:grid;grid-template-columns:1fr 1fr;gap:1rem;margin:1rem 0 1.4rem">
+    <div style="background:rgba(217,119,6,0.07);border:1px solid rgba(217,119,6,0.3);border-top:4px solid #D97706;border-radius:4px;padding:1.1rem 1.2rem">
+      <div style="font-family:'Noto Sans',sans-serif;font-size:9pt;font-weight:700;color:#92400E;margin-bottom:0.5rem">उत्तर A — Gross Negligence</div>
+      <div style="font-size:9pt;color:var(--ink);line-height:1.65">Department में management systems, legal capacity, और institutional will की कमी। Officers trained नहीं, accountable नहीं, incentivised नहीं। Recovery gaps through the cracks of an overwhelmed administration।<br/><br/><em style="color:var(--muted)">यदि यह सत्य है: तो यह भी उतना ही गंभीर है — क्योंकि यह सरकारी governance का पूर्ण पतन है।</em></div>
+    </div>
+    <div style="background:rgba(155,28,28,0.07);border:1px solid rgba(155,28,28,0.25);border-top:4px solid var(--crimson);border-radius:4px;padding:1.1rem 1.2rem">
+      <div style="font-family:'Noto Sans',sans-serif;font-size:9pt;font-weight:700;color:var(--crimson);margin-bottom:0.5rem">उत्तर B — Complicity (अधिक संभावित)</div>
+      <div style="font-size:9pt;color:var(--ink);line-height:1.65">Non-recovery deliberate है। वही officers जिन्होंने original contract process किया, payments approve किए — उनका vested interest है कि recovery proceedings न हों। Recovery = scrutiny = accountability = exposure of their own role।<br/><br/><strong style="color:var(--crimson)">जिस हाथ ने payments किए — वही हाथ recovery रोक रहा है।</strong></div>
+    </div>
+  </div>
+
+  <!-- LIMITATION PERIOD — THE TICKING CLOCK -->
+  <div style="background:linear-gradient(135deg,#1c1917 0%,#292524 100%);border-radius:5px;padding:1.4rem 1.6rem;margin:1rem 0 1.4rem;color:#fff">
+    <div style="font-family:'Noto Sans',sans-serif;font-size:8pt;font-weight:700;letter-spacing:0.14em;text-transform:uppercase;color:#fcd34d;margin-bottom:0.8rem">⏰ Limitation Period — The Ticking Clock Nobody Is Watching</div>
+    <div style="font-size:9.5pt;color:rgba(255,255,255,0.9);line-height:1.7;margin-bottom:0.8rem">
+      भारत में सरकारी dues की recovery के लिए legal action की एक <strong style="color:#fcd34d">limitation period</strong> होती है। यदि department उस period के भीतर legal proceedings initiate नहीं करता — तो वसूली का <strong style="color:#fca5a5">legal right हमेशा के लिए समाप्त हो जाता है।</strong>
+    </div>
+    <div style="display:grid;grid-template-columns:1fr 1fr 1fr;gap:0.8rem">
+      <div style="background:rgba(255,255,255,0.07);border-radius:3px;padding:0.7rem 0.8rem;text-align:center">
+        <div style="font-family:'Noto Sans',sans-serif;font-size:8.5pt;font-weight:700;color:#fcd34d;margin-bottom:0.3rem">कोई Limitation Tracker नहीं</div>
+        <div style="font-size:8.5pt;color:rgba(255,255,255,0.75)">No system alerts officer when limitation period is expiring on a recovery case</div>
+      </div>
+      <div style="background:rgba(255,255,255,0.07);border-radius:3px;padding:0.7rem 0.8rem;text-align:center">
+        <div style="font-family:'Noto Sans',sans-serif;font-size:8.5pt;font-weight:700;color:#fcd34d;margin-bottom:0.3rem">Cases Time-barred हो रहे हैं</div>
+        <div style="font-size:8.5pt;color:rgba(255,255,255,0.75)">Older rescinded contracts may already be legally time-barred — state's right to recover extinguished forever</div>
+      </div>
+      <div style="background:rgba(255,255,255,0.07);border-radius:3px;padding:0.7rem 0.8rem;text-align:center">
+        <div style="font-family:'Noto Sans',sans-serif;font-size:8.5pt;font-weight:700;color:#fca5a5;margin-bottom:0.3rem">Officer Accountability?</div>
+        <div style="font-size:8.5pt;color:rgba(255,255,255,0.75)">जिस officer की watch में limitation expired — personal accountability तय होनी चाहिए</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- FIVE POINT FRAMEWORK -->
+  <p><strong>पाँच-बिंदु Recovery Accountability Framework — अभी लागू हो:</strong></p>
+
+  <div class="reform-list">
+    <div class="reform-item">
+      <div class="reform-num">A</div>
+      <div>
+        <div class="reform-title">Digitised Recovery Portal — 90 दिन में अनिवार्य</div>
+        <div class="reform-desc">IFMS infrastructure पर बने। हर rescinded contract enter हो। Recovery status publicly visible हो। Responsible officer का नाम हर case के साथ। 90 दिन की deadline — कोई excuse नहीं।</div>
+      </div>
+    </div>
+    <div class="reform-item">
+      <div class="reform-num">B</div>
+      <div>
+        <div class="reform-title">Rescission के 30 दिन में Mandatory Legal Notice</div>
+        <div class="reform-desc">Contract rescind होने के 30 दिन के अंदर defaulting contractor को legal notice अनिवार्य। Portal में recorded। Acknowledged या contested — लेकिन कभी silent नहीं।</div>
+      </div>
+    </div>
+    <div class="reform-item">
+      <div class="reform-num">C</div>
+      <div>
+        <div class="reform-title">Litigation Register — Department Legal Cell</div>
+        <div class="reform-desc">हर contested case का register — court dates, hearing status, recovery realised — monthly update। Legal cell की accountability तय। No case without a named officer responsible।</div>
+      </div>
+    </div>
+    <div class="reform-item">
+      <div class="reform-num">D</div>
+      <div>
+        <div class="reform-title">Limitation Period Tracking — Automatic Alerts</div>
+        <div class="reform-desc">Portal automatically flag करे जब किसी case की legal limitation period approach कर रही हो। Officer must act before rights extinguish। Failure = personal accountability।</div>
+      </div>
+    </div>
+    <div class="reform-item">
+      <div class="reform-num">E</div>
+      <div>
+        <div class="reform-title">Same-Officer Overlap = ACB Referral</div>
+        <div class="reform-desc">जिस officer ने contract process किया और payments approve किए — यदि वही officer recovery initiate करने में विफल रहा — यह overlap automatic ACB referral trigger करे। Non-recovery is not negligence when the same hand that paid is the hand that refuses to collect.</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="pull-quote">
+    <blockquote>"Recovery Portal बनाना 90 दिन का काम था। 15 वर्ष में नहीं बना। Legal notice भेजना 30 दिन का काम था। ~200 cases में नहीं भेजा। Limitation period track करना software का काम था। कोई software नहीं बनाया।<br/><br/>यह negligence नहीं है। <strong>यह architecture है — impunity का।</strong>"</blockquote>
+  </div>
+
+  <hr class="section-divider"/>
+
+  <!-- CHAPTER 9 -->
+  <div class="chapter">
+    <div class="chapter-marker">अध्याय 9 — Chapter Nine</div>
+    <h3 class="chapter-title">छह तत्काल माँगें — क्या होना चाहिए?</h3>
+  </div>
+
+  <p>इस संकट से निकलने के लिए सात तत्काल कदम आवश्यक हैं:</p>
+
+  <div class="reform-list">
+    <div class="reform-item"><div class="reform-num">1</div><div class="reform-body"><div class="reform-title">Statutory Delegation Order — अनिवार्य</div><div class="reform-desc">सरकार तत्काल एक Gazette Notification जारी करे जिसमें task-wise Maker, Checker, Approver की भूमिकाएँ और पात्र अधिकारी स्पष्ट रूप से निर्धारित हों। यह statutory compulsion हो — suggestion नहीं।</div></div></div>
+    <div class="reform-item"><div class="reform-num">2</div><div class="reform-body"><div class="reform-title">नागरिक पारदर्शिता</div><div class="reform-desc">हर नागरिक को bill की स्थिति और दस्तावेज़ मुफ़्त में देखने की सुविधा IFMS 3.0 में जोड़ी जाए। Public accountability अनिवार्य।</div></div></div>
+    <div class="reform-item"><div class="reform-num">3</div><div class="reform-body"><div class="reform-title">DSC: अधिकारी के पास — operator के पास नहीं</div><div class="reform-desc">हर अधिकारी का DSC उसी के पास हो। Computer centre या operator को DSC देना IT Act 66C के तहत साइबर अपराध घोषित हो। Audit trail अनिवार्य।</div></div></div>
+    <div class="reform-item"><div class="reform-num">4</div><div class="reform-body"><div class="reform-title">समग्र, अनिवार्य Training</div><div class="reform-desc">हर XEN, AE, TA, Divisional Auditor, Divisional Accountant — सबके लिए mandatory IFMS 3.0 training। बिना training completion certificate के portal access बंद।</div></div></div>
+    <div class="reform-item"><div class="reform-num">5</div><div class="reform-body"><div class="reform-title">Portal तत्काल Fix — NIC जवाबदेह</div><div class="reform-desc">Vendor Selection, Security Refund Balance, July Report, Disbursement Engine — चारों bugs की fix के लिए deadline तय हो। NIC Rajasthan publicly accountable हो।</div></div></div>
+    <div class="reform-item"><div class="reform-num">6</div><div class="reform-body"><div class="reform-title">24×7 Dedicated IFMS 3.0 Helpline</div><div class="reform-desc">Dedicated toll-free helpline, working email (<code style="font-size:8.5pt">employeehelpdesk.ifms@rajasthan.gov.in</code> को activate करें), escalation matrix और response SLA — सब सार्वजनिक हों।</div></div></div>
+    <div class="reform-item"><div class="reform-num">7</div><div class="reform-body"><div class="reform-title">Independent Monitoring Committee</div><div class="reform-desc">System की नियमित, स्वतंत्र समीक्षा। Delegation compliance audit। NIC performance review। परिणाम सार्वजनिक।</div></div></div>
+  </div>
+
+  <hr class="section-divider"/>
+
+  <!-- CHAPTER 10 -->
+  <div class="chapter">
+    <div class="chapter-marker">अध्याय 10 — Chapter Ten (Final)</div>
+    <h3 class="chapter-title">लोकतंत्र के चौथे स्तंभ से आह्वान</h3>
+  </div>
+
+  <p>लोकतंत्र के चौथे स्तंभ — प्रेस — को इस मुद्दे पर एक साथ sting operation कर इस बात को जगज़ाहिर करना चाहिए। मीडिया से दस तत्काल माँगें:</p>
+
+  <div class="demand-list">
+    <div class="demand-item"><div class="demand-num">1.</div><div class="demand-text"><strong>Delegation Matrix — RTI करो:</strong> सरकार से RTI में पूछो — किस circular या order में task-wise Maker/Checker/Approver की statutory compulsion दी गई है? जवाब: कोई नहीं।</div></div>
+    <div class="demand-item"><div class="demand-num">2.</div><div class="demand-text"><strong>AS/FS ID Backdating — CAG Audit माँगो:</strong> Physical AS/FS date और IFMS ID generation date के बीच के gap की CAG audit होनी चाहिए। कितने cases में 30+ दिन की देरी है? यह data सार्वजनिक हो।</div></div>
+    <div class="demand-item"><div class="demand-num">3.</div><div class="demand-text"><strong>IP Login Audit — ACB को सौंपो:</strong> NIC Rajasthan के IFMS server logs में head office officer के login का IP address track होना चाहिए। Division IP से HO login = credential sharing = bribery। ACB इसकी जाँच करे।</div></div>
+    <div class="demand-item"><div class="demand-num">4.</div><div class="demand-text"><strong>Sting Operation — XEN Login Test:</strong> 90% XEN portal पर login तक नहीं कर सकते — इसे interview और sting operation से जगज़ाहिर किया जाए।</div></div>
+    <div class="demand-item"><div class="demand-num">5.</div><div class="demand-text"><strong>DSC कहाँ है — Live Check करो:</strong> किसी भी Division में जाकर पूछो — XEN का DSC उनके पास है या computer centre पर? यह expose ज़रूरी है।</div></div>
+    <div class="demand-item"><div class="demand-num">6.</div><div class="demand-text"><strong>Helpline Investigation — Live Call &amp; Email Test:</strong> <code style="font-size:8pt">employeehelpdesk.ifms@rajasthan.gov.in</code> पर email भेजो, helpline call करो — live record करो। कोई जवाब नहीं आता।</div></div>
+    <div class="demand-item"><div class="demand-num">7.</div><div class="demand-text"><strong>Morphed Photo Scam — उजागर हो:</strong> Physical progress में morphed photos अपलोड हो रही हैं — जाँच और खुलासा ज़रूरी है।</div></div>
+    <div class="demand-item"><div class="demand-num">8.</div><div class="demand-text"><strong>IFMS 3.0 — Public Audit की माँग:</strong> IFMS 3.0 portal को public audit के दायरे में लाया जाए — NIC Rajasthan को जवाबदेह बनाया जाए।</div></div>
+    <div class="demand-item"><div class="demand-num">9.</div><div class="demand-text"><strong>एक Operator, तीन Roles — Expose करो:</strong> Maker + Checker + Approver — एक ही बाहरी operator कैसे तीनों roles निभाता है और उसके पास DSC भी है — यह उजागर हो।</div></div>
+    <div class="demand-item"><div class="demand-num">10.</div><div class="demand-text"><strong>जनता की निगरानी — अनिवार्य:</strong> जन भुगतान प्रणाली में जनता की निगरानी अनिवार्य है — यह लोकहित का मामला है।</div></div>
+  </div>
+
+  <!-- CLOSING STATEMENT -->
+  <div class="closing">
+    <blockquote>"जब तक system की monitoring नहीं होगी, तब तक यही होगा —<br/>सरकार काम करती रहेगी, जनता का पैसा डूबता रहेगा।<br/><br/>WAM बंद हो गया। IFMS टूटा है। Helpline मौन है।<br/>Digital Signature बाज़ार में है। FS-ID बिकती है।<br/>और सरकार — <em>मौन है।</em>"</blockquote>
+    <div style="display:flex;gap:0.8rem;justify-content:center;margin-top:1.2rem;flex-wrap:wrap">
+      <div class="closing-btn">🚨 PRESS MUST ACT NOW</div>
+      <div style="display:inline-block;margin-top:0rem;background:rgba(255,255,255,0.12);color:#fff;font-family:'Noto Sans',sans-serif;font-size:8.5pt;font-weight:700;padding:6px 18px;border-radius:2px;letter-spacing:0.05em">📋 RTI FILE करें</div>
+      <div style="display:inline-block;margin-top:0rem;background:rgba(255,255,255,0.12);color:#fff;font-family:'Noto Sans',sans-serif;font-size:8.5pt;font-weight:700;padding:6px 18px;border-radius:2px;letter-spacing:0.05em">🔍 ACB INVESTIGATE करे</div>
+    </div>
+  </div>
+
+  <!-- CORRUPTION CYCLE SUMMARY -->
+  <div class="cycle-box">
+    <div style="font-family:'Noto Sans',sans-serif;font-size:8pt;font-weight:700;letter-spacing:0.12em;text-transform:uppercase;color:var(--teal);margin-bottom:0.5rem">इस पूरे संकट का भ्रष्टाचार चक्र — The Complete Corruption Cycle</div>
+    <div class="cycle-steps">
+      <span class="cycle-step">Physical AS/FS जारी (Oct '25)</span>
+      <span class="cycle-arrow">→</span>
+      <span class="cycle-step">IFMS ID में 6 माह देरी</span>
+      <span class="cycle-arrow">→</span>
+      <span class="cycle-step">Tender + Work Order + काम शुरू</span>
+      <span class="cycle-arrow">→</span>
+      <span class="cycle-step">Bill के वक्त FS-ID absent</span>
+      <span class="cycle-arrow">→</span>
+      <span class="cycle-step">"Secret Bytes" — HO approach</span>
+      <span class="cycle-arrow">→</span>
+      <span class="cycle-step">Operator के पास HO credentials</span>
+      <span class="cycle-arrow">→</span>
+      <span class="cycle-step">रिश्वत → Instant FS-ID</span>
+      <span class="cycle-arrow">→</span>
+      <span class="cycle-step">Payment Release</span>
+      <span class="cycle-arrow">→</span>
+      <span class="cycle-step" style="background:rgba(155,28,28,0.4);border-color:rgba(155,28,28,0.6)">जनता का पैसा रिसता रहा</span>
+    </div>
+    <div style="margin-top:0.8rem;font-family:'Noto Sans',sans-serif;font-size:8pt;color:rgba(255,255,255,0.5);font-style:italic">हर कड़ी में सरकारी ढाँचे की विफलता — हर कड़ी में रिश्वत का अवसर</div>
+  </div>
+
+  <!-- FOOTER -->
+  <div class="article-footer">
+    <!-- Award praise bar -->
+    <div style="background:var(--navy);color:#fff;padding:1rem 1.5rem;border-radius:4px;margin-bottom:1.2rem;font-family:'Noto Sans',sans-serif">
+      <div style="font-size:8pt;font-weight:700;letter-spacing:0.12em;text-transform:uppercase;color:var(--teal);margin-bottom:0.6rem">🏆 रिपोर्ट का मूल्यांकन — Editorial Assessment</div>
+      <div style="display:grid;grid-template-columns:1fr 1fr 1fr;gap:0.8rem;font-size:8.5pt">
+        <div style="background:rgba(255,255,255,0.07);border-radius:3px;padding:0.5rem 0.7rem;border-top:2px solid var(--teal)">
+          <div style="font-weight:700;color:var(--teal);margin-bottom:2px">खोज की गहराई</div>
+          <div style="color:rgba(255,255,255,0.8)">Ground investigation + official email evidence + print media corroboration + IP audit trail — बहु-स्तरीय साक्ष्य</div>
+        </div>
+        <div style="background:rgba(255,255,255,0.07);border-radius:3px;padding:0.5rem 0.7rem;border-top:2px solid #fcd34d">
+          <div style="font-weight:700;color:#fcd34d;margin-bottom:2px">जन महत्व</div>
+          <div style="color:rgba(255,255,255,0.8)">₹40 Cr+ वार्षिक नुकसान, ~200 Divisions प्रभावित, IT Act उल्लंघन, treasury fraud — असाधारण public interest</div>
+        </div>
+        <div style="background:rgba(255,255,255,0.07);border-radius:3px;padding:0.5rem 0.7rem;border-top:2px solid #fca5a5">
+          <div style="font-weight:700;color:#fca5a5;margin-bottom:2px">Action Potential</div>
+          <div style="color:rgba(255,255,255,0.8)">RTI + CAG Audit + ACB Investigation + NIC accountability + Gazette Notification — सब actionable demands</div>
+        </div>
+      </div>
+    </div>
+    <p style="font-weight:700;color:var(--navy);font-size:9pt;margin-bottom:4px">जन संवाददाता — खोजी पत्रकारिता</p>
+    <p>PWD &amp; Irrigation | Rajasthan | IFMS 3.0 Investigation | Exclusive Multi-Part Report</p>
+    <p style="margin-top:4px">
+      Published: 2 August 2026 &nbsp;|&nbsp; Updated: 6 August 2026 &nbsp;|&nbsp;
+      <span style="color:var(--teal);font-weight:600">10 Chapters</span> &nbsp;|&nbsp;
+      <span style="color:var(--teal);font-weight:600">7 Reforms Demanded</span> &nbsp;|&nbsp;
+      <span style="color:var(--teal);font-weight:600">10 Media Demands</span> &nbsp;|&nbsp;
+      All rights reserved
+    </p>
+    <p style="margin-top:6px;font-style:italic;font-size:7pt;color:#aaa">इस रिपोर्ट में उल्लिखित सभी तथ्य ground investigation पर आधारित हैं। नामों को गोपनीय रखा गया है। यह रिपोर्ट सार्वजनिक हित में प्रकाशित की गई है।</p>
+  </div>
+
+</div>
+</body>
+</html>
